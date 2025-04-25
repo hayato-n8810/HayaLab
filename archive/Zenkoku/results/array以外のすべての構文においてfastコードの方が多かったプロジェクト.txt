@@ -1,0 +1,31 @@
+array以外のすべての構文においてfastコードの方が多かったプロジェクト
+うしろはそれぞれの構文の中での差の順位
+
+['dcloudio_uni-app',d2 s2 f4
+ 'Leaflet_Leaflet',
+ 'vercel_next.js',d3 p2 s3 f3    a1
+ 'nodejs_node',d1 p3 s1 f1 
+ 'gorhill_uBlock',d6
+ 'preactjs_preact',
+ 'phaserjs_phaser',d5 p1 f2
+ 'hakimel_reveal.js',
+ 'facebook_react', s4     a3
+ 'marktext_marktext',
+ 'layui_layui',
+ 'meteor_meteor',
+ 'bigskysoftware_htmx',
+ 'prettier_prettier',
+ 'Dogfalo_materialize',
+ 'cypress-io_cypress',
+ 'adobe_brackets',p4 s5 f5
+ 'serverless_serverless',
+ 'parcel-bundler_parcel',
+ 'nwjs_nw.js',p5
+ 'axios_axios',
+ 'ToolJet_ToolJet',
+ 'jquery_jquery',
+ 'gatsbyjs_gatsby',
+ 'angular_angular.js',     a5
+ 'webtorrent_webtorrent',
+ 'NaiboWang_EasySpider',
+ 'atom_atom']

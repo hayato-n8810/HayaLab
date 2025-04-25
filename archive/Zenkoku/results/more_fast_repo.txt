@@ -1,0 +1,46 @@
+すべての構文においてfastコードの方が多かったプロジェクト
+うしろはそれぞれの構文の中での(fast)-(slow)差の順位
+[
+    'nodejs_node', d1 p3 s1 f1 a1
+    'webtorrent_webtorrent', 
+    'Dogfalo_materialize', 
+    'ToolJet_ToolJet', 
+    'adobe_brackets', p4 s5 f5
+    'dcloudio_uni-app', d2 s2 f4 a6
+    'bigskysoftware_htmx', p7
+    'gorhill_uBlock', d6
+    'meteor_meteor', f6 
+    'phaserjs_phaser', d5 p1 s6 f2 a3
+    'vercel_next.js', d3 p2 s3 f3 a4
+    'angular_angular.js', 
+    'facebook_react', s4 a7
+    'axios_axios', 
+    'cypress-io_cypress', 
+    'marktext_marktext', 
+    'parcel-bundler_parcel', d7
+    'prettier_prettier', 
+    'serverless_serverless'
+]
+
+TryGhost_Ghost d4
+nwjs_nw.js p5
+mrdoob_three.js p6 a2
+FortAwesome_Font-Awesome s7
+Semantic-Org_Semantic-UI f7
+mozilla_pdf.js a5
+
+TOP5 keyword : ['javascript', 'react', 'node', 'nodejs', 'canvas', 'webgl']
+
+nodejs サーバサイドでjsを実行するための環境
+canvas ブラウザ上に図を書くための仕様
+webgl ウェブ上で三次元グラフィックを高速に描画する技術
+
+案1
+散布図それぞれでfast-slowの上位５つを色変えて表示&スペース・時間が許せばそれを明示
+注目1つ以外ををグレースケールしてでスライド並べる
+さらに↓を採用すると別視点ですよ感で話しやすいかも
+
+案2
+すべての構文においてfastコードの方が多かったプロジェクトのもつキーワードから
+複数回登場したキーワードをランキング表示して話す（ウェブに関するものが出るかは不明）
+単純に登場回数多いものをフィルタリングすると出るかも　やってみる

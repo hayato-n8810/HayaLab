@@ -1,0 +1,7 @@
+services:
+  main:
+    build: .
+    command: python3 main.py
+    volumes:
+      - .:/workspace
+    working_dir: /workspace

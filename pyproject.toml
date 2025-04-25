@@ -1,0 +1,38 @@
+[project]
+name = "hayalab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pre-commit>=4.2.0",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+    "ruff>=0.11.6",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
+exclude = ["archive/*"]
+
+[tool.ruff.lint]
+select = [
+    "F", # pyflakes
+    "E", # pycodestyle
+    "W", # pycodestyle warnings
+    "I", # isort
+    "D", # pydocstyle
+]
+ignore = [
+    "D100", # undocumented-public-module
+    "D107", # undocumented-public-init
+    "D205", # blank-line-after-summary
+    "D415" # ends-in-punctuation
+]
+exclude = ["archive/*"]
+
+[tool.ruff.lint.pydocstyle]
+# docstringはgoogle style
+convention = "google"
+

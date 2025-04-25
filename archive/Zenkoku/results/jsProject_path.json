@@ -1,0 +1,502 @@
+[
+    {
+        "github": "https://github.com/facebook/react",
+        "npm": "https://www.npmjs.com/package/react",
+        "libraries.io": "https://libraries.io/npm/react"
+    },
+    {
+        "github": "https://github.com/trekhleb/javascript-algorithms",
+        "npm": "https://www.npmjs.com/package/javascript-algorithms-and-data-structures",
+        "libraries.io": "https://libraries.io/npm/javascript-algorithms-and-data-structures"
+    },
+    {
+        "github": "https://github.com/twbs/bootstrap",
+        "npm": "https://www.npmjs.com/package/bootstrap",
+        "libraries.io": "https://libraries.io/nuget/bootstrap"
+    },
+    {
+        "github": "https://github.com/airbnb/javascript",
+        "npm": "https://www.npmjs.com/package/airbnb-style",
+        "libraries.io": "https://libraries.io/npm/@ndelangen%2Feslint-config-airbnb"
+    },
+    {
+        "github": "https://github.com/vercel/next.js",
+        "npm": "https://www.npmjs.com/package/next",
+        "libraries.io": "https://libraries.io/npm/@next%2Fmdx"
+    },
+    {
+        "github": "https://github.com/Chalarangelo/30-seconds-of-code",
+        "npm": "https://www.npmjs.com/package/tsoc",
+        "libraries.io": "https://libraries.io/npm/30-seconds-of-code"
+    },
+    {
+        "github": "https://github.com/nodejs/node",
+        "npm": "https://www.npmjs.com/package/ericapi",
+        "libraries.io": "https://libraries.io/homebrew/node"
+    },
+    {
+        "github": "https://github.com/axios/axios",
+        "npm": "https://www.npmjs.com/package/axios",
+        "libraries.io": "https://libraries.io/npm/axios"
+    },
+    {
+        "github": "https://github.com/mrdoob/three.js",
+        "npm": "https://www.npmjs.com/package/three.js",
+        "libraries.io": "https://libraries.io/conda/three.js"
+    },
+    {
+        "github": "https://github.com/facebook/create-react-app",
+        "npm": "https://www.npmjs.com/package/create-react-app",
+        "libraries.io": "https://libraries.io/npm/create-react-app"
+    },
+    {
+        "github": "https://github.com/ryanmcdermott/clean-code-javascript",
+        "npm": "https://www.npmjs.com/package/clean-code-javascript",
+        "libraries.io": "https://libraries.io/npm/clean-code-javascript"
+    },
+    {
+        "github": "https://github.com/iptv-org/iptv",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/microsoft/Web-Dev-For-Beginners",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/sveltejs/svelte",
+        "npm": "https://www.npmjs.com/package/svelte",
+        "libraries.io": "https://libraries.io/npm/svelte"
+    },
+    {
+        "github": "https://github.com/jaywcjlove/awesome-mac",
+        "npm": "https://www.npmjs.com/package/awesome-mac",
+        "libraries.io": "https://libraries.io/npm/awesome-mac"
+    },
+    {
+        "github": "https://github.com/FortAwesome/Font-Awesome",
+        "npm": "https://www.npmjs.com/package/fontawesome-svg-core",
+        "libraries.io": "https://libraries.io/npm/@fortawesome%2Ffontawesome-svg-core"
+    },
+    {
+        "github": "https://github.com/typicode/json-server",
+        "npm": "https://www.npmjs.com/package/json-server",
+        "libraries.io": "https://libraries.io/npm/json-server"
+    },
+    {
+        "github": "https://github.com/anuraghazra/github-readme-stats",
+        "npm": "https://www.npmjs.com/package/github-readme-stats-test",
+        "libraries.io": "https://libraries.io/npm/@zo-bro-23%2Fgithub-readme-stats-test"
+    },
+    {
+        "github": "https://github.com/hakimel/reveal.js",
+        "npm": "https://www.npmjs.com/package/reveal.js",
+        "libraries.io": "https://libraries.io/npm/reveal.js"
+    },
+    {
+        "github": "https://github.com/expressjs/express",
+        "npm": "https://www.npmjs.com/package/express",
+        "libraries.io": "https://libraries.io/npm/express"
+    },
+    {
+        "github": "https://github.com/chartjs/Chart.js",
+        "npm": "https://www.npmjs.com/package/chart.js",
+        "libraries.io": "https://libraries.io/npm/chart.js"
+    },
+    {
+        "github": "https://github.com/webpack/webpack",
+        "npm": "https://www.npmjs.com/package/webpack",
+        "libraries.io": "https://libraries.io/npm/webpack"
+    },
+    {
+        "github": "https://github.com/leonardomso/33-js-concepts",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/resume/resume.github.com",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/louislam/uptime-kuma",
+        "npm": "https://www.npmjs.com/package/uptime-kuma",
+        "libraries.io": "https://libraries.io/npm/uptime-kuma"
+    },
+    {
+        "github": "https://github.com/atom/atom",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/lodash/lodash",
+        "npm": "https://www.npmjs.com/package/lodash",
+        "libraries.io": "https://libraries.io/npm/lodash"
+    },
+    {
+        "github": "https://github.com/adam-p/markdown-here",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/jquery/jquery",
+        "npm": "https://www.npmjs.com/package/jquery",
+        "libraries.io": "https://libraries.io/npm/jquery"
+    },
+    {
+        "github": "https://github.com/angular/angular.js",
+        "npm": "https://www.npmjs.com/package/angular",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/h5bp/html5-boilerplate",
+        "npm": "https://www.npmjs.com/package/html5-boilerplate",
+        "libraries.io": "https://libraries.io/npm/html5-boilerplate"
+    },
+    {
+        "github": "https://github.com/gatsbyjs/gatsby",
+        "npm": "https://www.npmjs.com/package/gatsby",
+        "libraries.io": "https://libraries.io/npm/gatsby"
+    },
+    {
+        "github": "https://github.com/scutan90/DeepLearning-500-questions",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/azl397985856/leetcode",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/jgraph/drawio-desktop",
+        "npm": "https://www.npmjs.com/package/draw.io-desktop",
+        "libraries.io": "https://libraries.io/npm/draw.io-desktop"
+    },
+    {
+        "github": "https://github.com/Semantic-Org/Semantic-UI",
+        "npm": "",
+        "libraries.io": "https://libraries.io/maven/org.webjars:Semantic-UI"
+    },
+    {
+        "github": "https://github.com/juliangarnier/anime",
+        "npm": "",
+        "libraries.io": "https://libraries.io/clojars/cljsjs%2Fanime"
+    },
+    {
+        "github": "https://github.com/prettier/prettier",
+        "npm": "https://www.npmjs.com/package/prettier",
+        "libraries.io": "https://libraries.io/npm/prettier"
+    },
+    {
+        "github": "https://github.com/mozilla/pdf.js",
+        "npm": "https://www.npmjs.com/package/mr-pdfjs-dist",
+        "libraries.io": "https://libraries.io/npm/pdfjs-dist"
+    },
+    {
+        "github": "https://github.com/chinese-poetry/chinese-poetry",
+        "npm": "https://www.npmjs.com/package/chinese-poetry",
+        "libraries.io": "https://libraries.io/npm/chinese-poetry"
+    },
+    {
+        "github": "https://github.com/moment/moment",
+        "npm": "https://www.npmjs.com/package/moment",
+        "libraries.io": "https://libraries.io/npm/moment"
+    },
+    {
+        "github": "https://github.com/gorhill/uBlock",
+        "npm": "https://www.npmjs.com/package/@gorhill/ubo-core",
+        "libraries.io": "https://libraries.io/npm/@gorhill%2Fubo-core"
+    },
+    {
+        "github": "https://github.com/marktext/marktext",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/TryGhost/Ghost",
+        "npm": "https://www.npmjs.com/package/@tryghost/portal",
+        "libraries.io": "https://libraries.io/npm/@tryghost%2Fportal"
+    },
+    {
+        "github": "https://github.com/NARKOZ/hacker-scripts",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/cypress-io/cypress",
+        "npm": "https://www.npmjs.com/package/cypress",
+        "libraries.io": "https://libraries.io/npm/cypress"
+    },
+    {
+        "github": "https://github.com/iamkun/dayjs",
+        "npm": "https://www.npmjs.com/package/dayjs",
+        "libraries.io": "https://libraries.io/npm/dayjs"
+    },
+    {
+        "github": "https://github.com/algorithm-visualizer/algorithm-visualizer",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/poteto/hiring-without-whiteboards",
+        "npm": "https://www.npmjs.com/package/hiring-without-whiteboards",
+        "libraries.io": "https://libraries.io/npm/hiring-without-whiteboards"
+    },
+    {
+        "github": "https://github.com/serverless/serverless",
+        "npm": "https://www.npmjs.com/package/serverless",
+        "libraries.io": "https://libraries.io/npm/serverless"
+    },
+    {
+        "github": "https://github.com/agalwood/Motrix",
+        "npm": "https://www.npmjs.com/package/motrix",
+        "libraries.io": "https://libraries.io/npm/motrix"
+    },
+    {
+        "github": "https://github.com/typescript-cheatsheets/react",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/meteor/meteor",
+        "npm": "https://www.npmjs.com/package/meteor-tools",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/parcel-bundler/parcel",
+        "npm": "https://www.npmjs.com/package/parcel",
+        "libraries.io": "https://libraries.io/meteor/meteor"
+    },
+    {
+        "github": "https://github.com/Asabeneh/30-Days-Of-JavaScript",
+        "npm": "https://www.npmjs.com/package/30-days-of-javascript",
+        "libraries.io": "https://libraries.io/npm/30-days-of-javascript"
+    },
+    {
+        "github": "https://github.com/google/zx",
+        "npm": "https://www.npmjs.com/package/zx",
+        "libraries.io": "https://libraries.io/npm/zx"
+    },
+    {
+        "github": "https://github.com/Unitech/pm2",
+        "npm": "https://www.npmjs.com/package/pm2",
+        "libraries.io": "https://libraries.io/npm/pm2"
+    },
+    {
+        "github": "https://github.com/Leaflet/Leaflet",
+        "npm": "https://www.npmjs.com/package/leaflet",
+        "libraries.io": "https://libraries.io/npm/leaflet"
+    },
+    {
+        "github": "https://github.com/yarnpkg/yarn",
+        "npm": "https://www.npmjs.com/package/yarn",
+        "libraries.io": "https://libraries.io/npm/yarn"
+    },
+    {
+        "github": "https://github.com/GitSquared/edex-ui",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/microsoft/monaco-editor",
+        "npm": "https://www.npmjs.com/package/monaco-editor",
+        "libraries.io": "https://libraries.io/npm/monaco-editor"
+    },
+    {
+        "github": "https://github.com/LeCoupa/awesome-cheatsheets",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/nwjs/nw.js",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/sudheerj/reactjs-interview-questions",
+        "npm": "https://www.npmjs.com/package/reactjs-interview-questions",
+        "libraries.io": "https://libraries.io/npm/reactjs-interview-questions"
+    },
+    {
+        "github": "https://github.com/dcloudio/uni-app",
+        "npm": "https://www.npmjs.com/package/@dcloudio/uni-app",
+        "libraries.io": "https://libraries.io/npm/@dcloudio%2Funi-app-plus"
+    },
+    {
+        "github": "https://github.com/nolimits4web/swiper",
+        "npm": "https://www.npmjs.com/package/swiper",
+        "libraries.io": "https://libraries.io/npm/swiper"
+    },
+    {
+        "github": "https://github.com/Dogfalo/materialize",
+        "npm": "https://www.npmjs.com/package/materialize-css",
+        "libraries.io": "https://libraries.io/maven/org.webjars.bower:materialize"
+    },
+    {
+        "github": "https://github.com/bigskysoftware/htmx",
+        "npm": "https://www.npmjs.com/package/htmx.org",
+        "libraries.io": "https://libraries.io/maven/org.webjars.npm:htmx.org"
+    },
+    {
+        "github": "https://github.com/videojs/video.js",
+        "npm": "https://www.npmjs.com/package/video.js",
+        "libraries.io": "https://libraries.io/npm/video.js"
+    },
+    {
+        "github": "https://github.com/impress/impress.js",
+        "npm": "https://www.npmjs.com/package/impress.js",
+        "libraries.io": "https://libraries.io/npm/impress.js"
+    },
+    {
+        "github": "https://github.com/phaserjs/phaser",
+        "npm": "https://www.npmjs.com/package/phaser",
+        "libraries.io": "https://libraries.io/npm/phaser"
+    },
+    {
+        "github": "https://github.com/preactjs/preact",
+        "npm": "https://www.npmjs.com/package/preact",
+        "libraries.io": "https://libraries.io/npm/preact"
+    },
+    {
+        "github": "https://github.com/NaiboWang/EasySpider",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/naptha/tesseract.js",
+        "npm": "https://www.npmjs.com/package/tesseract.js",
+        "libraries.io": "https://libraries.io/npm/tesseract.js"
+    },
+    {
+        "github": "https://github.com/denysdovhan/wtfjs",
+        "npm": "https://www.npmjs.com/package/wtfjs",
+        "libraries.io": "https://libraries.io/npm/wtfjs"
+    },
+    {
+        "github": "https://github.com/alvarotrigo/fullPage.js",
+        "npm": "https://www.npmjs.com/package/fullpage.js",
+        "libraries.io": "https://libraries.io/npm/fullpage.js"
+    },
+    {
+        "github": "https://github.com/koajs/koa",
+        "npm": "https://www.npmjs.com/package/koa",
+        "libraries.io": "https://libraries.io/npm/koa"
+    },
+    {
+        "github": "https://github.com/Kong/insomnia",
+        "npm": "https://www.npmjs.com/package/insomnia-plugin-kong-portal",
+        "libraries.io": "https://libraries.io/npm/insomnia-common"
+    },
+    {
+        "github": "https://github.com/sahat/hackathon-starter",
+        "npm": "https://www.npmjs.com/package/dguardcloudbe",
+        "libraries.io": "https://libraries.io/npm/dguardcloudbe"
+    },
+    {
+        "github": "https://github.com/jondot/awesome-react-native",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/carbon-app/carbon",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/goabstract/Awesome-Design-Tools",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/zenorocha/clipboard.js",
+        "npm": "https://www.npmjs.com/package/clipboard",
+        "libraries.io": "https://libraries.io/npm/clipboard"
+    },
+    {
+        "github": "https://github.com/atlassian/react-beautiful-dnd",
+        "npm": "https://www.npmjs.com/package/react-beautiful-dnd",
+        "libraries.io": "https://libraries.io/npm/react-beautiful-dnd"
+    },
+    {
+        "github": "https://github.com/ToolJet/ToolJet",
+        "npm": "https://www.npmjs.com/package/clgrpc",
+        "libraries.io": "https://libraries.io/npm/clgrpc"
+    },
+    {
+        "github": "https://github.com/markedjs/marked",
+        "npm": "https://www.npmjs.com/package/marked",
+        "libraries.io": "https://libraries.io/npm/marked"
+    },
+    {
+        "github": "https://github.com/adobe/brackets",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/gulpjs/gulp",
+        "npm": "https://www.npmjs.com/package/gulp",
+        "libraries.io": "https://libraries.io/npm/gulp"
+    },
+    {
+        "github": "https://github.com/typicode/husky",
+        "npm": "https://www.npmjs.com/package/husky",
+        "libraries.io": "https://libraries.io/npm/husky"
+    },
+    {
+        "github": "https://github.com/TheAlgorithms/JavaScript",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/fastify/fastify",
+        "npm": "https://www.npmjs.com/package/fastify",
+        "libraries.io": "https://libraries.io/npm/fastify"
+    },
+    {
+        "github": "https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/qishibo/AnotherRedisDesktopManager",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/pcottle/learnGitBranching",
+        "npm": "https://www.npmjs.com/package/uselearngitbranching",
+        "libraries.io": "https://libraries.io/npm/uselearngitbranching"
+    },
+    {
+        "github": "https://github.com/airbnb/lottie-web",
+        "npm": "https://www.npmjs.com/package/lottie-web",
+        "libraries.io": "https://libraries.io/npm/lottie-web"
+    },
+    {
+        "github": "https://github.com/remoteintech/remote-jobs",
+        "npm": "",
+        "libraries.io": ""
+    },
+    {
+        "github": "https://github.com/SortableJS/Sortable",
+        "npm": "https://www.npmjs.com/package/sortablejs-rc",
+        "libraries.io": "https://libraries.io/maven/org.webjars.bower:github-com-SortableJS-Sortable"
+    },
+    {
+        "github": "https://github.com/vuejs/vue-cli",
+        "npm": "https://www.npmjs.com/package/vue-cli",
+        "libraries.io": "https://libraries.io/npm/@vue%2Fcli-service"
+    },
+    {
+        "github": "https://github.com/layui/layui",
+        "npm": "https://www.npmjs.com/package/layui",
+        "libraries.io": "https://libraries.io/npm/layui"
+    },
+    {
+        "github": "https://github.com/webtorrent/webtorrent",
+        "npm": "https://www.npmjs.com/package/webtorrent",
+        "libraries.io": "https://libraries.io/npm/webtorrent"
+    }
+]

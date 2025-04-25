@@ -1,0 +1,1719 @@
+[
+    {
+        "repository": "facebook_react",
+        "keywords": [
+            "declarative",
+            "frontend",
+            "javascript",
+            "library",
+            "react",
+            "ui"
+        ],
+        "About": "The library for web and native user interfaces.",
+        "efficiency": 0
+    },
+    {
+        "repository": "trekhleb_javascript-algorithms",
+        "keywords": [
+            "algorithm",
+            "algorithms",
+            "computer-science",
+            "cs",
+            "data-structures",
+            "graph",
+            "interview",
+            "interview-preparation",
+            "javascript",
+            "javascript-algorithms",
+            "sorting-algorithms",
+            "tree"
+        ],
+        "About": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+        "efficiency": 0
+    },
+    {
+        "repository": "twbs_bootstrap",
+        "keywords": [
+            "bootstrap",
+            "css",
+            "css-framework",
+            "framework",
+            "front-end",
+            "html",
+            "javascript",
+            "mobile-first",
+            "responsive",
+            "sass",
+            "scss",
+            "web"
+        ],
+        "About": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+        "efficiency": 0
+    },
+    {
+        "repository": "airbnb_javascript",
+        "keywords": [
+            "airbnb",
+            "arrow-functions",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "es6",
+            "eslint",
+            "javascript",
+            "jsx",
+            "lint",
+            "linting",
+            "naming-conventions",
+            "react",
+            "style guide",
+            "style-guide",
+            "style-linter",
+            "styleguide",
+            "tc39"
+        ],
+        "About": "JavaScript Style Guide",
+        "efficiency": 0
+    },
+    {
+        "repository": "vercel_next.js",
+        "keywords": [
+            "backend",
+            "blog",
+            "browser",
+            "cli",
+            "compiler",
+            "components",
+            "framework",
+            "front-end",
+            "hybrid",
+            "nextjs",
+            "node",
+            "react",
+            "server",
+            "server-rendering",
+            "ssg",
+            "static",
+            "static-site-generator",
+            "universal",
+            "vercel",
+            "web"
+        ],
+        "About": "The React Framework",
+        "efficiency": 1
+    },
+    {
+        "repository": "Chalarangelo_30-seconds-of-code",
+        "keywords": [
+            "astro",
+            "awesome-list",
+            "boilerplate",
+            "css",
+            "education",
+            "es6-javascript",
+            "git",
+            "html",
+            "javascript",
+            "learn-to-code",
+            "learning-resources",
+            "nodejs",
+            "programming",
+            "snippets",
+            "snippets-collections",
+            "snippets-library"
+        ],
+        "About": "Coding articles to level up your development skills",
+        "efficiency": 0
+    },
+    {
+        "repository": "nodejs_node",
+        "keywords": [
+            "javascript",
+            "js",
+            "linux",
+            "macos",
+            "mit",
+            "node",
+            "nodejs",
+            "runtime",
+            "windows"
+        ],
+        "About": "Node.js JavaScript runtime ✨🐢🚀✨ サーバープログラムに使われる",
+        "efficiency": 1
+    },
+    {
+        "repository": "axios_axios",
+        "keywords": [
+            "ajax",
+            "hacktoberfest",
+            "http",
+            "http-client",
+            "javascript",
+            "node",
+            "nodejs",
+            "promise",
+            "xhr"
+        ],
+        "About": "Promise based HTTP client for the browser and node.js クライアントとサーバで効率的にhttpレスポンスを処理する",
+        "efficiency": 1
+    },
+    {
+        "repository": "mrdoob_three.js",
+        "keywords": [
+            "3d",
+            "augmented-reality",
+            "canvas",
+            "html5",
+            "javascript",
+            "svg",
+            "virtual-reality",
+            "webaudio",
+            "webgl",
+            "webgl2",
+            "webgpu",
+            "webxr"
+        ],
+        "About": "JavaScript 3D Library.The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library.",
+        "efficiency": 1
+    },
+    {
+        "repository": "facebook_create-react-app",
+        "keywords": [
+            "build-tools",
+            "react",
+            "zero-configuration"
+        ],
+        "About": "Set up a modern web app by running one command.",
+        "efficiency": 0
+    },
+    {
+        "repository": "ryanmcdermott_clean-code-javascript",
+        "keywords": [
+            "best-practices",
+            "clean",
+            "clean-architecture",
+            "clean-code",
+            "code",
+            "composition",
+            "inheritance",
+            "javascript",
+            "oss",
+            "package",
+            "principles",
+            "project"
+        ],
+        "About": "Clean Code concepts adapted for JavaScript",
+        "efficiency": 0
+    },
+    {
+        "repository": "iptv-org_iptv",
+        "keywords": [
+            "iptv",
+            "m3u",
+            "playlist",
+            "streams",
+            "tv"
+        ],
+        "About": "Collection of publicly available IPTV channels from all over the world",
+        "efficiency": 0
+    },
+    {
+        "repository": "microsoft_Web-Dev-For-Beginners",
+        "keywords": [
+            "css",
+            "curriculum",
+            "education",
+            "html",
+            "javascript",
+            "learning",
+            "microsoft-for-beginners",
+            "tutorials"
+        ],
+        "About": "24 Lessons, 12 Weeks, Get Started as a Web Developer",
+        "efficiency": 0
+    },
+    {
+        "repository": "sveltejs_svelte",
+        "keywords": [
+            "UI",
+            "compiler",
+            "framework",
+            "svelte",
+            "template",
+            "templates",
+            "templating",
+            "ui"
+        ],
+        "About": "web development for the rest of us These components are compiled into small, efficient JavaScript modules that eliminate overhead traditionally associated with UI frameworks.",
+        "efficiency": 1
+    },
+    {
+        "repository": "jaywcjlove_awesome-mac",
+        "keywords": [
+            "apple",
+            "awesome",
+            "awesome-list",
+            "awesome-lists",
+            "awesome-mac",
+            "list",
+            "mac",
+            "mac-osx",
+            "macos",
+            "macosx",
+            "osx",
+            "software"
+        ],
+        "About": " Now we have become very big, Different from the original idea. Collect premium software in various categories.",
+        "efficiency": 0
+    },
+    {
+        "repository": "FortAwesome_Font-Awesome",
+        "keywords": [
+            "css",
+            "font",
+            "fontawesome",
+            "icons",
+            "svg-icons",
+            "svg-sprites",
+            "webfont"
+        ],
+        "About": "The iconic SVG, font, and CSS toolkit",
+        "efficiency": 0
+    },
+    {
+        "repository": "typicode_json-server",
+        "keywords": [],
+        "About": "Get a full fake REST API with zero coding in less than 30 seconds (seriously)",
+        "efficiency": 0
+    },
+    {
+        "repository": "anuraghazra_github-readme-stats",
+        "keywords": [
+            "dynamic",
+            "hacktoberfest",
+            "profile-readme",
+            "readme-generator",
+            "readme-stats",
+            "serverless"
+        ],
+        "About": "⚡ Dynamically generated stats for your github readmes",
+        "efficiency": 0
+    },
+    {
+        "repository": "hakimel_reveal.js",
+        "keywords": [
+            "presentation",
+            "presentations",
+            "reveal",
+            "slides",
+            "slideshow"
+        ],
+        "About": "The HTML Presentation Framework",
+        "efficiency": 0
+    },
+    {
+        "repository": "expressjs_express",
+        "keywords": [
+            "api",
+            "app",
+            "express",
+            "framework",
+            "http",
+            "javascript",
+            "nodejs",
+            "rest",
+            "restful",
+            "router",
+            "server",
+            "sinatra",
+            "web"
+        ],
+        "About": "Fast, unopinionated, minimalist web framework for node.",
+        "efficiency": 1
+    },
+    {
+        "repository": "chartjs_Chart.js",
+        "keywords": [
+            "canvas",
+            "chart",
+            "charts",
+            "data",
+            "graph",
+            "graphs",
+            "html5",
+            "html5-charts",
+            "javascript",
+            "responsive"
+        ],
+        "About": "Simple HTML5 Charts using the <canvas> tag",
+        "efficiency": 0
+    },
+    {
+        "repository": "webpack_webpack",
+        "keywords": [
+            "amd",
+            "build-tool",
+            "commonjs",
+            "compiler",
+            "es2015",
+            "es6",
+            "esm",
+            "javascript",
+            "javascript-compiler",
+            "javascript-modules",
+            "loaders",
+            "module-bundler",
+            "plugins",
+            "web",
+            "web-performance",
+            "webpack"
+        ],
+        "About": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
+        "efficiency": 0
+    },
+    {
+        "repository": "leonardomso_33-js-concepts",
+        "keywords": [
+            "angular",
+            "concepts",
+            "es6",
+            "es6-javascript",
+            "hacktoberfest",
+            "javascript",
+            "javascript-closures",
+            "javascript-engines",
+            "javascript-programming",
+            "nodejs",
+            "primitive-types",
+            "programming",
+            "react"
+        ],
+        "About": "📜 33 JavaScript concepts every developer should know.",
+        "efficiency": 0
+    },
+    {
+        "repository": "resume_resume.github.com",
+        "keywords": [],
+        "About": "Resumes generated using the GitHub informations",
+        "efficiency": 0
+    },
+    {
+        "repository": "louislam_uptime-kuma",
+        "keywords": [
+            "docker",
+            "monitor",
+            "monitoring",
+            "responsive",
+            "self-hosted",
+            "selfhosted",
+            "single-page-app",
+            "socket-io",
+            "uptime",
+            "uptime-monitoring",
+            "webapp",
+            "websocket"
+        ],
+        "About": "A fancy self-hosted monitoring tool",
+        "efficiency": 0
+    },
+    {
+        "repository": "atom_atom",
+        "keywords": [
+            "atom",
+            "editor",
+            "electron",
+            "javascript",
+            "linux",
+            "macos",
+            "windows"
+        ],
+        "About": "The hackable text editor",
+        "efficiency": 0
+    },
+    {
+        "repository": "lodash_lodash",
+        "keywords": [
+            "javascript",
+            "lodash",
+            "modules",
+            "stdlib",
+            "util",
+            "utilities"
+        ],
+        "About": "A modern JavaScript utility library delivering modularity, performance, & extras.",
+        "efficiency": 0
+    },
+    {
+        "repository": "adam-p_markdown-here",
+        "keywords": [],
+        "About": "Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.",
+        "efficiency": 0
+    },
+    {
+        "repository": "jquery_jquery",
+        "keywords": [
+            "browser",
+            "javascript",
+            "jquery",
+            "library"
+        ],
+        "About": "jQuery JavaScript Library",
+        "efficiency": 0
+    },
+    {
+        "repository": "angular_angular.js",
+        "keywords": [
+            "angular",
+            "browser",
+            "client-side",
+            "framework"
+        ],
+        "About": "AngularJS - HTML enhanced for web apps!",
+        "efficiency": 0
+    },
+    {
+        "repository": "h5bp_html5-boilerplate",
+        "keywords": [
+            "best-practices",
+            "css",
+            "front-end",
+            "h5bp",
+            "html",
+            "html5",
+            "html5-boilerplate",
+            "javascript",
+            "robust",
+            "template"
+        ],
+        "About": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+        "efficiency": 0
+    },
+    {
+        "repository": "gatsbyjs_gatsby",
+        "keywords": [
+            "blog",
+            "compiler",
+            "gatsby",
+            "generator",
+            "graphql",
+            "jekyll",
+            "markdown",
+            "react",
+            "ssg",
+            "static-site-generator",
+            "web-app",
+            "website"
+        ],
+        "About": "The best React-based framework with performance, scalability and security built in.",
+        "efficiency": 0
+    },
+    {
+        "repository": "scutan90_DeepLearning-500-questions",
+        "keywords": [],
+        "About": "深度学习500问，以问答形式对常用的概率知识、线性代数、机器学习、深度学习、计算机视觉等热点问题进行阐述，以帮助自己及有需要的读者。 全书分为18个章节，50余万字。由于水平有限，书中不妥之处恳请广大读者批评指正。 未完待续............ 如有意合作，联系scutjy2015@163.com 版权所有，违权必究 Tan 2018.06",
+        "efficiency": 0
+    },
+    {
+        "repository": "azl397985856_leetcode",
+        "keywords": [
+            "algo",
+            "algorithm",
+            "algorithms",
+            "algorithms-datastructures",
+            "computer-science",
+            "cpp",
+            "data-structures",
+            "interview",
+            "java",
+            "javascript",
+            "leetcode",
+            "leetcode-solutions",
+            "python",
+            "tree"
+        ],
+        "About": "LeetCode Solutions: A Record of My Problem Solving Journey.( leetcode题解，记录自己的leetcode解题之路。)",
+        "efficiency": 0
+    },
+    {
+        "repository": "jgraph_drawio-desktop",
+        "keywords": [
+            "UML",
+            "diagram",
+            "diagram-editor",
+            "draw.io",
+            "electron-app",
+            "flowchart",
+            "graphics",
+            "javascript-applications"
+        ],
+        "About": "Official electron build of draw.io",
+        "efficiency": 0
+    },
+    {
+        "repository": "Semantic-Org_Semantic-UI",
+        "keywords": [
+            "button",
+            "css-framework",
+            "dropdown",
+            "flexbox",
+            "popup",
+            "semantic",
+            "sidebar",
+            "tooltip",
+            "ui",
+            "ui-components"
+        ],
+        "About": "Semantic is a UI component framework based around useful principles from natural language.",
+        "efficiency": 0
+    },
+    {
+        "repository": "juliangarnier_anime",
+        "keywords": [
+            "animation",
+            "anime",
+            "canvas",
+            "css",
+            "javascript",
+            "javascript-library",
+            "svg"
+        ],
+        "About": "JavaScript animation engine",
+        "efficiency": 0
+    },
+    {
+        "repository": "prettier_prettier",
+        "keywords": [
+            "angular",
+            "ast",
+            "css",
+            "flow",
+            "formatter",
+            "graphql",
+            "html",
+            "javascript",
+            "json",
+            "jsx",
+            "less",
+            "markdown",
+            "prettier",
+            "printer",
+            "scss",
+            "typescript",
+            "vue",
+            "yaml"
+        ],
+        "About": "Prettier is an opinionated code formatter.",
+        "efficiency": 0
+    },
+    {
+        "repository": "mozilla_pdf.js",
+        "keywords": [
+            "Mozilla",
+            "pdf",
+            "pdf.js"
+        ],
+        "About": "PDF Reader in JavaScript",
+        "efficiency": 0
+    },
+    {
+        "repository": "chinese-poetry_chinese-poetry",
+        "keywords": [
+            "caocaoshiji",
+            "chinese",
+            "chinese-poetry",
+            "ci",
+            "json",
+            "lunyu",
+            "mengxue",
+            "poetry",
+            "shijing",
+            "sishuwujing",
+            "strains",
+            "tangshi",
+            "wudai",
+            "youmengying",
+            "yuanqu"
+        ],
+        "About": "The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。",
+        "efficiency": 0
+    },
+    {
+        "repository": "moment_moment",
+        "keywords": [
+            "date",
+            "ender",
+            "format",
+            "i18n",
+            "l10n",
+            "moment",
+            "parse",
+            "time",
+            "validate"
+        ],
+        "About": "Parse, validate, manipulate, and display dates in javascript.",
+        "efficiency": 0
+    },
+    {
+        "repository": "gorhill_uBlock",
+        "keywords": [
+            "adblock",
+            "blocker",
+            "browser-extension",
+            "chromium",
+            "firefox",
+            "javascript",
+            "trie",
+            "uBO",
+            "uBlock",
+            "ublock",
+            "ublock-origin"
+        ],
+        "About": "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean.",
+        "efficiency": 0
+    },
+    {
+        "repository": "marktext_marktext",
+        "keywords": [
+            "dark-mode",
+            "editor",
+            "electron",
+            "element-ui",
+            "emoji",
+            "focus-mode",
+            "latex",
+            "linux",
+            "mac",
+            "macos",
+            "markdown",
+            "marktext",
+            "next-generation",
+            "source-code",
+            "typewriter-mode",
+            "vue",
+            "windows"
+        ],
+        "About": "📝A simple and elegant markdown editor, available for Linux, macOS and Windows.",
+        "efficiency": 0
+    },
+    {
+        "repository": "TryGhost_Ghost",
+        "keywords": [
+            "blogging",
+            "cms",
+            "creator-economy",
+            "ghost",
+            "hacktoberfest",
+            "headless-cms",
+            "jamstack",
+            "javascript",
+            "journalism",
+            "nodejs",
+            "publishing",
+            "web-application"
+        ],
+        "About": "Independent technology for modern publishing, memberships, subscriptions and newsletters.",
+        "efficiency": 0
+    },
+    {
+        "repository": "NARKOZ_hacker-scripts",
+        "keywords": [],
+        "About": "Based on a true story",
+        "efficiency": 0
+    },
+    {
+        "repository": "cypress-io_cypress",
+        "keywords": [
+            "angular-testing-library",
+            "automation",
+            "browser",
+            "component",
+            "component-testing",
+            "cypress",
+            "cypress-cloud",
+            "cypress-schematic",
+            "cypress.io",
+            "e2e",
+            "end-to-end",
+            "end-to-end-testing",
+            "integration",
+            "mocks",
+            "react-testing-library",
+            "runner",
+            "spies",
+            "stubs",
+            "svelte-testing-library",
+            "test",
+            "test-replay",
+            "testing",
+            "testing-framework",
+            "testing-library",
+            "testing-tool",
+            "vue-testing-library"
+        ],
+        "About": "Fast, easy and reliable testing for anything that runs in a browser.",
+        "efficiency": 0
+    },
+    {
+        "repository": "iamkun_dayjs",
+        "keywords": [
+            "date",
+            "date-formatting",
+            "datetime",
+            "dayjs",
+            "immutable",
+            "moment",
+            "time"
+        ],
+        "About": "⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API",
+        "efficiency": 0
+    },
+    {
+        "repository": "algorithm-visualizer_algorithm-visualizer",
+        "keywords": [
+            "algorithm",
+            "animation",
+            "data-structure",
+            "visualization"
+        ],
+        "About": "🎆Interactive Online Platform that Visualizes Algorithms from Code",
+        "efficiency": 0
+    },
+    {
+        "repository": "poteto_hiring-without-whiteboards",
+        "keywords": [
+            "airtable",
+            "hiring",
+            "hiring-without-whiteboards",
+            "interview",
+            "jobs",
+            "tech",
+            "whiteboard"
+        ],
+        "About": "⭐️ Companies that don't have a broken hiring process",
+        "efficiency": 0
+    },
+    {
+        "repository": "serverless_serverless",
+        "keywords": [
+            "aws",
+            "aws-dynamodb",
+            "aws-lambda",
+            "azure-functions",
+            "google-cloud-functions",
+            "microservice",
+            "serverless",
+            "serverless-architectures",
+            "serverless-framework"
+        ],
+        "About": "⚡ Serverless Framework – Effortlessly build apps that auto-scale, incur zero costs when idle, and require minimal maintenance using AWS Lambda and other managed cloud services.",
+        "efficiency": 0
+    },
+    {
+        "repository": "agalwood_Motrix",
+        "keywords": [
+            "aria2",
+            "bittorrent",
+            "bt",
+            "download",
+            "download-manager",
+            "electron",
+            "linux",
+            "mac",
+            "macos",
+            "magnet",
+            "motrix",
+            "torrent",
+            "windows"
+        ],
+        "About": "A full-featured download manager.",
+        "efficiency": 0
+    },
+    {
+        "repository": "typescript-cheatsheets_react",
+        "keywords": [
+            "cheatsheet",
+            "guide",
+            "react",
+            "typescript"
+        ],
+        "About": "Cheatsheets for experienced React developers getting started with TypeScript",
+        "efficiency": 0
+    },
+    {
+        "repository": "meteor_meteor",
+        "keywords": [
+            "build-system",
+            "framework",
+            "hacktoberfest",
+            "hacktoberfest2023",
+            "javascript",
+            "meteor",
+            "mongodb",
+            "nodejs",
+            "npm",
+            "platform",
+            "react",
+            "reactive-programming",
+            "realtime",
+            "rpc",
+            "zero-configuration"
+        ],
+        "About": "Meteor, the JavaScript App Platform",
+        "efficiency": 0
+    },
+    {
+        "repository": "parcel-bundler_parcel",
+        "keywords": [
+            "assets",
+            "build-tool",
+            "commonjs",
+            "compiler",
+            "css",
+            "es6",
+            "html",
+            "javascript",
+            "module-bundler",
+            "modules",
+            "web"
+        ],
+        "About": "The zero configuration build tool for the web. 📦🚀",
+        "efficiency": 0
+    },
+    {
+        "repository": "Asabeneh_30-Days-Of-JavaScript",
+        "keywords": [
+            "30",
+            "30daysofjavascript",
+            "angular",
+            "challenge",
+            "css",
+            "d3",
+            "d3js",
+            "html",
+            "javascript",
+            "javascript-for-everyone",
+            "js",
+            "json",
+            "node",
+            "nodejs",
+            "programming",
+            "react",
+            "redux",
+            "typescript",
+            "vue",
+            "webdevelopment",
+            "website"
+        ],
+        "About": "30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. This challenge may take more than 100 days, please just follow your own pace. These videos may help too: https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw",
+        "efficiency": 0
+    },
+    {
+        "repository": "google_zx",
+        "keywords": [
+            "bash",
+            "bin",
+            "binary",
+            "call",
+            "child",
+            "cli",
+            "exec",
+            "execute",
+            "invoke",
+            "javascript",
+            "nodejs",
+            "process",
+            "script",
+            "shell",
+            "spawn"
+        ],
+        "About": "A tool for writing better scripts",
+        "efficiency": 0
+    },
+    {
+        "repository": "Unitech_pm2",
+        "keywords": [
+            "apm",
+            "cli",
+            "cluster",
+            "cluster cli",
+            "clustering",
+            "command-line",
+            "command-line-tool",
+            "container",
+            "cron",
+            "daemon",
+            "deploy",
+            "deployment",
+            "dev ops",
+            "devops",
+            "docker",
+            "express",
+            "fault tolerant",
+            "forever",
+            "forever-monitor",
+            "ghost",
+            "ghost production",
+            "graceful",
+            "hapi",
+            "harmony",
+            "json",
+            "k8s",
+            "keep process alive",
+            "keymetrics",
+            "kraken",
+            "kubernetes",
+            "lb",
+            "load balancer",
+            "load-balancer",
+            "log",
+            "logs",
+            "microservice",
+            "monitoring",
+            "node",
+            "node-pm2",
+            "node.js monitoring",
+            "nodejs",
+            "nodemon",
+            "pm2",
+            "pm2-docker",
+            "pm2.io",
+            "probes",
+            "process configuration",
+            "process manager",
+            "process-manager",
+            "production",
+            "profiling",
+            "programmatic",
+            "reload",
+            "runtime",
+            "source maps",
+            "strong-pm",
+            "supervisor",
+            "supervisord",
+            "sysadmin",
+            "tools"
+        ],
+        "About": "Node.js Production Process Manager with a built-in Load Balancer.",
+        "efficiency": 0
+    },
+    {
+        "repository": "Leaflet_Leaflet",
+        "keywords": [
+            "gis",
+            "javascript",
+            "leaflet",
+            "map",
+            "maps"
+        ],
+        "About": "🍃 JavaScript library for mobile-friendly interactive maps 🇺🇦",
+        "efficiency": 0
+    },
+    {
+        "repository": "yarnpkg_yarn",
+        "keywords": [
+            "javascript",
+            "npm",
+            "package-manager",
+            "yarn"
+        ],
+        "About": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
+        "efficiency": 0
+    },
+    {
+        "repository": "GitSquared_edex-ui",
+        "keywords": [
+            "desktop",
+            "edex-ui",
+            "electron",
+            "linux",
+            "macos",
+            "nodejs",
+            "science-fiction",
+            "shell",
+            "terminal",
+            "touchscreen",
+            "tron",
+            "unixporn",
+            "windows"
+        ],
+        "About": "A cross-platform, customizable science fiction terminal emulator with advanced monitoring & touchscreen support.",
+        "efficiency": 0
+    },
+    {
+        "repository": "microsoft_monaco-editor",
+        "keywords": [
+            "browser",
+            "editor",
+            "monaco-editor",
+            "typescript",
+            "vscode"
+        ],
+        "About": "A browser based code editor",
+        "efficiency": 0
+    },
+    {
+        "repository": "LeCoupa_awesome-cheatsheets",
+        "keywords": [
+            "backend",
+            "bash",
+            "cheatsheet",
+            "cheatsheets",
+            "database",
+            "django",
+            "docker",
+            "feathersjs",
+            "frontend",
+            "javascript",
+            "kubernetes",
+            "language",
+            "nodejs",
+            "php",
+            "programming-language",
+            "redis",
+            "sailsjs",
+            "vim",
+            "vuejs",
+            "xcode"
+        ],
+        "About": "👩‍💻👨‍💻 Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file.",
+        "efficiency": 0
+    },
+    {
+        "repository": "nwjs_nw.js",
+        "keywords": [
+            "desktop",
+            "javascript",
+            "node-webkit",
+            "nodejs",
+            "nwjs",
+            "web-application-framework"
+        ],
+        "About": "Call all Node.js modules directly from DOM/WebWorker and enable a new way of writing applications with all Web technologies.",
+        "efficiency": 0
+    },
+    {
+        "repository": "sudheerj_reactjs-interview-questions",
+        "keywords": [
+            "interview-preparation",
+            "interview-questions",
+            "javascript",
+            "javascript-applications",
+            "javascript-framework",
+            "javascript-interview-questions",
+            "react",
+            "react-interview-questions",
+            "react-native",
+            "react-router",
+            "react16",
+            "reactjs",
+            "redux"
+        ],
+        "About": "List of top 500 ReactJS Interview Questions & Answers....Coding exercise questions are coming soon!!",
+        "efficiency": 0
+    },
+    {
+        "repository": "dcloudio_uni-app",
+        "keywords": [
+            "android",
+            "cross-platform",
+            "crossplatform",
+            "hbuilderx",
+            "ios",
+            "javascript",
+            "miniprogram",
+            "uni",
+            "uni-app",
+            "uniapp",
+            "vue",
+            "vue3"
+        ],
+        "About": "A cross-platform framework using Vue.js",
+        "efficiency": 0
+    },
+    {
+        "repository": "nolimits4web_swiper",
+        "keywords": [
+            "app",
+            "carousel",
+            "cordova",
+            "framework",
+            "framework7",
+            "gallery",
+            "ios",
+            "mobile",
+            "phonegap",
+            "plugin",
+            "react",
+            "slider",
+            "slideshow",
+            "swipe",
+            "swiper",
+            "touch",
+            "touch-events",
+            "vue"
+        ],
+        "About": "Most modern mobile touch slider with hardware accelerated transitions",
+        "efficiency": 0
+    },
+    {
+        "repository": "Dogfalo_materialize",
+        "keywords": [
+            "css",
+            "css-framework",
+            "design",
+            "framework",
+            "javascript",
+            "material",
+            "material-design"
+        ],
+        "About": "Materialize, a CSS Framework based on Material Design",
+        "efficiency": 0
+    },
+    {
+        "repository": "bigskysoftware_htmx",
+        "keywords": [
+            "AJAX",
+            "HTML",
+            "hateoas",
+            "html",
+            "htmx",
+            "hyperscript",
+            "javascript",
+            "rest"
+        ],
+        "About": "</> htmx - high power tools for HTML",
+        "efficiency": 0
+    },
+    {
+        "repository": "videojs_video.js",
+        "keywords": [
+            "dash",
+            "hls",
+            "html",
+            "html5",
+            "html5-audio",
+            "html5-video",
+            "javascript",
+            "player",
+            "video",
+            "video-player",
+            "videojs"
+        ],
+        "About": "Video.js - open source HTML5 video player",
+        "efficiency": 0
+    },
+    {
+        "repository": "impress_impress.js",
+        "keywords": [
+            "browser",
+            "css3",
+            "presentation",
+            "slides",
+            "slideshow",
+            "transforms",
+            "transitions"
+        ],
+        "About": "It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.",
+        "efficiency": 0
+    },
+    {
+        "repository": "phaserjs_phaser",
+        "keywords": [
+            "2d",
+            "HTML5",
+            "WebGL",
+            "canvas",
+            "discord-activities",
+            "facebook-instant-games",
+            "game",
+            "game-development",
+            "game-frameworks",
+            "gamedev",
+            "html5-game-development",
+            "javascript",
+            "phaser",
+            "phaser-development",
+            "phaserjs",
+            "physics",
+            "tweens",
+            "typescript",
+            "web audio",
+            "webgl",
+            "youtube-playables"
+        ],
+        "About": "Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering.",
+        "efficiency": 1
+    },
+    {
+        "repository": "preactjs_preact",
+        "keywords": [
+            "components",
+            "dom",
+            "dom diff",
+            "framework",
+            "front-end",
+            "jsx",
+            "preact",
+            "react",
+            "ui",
+            "user interface",
+            "vdom",
+            "virtual dom",
+            "virtual-dom"
+        ],
+        "About": "⚛️ Fast 3kB React alternative with the same modern API. Components & Virtual DOM.",
+        "efficiency": 0
+    },
+    {
+        "repository": "NaiboWang_EasySpider",
+        "keywords": [
+            "batch-processing",
+            "batch-script",
+            "code-free",
+            "crawler",
+            "data-collection",
+            "frontend",
+            "gui",
+            "html",
+            "input-parameters",
+            "layman",
+            "parameters",
+            "robotics",
+            "rpa",
+            "scraper",
+            "spider",
+            "visual",
+            "visualization",
+            "visualprogramming",
+            "web",
+            "www"
+        ],
+        "About": "A visual no-code/code-free web crawler/spider易采集：一个可视化浏览器自动化测试/数据采集/爬虫软件，可以无代码图形化的设计和执行爬虫任务。别名：ServiceWrapper面向Web应用的智能化服务封装系统。",
+        "efficiency": 0
+    },
+    {
+        "repository": "naptha_tesseract.js",
+        "keywords": [
+            "deep-learning",
+            "javascript",
+            "ocr",
+            "tesseract",
+            "webassembly"
+        ],
+        "About": "Pure Javascript OCR for more than 100 Languages 📖🎉🖥",
+        "efficiency": 0
+    },
+    {
+        "repository": "denysdovhan_wtfjs",
+        "keywords": [
+            "book",
+            "guide",
+            "handbook",
+            "javascript",
+            "js",
+            "learning",
+            "notes",
+            "specification",
+            "wtf"
+        ],
+        "About": "🤪 A list of funny and tricky JavaScript examples",
+        "efficiency": 0
+    },
+    {
+        "repository": "alvarotrigo_fullPage.js",
+        "keywords": [
+            "fullpage",
+            "fullpagejs",
+            "fullscreen",
+            "javacript",
+            "javascript",
+            "jquery",
+            "mouse",
+            "mousewheel",
+            "one_page",
+            "onepage",
+            "scroll",
+            "scrolling",
+            "sections",
+            "single_page",
+            "slide",
+            "slides",
+            "slideshow",
+            "sliding",
+            "snap",
+            "swipe",
+            "wheel"
+        ],
+        "About": "fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple",
+        "efficiency": 0
+    },
+    {
+        "repository": "koajs_koa",
+        "keywords": [
+            "app",
+            "application",
+            "framework",
+            "http",
+            "koa",
+            "middleware",
+            "rack",
+            "web"
+        ],
+        "About": "Expressive middleware for node.js using ES2017 async functions",
+        "efficiency": 0
+    },
+    {
+        "repository": "Kong_insomnia",
+        "keywords": [
+            "api",
+            "api-client",
+            "api-design",
+            "curl",
+            "electron-app",
+            "graphql",
+            "grpc",
+            "http-client",
+            "rest-api",
+            "websockets"
+        ],
+        "About": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+        "efficiency": 0
+    },
+    {
+        "repository": "sahat_hackathon-starter",
+        "keywords": [
+            "boilerplate",
+            "hackathon",
+            "hacktoberfest",
+            "nodejs",
+            "oauth2",
+            "starter-kit"
+        ],
+        "About": "A boilerplate for Node.js web applications",
+        "efficiency": 0
+    },
+    {
+        "repository": "jondot_awesome-react-native",
+        "keywords": [
+            "awesome-list",
+            "mobile",
+            "react",
+            "react-native"
+        ],
+        "About": "Awesome React Native components, news, tools, and learning material!",
+        "efficiency": 0
+    },
+    {
+        "repository": "carbon-app_carbon",
+        "keywords": [
+            "beautiful",
+            "carbon",
+            "education",
+            "github-gist",
+            "javascript",
+            "presentation",
+            "sharing",
+            "snippets",
+            "tweet"
+        ],
+        "About": "🖤 Create and share beautiful images of your source code",
+        "efficiency": 0
+    },
+    {
+        "repository": "goabstract_Awesome-Design-Tools",
+        "keywords": [
+            "animations",
+            "awesome",
+            "awesome-list",
+            "design",
+            "design-systems",
+            "design-tools",
+            "font-awesome",
+            "ui-design"
+        ],
+        "About": "The best design tools and plugins for everything 👉",
+        "efficiency": 0
+    },
+    {
+        "repository": "zenorocha_clipboard.js",
+        "keywords": [
+            "clipboard",
+            "copy",
+            "cut",
+            "javascript"
+        ],
+        "About": "✂️ Modern copy to clipboard. No Flash. Just 3kb gzipped 📋",
+        "efficiency": 0
+    },
+    {
+        "repository": "atlassian_react-beautiful-dnd",
+        "keywords": [
+            "accessible",
+            "beautiful",
+            "dnd",
+            "drag",
+            "drag and drop",
+            "drag-and-drop",
+            "natural",
+            "react",
+            "react.js",
+            "reorder",
+            "reorderable",
+            "reordering",
+            "sortable"
+        ],
+        "About": "Beautiful and accessible drag and drop for lists with React",
+        "efficiency": 0
+    },
+    {
+        "repository": "ToolJet_ToolJet",
+        "keywords": [
+            "docker",
+            "hacktoberfest",
+            "internal-applications",
+            "internal-project",
+            "internal-tool",
+            "internal-tools",
+            "javascript",
+            "kubernetes",
+            "low-code",
+            "low-code-development-platform",
+            "low-code-framework",
+            "nestjs",
+            "no-code",
+            "nodejs",
+            "openai",
+            "reactjs",
+            "self-hosted",
+            "typeorm",
+            "typescript",
+            "web-development-tools"
+        ],
+        "About": "Low-code platform for building business applications. Connect to databases, cloud storages, GraphQL, API endpoints, Airtable, Google sheets, OpenAI, etc and build apps using drag and drop application builder. Built using JavaScript/TypeScript. 🚀",
+        "efficiency": 0
+    },
+    {
+        "repository": "markedjs_marked",
+        "keywords": [
+            "commonmark",
+            "compiler",
+            "gfm",
+            "hacktoberfest",
+            "html",
+            "markdown",
+            "markup",
+            "parser"
+        ],
+        "About": "A markdown parser and compiler. Built for speed.",
+        "efficiency": 0
+    },
+    {
+        "repository": "adobe_brackets",
+        "keywords": [],
+        "About": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
+        "efficiency": 0
+    },
+    {
+        "repository": "gulpjs_gulp",
+        "keywords": [
+            "asset",
+            "build",
+            "make",
+            "parallel",
+            "pipeline",
+            "series",
+            "stream",
+            "streaming",
+            "system",
+            "tool"
+        ],
+        "About": "A toolkit to automate & enhance your workflow",
+        "efficiency": 0
+    },
+    {
+        "repository": "typicode_husky",
+        "keywords": [
+            "commit",
+            "git",
+            "hooks",
+            "pre-commit"
+        ],
+        "About": "Git hooks made easy 🐶 woof!",
+        "efficiency": 0
+    },
+    {
+        "repository": "TheAlgorithms_JavaScript",
+        "keywords": [
+            "algorithm",
+            "algorithm-challenges",
+            "algorithms",
+            "algorithms-implemented",
+            "cipher",
+            "conversions",
+            "cryptography",
+            "data-structures",
+            "hacktoberfest",
+            "javascript",
+            "mathematics",
+            "search",
+            "sort",
+            "sorting-algorithms"
+        ],
+        "About": "Algorithms and Data Structures implemented in JavaScript for beginners, following best practices.",
+        "efficiency": 0
+    },
+    {
+        "repository": "fastify_fastify",
+        "keywords": [
+            "api",
+            "framework",
+            "json",
+            "nodejs",
+            "open",
+            "performance",
+            "schema",
+            "speed",
+            "web",
+            "webframework"
+        ],
+        "About": "Fast and low overhead web framework, for Node.js",
+        "efficiency": 0
+    },
+    {
+        "repository": "ryanhanwu_How-To-Ask-Questions-The-Smart-Way",
+        "keywords": [
+            "rtfm",
+            "stfw",
+            "translation"
+        ],
+        "About": "本文原文由知名 Hacker Eric S. Raymond 所撰寫，教你如何正確的提出技術問題並獲得你滿意的答案。",
+        "efficiency": 0
+    },
+    {
+        "repository": "qishibo_AnotherRedisDesktopManager",
+        "keywords": [
+            "redis",
+            "redis-client",
+            "redis-cluster",
+            "redis-desktop-manager",
+            "redis-gui"
+        ],
+        "About": "🚀🚀🚀A faster, better and more stable Redis desktop manager [GUI client], compatible with Linux, Windows, Mac.",
+        "efficiency": 0
+    },
+    {
+        "repository": "pcottle_learnGitBranching",
+        "keywords": [],
+        "About": "An interactive git visualization and tutorial. Aspiring students of git can use this app to educate and challenge themselves towards mastery of git!",
+        "efficiency": 0
+    },
+    {
+        "repository": "airbnb_lottie-web",
+        "keywords": [
+            "after effects",
+            "animation",
+            "canvas",
+            "export",
+            "plugin",
+            "svg"
+        ],
+        "About": "Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/",
+        "efficiency": 0
+    },
+    {
+        "repository": "remoteintech_remote-jobs",
+        "keywords": [
+            "distributed-companies",
+            "hacktoberfest",
+            "jobs-search",
+            "jobsearch",
+            "jobseeker",
+            "remote",
+            "remote-companies",
+            "remote-job",
+            "remote-work"
+        ],
+        "About": "A list of semi to fully remote-friendly companies (jobs) in tech.",
+        "efficiency": 0
+    },
+    {
+        "repository": "SortableJS_Sortable",
+        "keywords": [
+            "angular",
+            "drag",
+            "drag-and-drop",
+            "drag-drop",
+            "draggable",
+            "droppable",
+            "meteor",
+            "mixin",
+            "ng-sortable",
+            "react",
+            "reorder",
+            "reordering",
+            "sort",
+            "sortable",
+            "touch",
+            "ui",
+            "vue"
+        ],
+        "About": "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.",
+        "efficiency": 0
+    },
+    {
+        "repository": "vuejs_vue-cli",
+        "keywords": [
+            "cli",
+            "spa",
+            "vue"
+        ],
+        "About": "🛠️ webpack-based tooling for Vue.js Development",
+        "efficiency": 0
+    },
+    {
+        "repository": "layui_layui",
+        "keywords": [
+            "component-library",
+            "components",
+            "css",
+            "framework",
+            "front-end",
+            "html",
+            "javascript",
+            "layui",
+            "library",
+            "ui",
+            "ui-kit",
+            "ui-library",
+            "web"
+        ],
+        "About": "一套遵循原生态开发模式的 Web UI 组件库，采用自身轻量级模块化规范，易上手，可以更简单快速地构建网页界面。",
+        "efficiency": 0
+    },
+    {
+        "repository": "webtorrent_webtorrent",
+        "keywords": [
+            "bittorrent",
+            "bittorrent client",
+            "browser",
+            "download",
+            "hacktoberfest",
+            "javascript",
+            "mad science",
+            "nodejs",
+            "p2p",
+            "peer-to-peer",
+            "peers",
+            "streaming",
+            "swarm",
+            "torrent",
+            "web torrent",
+            "webrtc",
+            "webrtc data",
+            "webtorrent"
+        ],
+        "About": "⚡️ Streaming torrent client for the web",
+        "efficiency": 0
+    }
+]
