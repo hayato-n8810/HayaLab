@@ -2,6 +2,8 @@ import os
 import subprocess
 import time
 
+from const import path
+
 
 def clone_repository(repo_url: str) -> None:
     """リポジトリクローン関数
@@ -11,10 +13,7 @@ def clone_repository(repo_url: str) -> None:
     """
     rep_split = repo_url.rstrip("/").split("/")
     clone_dir = f"{rep_split[-2]}_{rep_split[-1]}"
-    target_path = f"./data/TestDynamicAnalysis/{clone_dir}"
-
-    if not os.path.exists("./data/TestDynamicAnalysis"):
-        os.makedirs("./data/TestDynamicAnalysis")
+    target_path = f"{path.DATA}/{clone_dir}"
 
     if os.path.exists(target_path):
         print(f"{clone_dir} already cloned.")
