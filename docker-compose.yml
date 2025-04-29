@@ -1,0 +1,15 @@
+services:
+  hayato-n-python:
+    build: .
+    image: hayato-n-ast
+    container_name: hayato-n-ast
+    tty: true
+    volumes:
+      # 必要なディレクトリのみをマウント
+      - ./src:/works/src
+      - ./results:/works/results
+    working_dir: /works
+    deploy:
+      resources: # CPUコア使用数制限
+        limits:
+          cpus: "1.0"

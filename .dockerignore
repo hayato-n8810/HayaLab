@@ -1,0 +1,23 @@
+# バージョン管理システム関連
+.git
+.gitignore
+.pre-commit-config.yaml
+
+# Docker関連
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# キャッシュファイルなど
+**/.mypy_cache
+**/.ruff_cache
+**/.python-version
+**/.DS_Store
+
+# ドキュメント
+README.md
+LICENSE
+
+# プロジェクト固有
+**/data
+**/archive
