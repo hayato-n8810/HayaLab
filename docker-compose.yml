@@ -4,6 +4,10 @@ services:
     image: hayato-n-ast
     container_name: hayato-n-ast
     tty: true
+    # コンテナを修了させないコマンド
+    command: tail -f /dev/null
+    ports:
+      - 4567:4567
     volumes:
       # 必要なディレクトリのみをマウント
       - ./src:/works/src
