@@ -1,3 +1,4 @@
 **/data/
 .env
+node_modules
 /archive/Omori/fuki-o-brain1.zip
