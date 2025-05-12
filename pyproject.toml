@@ -16,7 +16,6 @@ line-length = 120
 
 [tool.ruff.format]
 quote-style = "double"
-docstring-code-format = true
 exclude = ["archive/*"]
 
 [tool.ruff.lint]
