@@ -405,13 +405,17 @@ class CodeAbstract:
 
         self.abstract_code = self.code
         i = 0
+
+        # scopeの文字列の長さが長い順にソート
+        sorted_declarations = sorted(self.declarations, key=lambda x: len(x["scope"]), reverse=True)
+
         for node, path in identifiers:
             path_str = "/".join(map(str, path))
             is_found = False
             match_declaration = []
 
             # 抽象化対象とプログラム中の変数が一致したら置換
-            for declaration in self.declarations:
+            for declaration in sorted_declarations:
                 if (
                     declaration["scope_kind"] != "global"
                     and declaration["name"] == node["name"]
@@ -419,12 +423,10 @@ class CodeAbstract:
                 ):
                     is_found = True
                     match_declaration = declaration
-                    print(match_declaration)
-                    print(1)
                     break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["scope_kind"] != "global"
                         and declaration["name"] == node["name"]
@@ -433,12 +435,10 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(2)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["name"] == node["name"]
                         and (path[-2] == "callee" or path[-1] == "callee")
@@ -448,12 +448,10 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(3)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["name"] == node["name"]
                         and (path[-2] != "callee" and path[-1] != "callee")
@@ -463,12 +461,10 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(4)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["scope_kind"] == "global"
                         and declaration["name"] == node["name"]
@@ -476,12 +472,10 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(5)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["name"] == node["name"]
                         and (path[-2] == "callee" or path[-1] == "callee")
@@ -489,12 +483,10 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(6)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if (
                         declaration["name"] == node["name"]
                         and (path[-2] != "callee" and path[-1] != "callee")
@@ -502,17 +494,13 @@ class CodeAbstract:
                     ):
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(7)
                         break
 
             if not is_found:
-                for declaration in self.declarations:
+                for declaration in sorted_declarations:
                     if declaration["name"] == node["name"]:
                         is_found = True
                         match_declaration = declaration
-                        print(match_declaration)
-                        print(8)
                         break
 
             if not is_found:
@@ -602,7 +590,7 @@ def target(js_file_path):
     Returns:
         str: 抽象化後のファイル
     """
-    # プロセスIDを使用して一時ファイルをユニーク化
+    # プロセスIDを使用してをユニークな一時ファイルを生成
     thread_id = os.getpid()
     parser = Parser(thread_id)
     target_js = f"./parser_{thread_id}.js"
@@ -641,8 +629,8 @@ def target(js_file_path):
     abstcode.weak_abstract_code()
 
     # 一時ファイルの削除
-    # os.remove(f"parser_{thread_id}.js")
-    # os.remove(f"./parser_{thread_id}.json")
+    os.remove(f"parser_{thread_id}.js")
+    os.remove(f"./parser_{thread_id}.json")
 
     # 抽象化結果を返す
     return abstcode.abstract_code
