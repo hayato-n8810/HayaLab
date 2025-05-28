@@ -25,6 +25,7 @@ select = [
     "W", # pycodestyle warnings
     "I", # isort
     "D", # pydocstyle
+    "N", # pep8-naming
 ]
 ignore = [
     "D100", # undocumented-public-module
