@@ -1,5 +1,4 @@
 {
-    "repository": "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react",
     "slow_apply_files": [
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/scripts/flags/flags.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/scripts/eslint-rules/__tests__/no-production-logging-test.internal.js",
@@ -226,7 +225,5 @@
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/function-expression-prototype-call-mutating.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/function-expression-prototype-call.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/method-call-fn-call.js"
-    ],
-    "slow_count": 63,
-    "fast_count": 160
+    ]
 }

@@ -1,0 +1,2856 @@
+[
+  {
+    "file": "scripts/devtools/prepare-release.js",
+    "commits": [
+      {
+        "commit": "b9964684bd8c909fc3d88f1cd47aa1f45ea7ba32",
+        "message": "DevTools release script updates: (#22170)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    choices.push({"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/ReactFiberConfigFabric.js",
+    "commits": [
+      {
+        "commit": "151e75a128d0fd436dce365335b96c5686f704d4",
+        "message": "[Fabric] Pass children when cloning (#27458)\n\n## Summary\r\n\r\nCurrently when cloning nodes in Fabric, we reset a node's children on\r\neach clone, and then repeatedly call appendChild to restore the previous\r\nlist of children (even if it was quasi-identical to before). This causes\r\nunnecessary invalidation of the layout state in Fabric's ShadowNode data\r\n(which in turn may require additional yoga clones) and extra JSI calls.\r\n\r\nThis PR adds a feature flag to pass in the children as part of the clone\r\ncall, so Fabric always has a complete view of the node that's being\r\nmutated.\r\n\r\nThis feature flag requires matching changes in the react-native repo:\r\nhttps://github.com/facebook/react-native/pull/39817\r\n\r\n## How did you test this change?\r\n\r\nUnit test added demonstrates the new behaviour \r\n\r\n```\r\nyarn test -r www-modern ReactFabric-test\r\nyarn test ReactFabric-test.internal\r\n```\r\n\r\nTested a manual sync into React Native and verified core surfaces render\r\ncorrectly.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "childSet.push(child.node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/ReactFiberConfigNative.js",
+    "commits": [
+      {
+        "commit": "b55d31955982851284bb437a5187a6c56e366539",
+        "message": "Rename HostConfig files to FiberConfig to clarify they are configs fo… (#26592)\n\npart of https://github.com/facebook/react/pull/26571\r\n\r\nmerging separately to improve tracking of files renames in git\r\n\r\nRename HostConfig files to FiberConfig to clarify they are configs for\r\nFiber and not Fizz/Flight. This better conforms to the naming used in\r\nFlight and now Fizz of `ReactFlightServerConfig` and `ReactFizzConfig`",
+        "diff": [
+          {
+            "removed": "",
+            "added": "  parentInstance._children.push(child);"
+          },
+          {
+            "removed": "",
+            "added": "    children.push(child);"
+          },
+          {
+            "removed": "",
+            "added": "    children.push(child);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/legacy-events/SyntheticEvent.js",
+    "commits": [
+      {
+        "commit": "e3f4eb7272d4ca0ee49f27577156b57eeb07cf73",
+        "message": "Fork legacy-events folder into react-dom and react-native (#19228)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      EventConstructor.eventPool.push(event);"
+          }
+        ]
+      },
+      {
+        "commit": "9fba65efa50fe5f38e5664729d4aa6f85cf7be92",
+        "message": "Enable modern event system and delete dead code (#19230)",
+        "diff": [
+          {
+            "removed": "EventConstructor.eventPool.push(event);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "EventConstructor.eventPool.push(event);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/legacy-events/EventPluginRegistry.js",
+    "commits": [
+      {
+        "commit": "e3f4eb7272d4ca0ee49f27577156b57eeb07cf73",
+        "message": "Fork legacy-events folder into react-dom and react-native (#19228)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    plugins.push(pluginModule);"
+          }
+        ]
+      },
+      {
+        "commit": "61dd00db24bec6305bd72908d3617b9f2a5183da",
+        "message": "Extract some of the tidy up changes from 19278 (#19315)",
+        "diff": [
+          {
+            "removed": "plugins.push(pluginModule);",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-debug-tools/src/ReactDebugHooks.js",
+    "commits": [
+      {
+        "commit": "fd1256a5618d335d5eb563858e0841869b97b1ad",
+        "message": "Add Debug Tools Package for Introspection of Hooks (#14085)\n\n* Add debug tools package\r\n\r\n* Add basic implementation\r\n\r\n* Implement inspection of the current state of hooks using the fiber tree\r\n\r\n* Support useContext hooks inspection by backtracking from the Fiber\r\n\r\nI'm not sure this is safe because the return fibers may not be current\r\nbut close enough and it's fast.\r\n\r\nWe use this to set up the current values of the providers.\r\n\r\n* rm copypasta\r\n\r\n* Use lastIndexOf\r\n\r\nJust in case. I don't know of any scenario where this can happen.\r\n\r\n* Support ForwardRef\r\n\r\n* Add test for memo and custom hooks\r\n\r\n* Support defaultProps resolution",
+        "diff": [
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({primitive: 'State', stackError: new Error(), value: state});"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({primitive: 'Effect', stackError: new Error(), value: create});"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "  hookLog.push({primitive: 'Memo', stackError: new Error(), value});"
+          },
+          {
+            "removed": "",
+            "added": "        levelChildren.push({"
+          },
+          {
+            "removed": "",
+            "added": "        stackOfChildren.push(levelChildren);"
+          },
+          {
+            "removed": "",
+            "added": "    levelChildren.push({"
+          }
+        ]
+      },
+      {
+        "commit": "c2a2d8a539bf02e40c43d36adc2826e228f30955",
+        "message": "Remove useMutationEffect (#14336)\n\nuseMutationEffect has problems (namely, refs aren't attached at the time that it runs) and we're not positive it's necessary. useLayoutEffect runs at the same time as componentDidMount/Update so it's sufficient for all existing use cases; it can be used in any case that useEffect happens too late. Until we figure out what we want to do, let's delete it.",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "edb1f595649b013a59a18f43c03a57035ddea19e",
+        "message": "Support configurable labels for custom hooks (#14559)\n\n* react-debug-tools accepts currentDispatcher ref as param\r\n\r\n* ReactDebugHooks injected dispatcher ref is optional\r\n\r\n* Support custom values for custom hooks\r\n\r\n* PR feedback:\r\n\r\n1. Renamed useDebugValueLabel hook to useDebugValue\r\n2. Wrapped useDebugValue internals in if-DEV so that it could be removed from production builds.\r\n\r\n* PR feedback:\r\n\r\n1. Fixed some minor typos\r\n2. Added inline comment explaining the purpose of  rollupDebugValues()\r\n3. Refactored rollupDebugValues() to use a for loop rather than filter()\r\n4. Improve check for useDebugValue hook to lessen the chance of a false positive\r\n5. Added optional formatter function param to useDebugValue\r\n\r\n* Nitpick renamed a method",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "debugValueHooksNodes.push(hooksNode);"
+          }
+        ]
+      },
+      {
+        "commit": "5b08f7b43fed206c66988f852ba36f0f0e7ffa13",
+        "message": "[Flare] Adds useListener implementation to ReactDebugHooks (#16205)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({primitive: 'Listener', stackError: new Error(), value});"
+          }
+        ]
+      },
+      {
+        "commit": "42794557ca44a8c05c71aab698d44d1294236538",
+        "message": "[Flare] Tweaks to Flare system design and API (#16264)",
+        "diff": [
+          {
+            "removed": "hookLog.push({primitive: 'Listener', stackError: new Error(), value});",
+            "added": "hookLog.push({primitive: 'Responder', stackError: new Error(), value});"
+          }
+        ]
+      },
+      {
+        "commit": "685ed561f22ea062281a4c570c7067e6020457c4",
+        "message": "Migrate useDeferredValue and useTransition (#17058)\n\nMigrated useDeferredValue and useTransition from Facebook's www repo into ReactFiberHooks.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "160505b0ca143fa458926b623a05cf2645ba799a",
+        "message": "ReactDOM.useEvent: Add more scaffolding for useEvent hook (#18271)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({primitive: 'Event', stackError: new Error(), value: event});"
+          }
+        ]
+      },
+      {
+        "commit": "322cdcd3abfaca985a001a12247f02c5d31d311e",
+        "message": "useMutableSource hook (#18000)\n\nuseMutableSource hook\r\n\r\nuseMutableSource() enables React components to safely and efficiently read from a mutable external source in Concurrent Mode. The API will detect mutations that occur during a render to avoid tearing and it will automatically schedule updates when the source is mutated.\r\n\r\nRFC: reactjs/rfcs#147",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({primitive: 'MutableSource', stackError: new Error(), value});"
+          }
+        ]
+      },
+      {
+        "commit": "3278d242184a13add3f25f683b77ef9a6a2305f3",
+        "message": "Add useOpaqueIdentifier Hook (#17322)\n\n* Add useOpaqueIdentifier Hook\r\n\r\nWe currently use unique IDs in a lot of places. Examples are:\r\n  * `<label for=\"ID\">`\r\n  * `aria-labelledby`\r\n\r\nThis can cause some issues:\r\n  1. If we server side render and then hydrate, this could cause an\r\n     hydration ID mismatch\r\n  2. If we server side render one part of the page and client side\r\n     render another part of the page, the ID for one part could be\r\n     different than the ID for another part even though they are\r\n     supposed to be the same\r\n  3. If we conditionally render something with an ID ,  this might also\r\n     cause an ID mismatch because the ID will be different on other\r\n     parts of the page\r\n\r\nThis PR creates a new hook `useUniqueId` that generates a different\r\nunique ID based on whether the hook was called on the server or client.\r\nIf the hook is called during hydration, it generates an opaque object\r\nthat will rerender the hook so that the IDs match.\r\n\r\nCo-authored-by: Andrew Clark <git@andrewclark.io>",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "ff431b7fc43ee9022db094a673afbac7088bcfa2",
+        "message": "Remove ReactDOM.useEvent and associated types+tests (#18689)",
+        "diff": [
+          {
+            "removed": "hookLog.push({primitive: 'Event', stackError: new Error(), value: event});",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "b61174fb7b09580c1ec2a8f55e73204b706d2935",
+        "message": "Remove the deprecated React Flare event system (#19520)",
+        "diff": [
+          {
+            "removed": "hookLog.push({primitive: 'Responder', stackError: new Error(), value});",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "27659559ebfd6b7119bfc0ff02ecb851c135020c",
+        "message": "Add useRefresh hook to react-debug-tools (#20460)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "ab390c65eefb7f395468c18ee2b059bf35c7cd03",
+        "message": "ReactDebugHooks optionally includes fileName, and line/column numbers (#21781)",
+        "diff": [
+          {
+            "removed": "levelChildren.push({",
+            "added": "const stackFrame = stack[j];"
+          },
+          {
+            "removed": "",
+            "added": "levelChildren.push(levelChild);"
+          },
+          {
+            "removed": "levelChildren.push({",
+            "added": "const levelChild: HooksNode = {"
+          },
+          {
+            "removed": "",
+            "added": "levelChildren.push(levelChild);"
+          }
+        ]
+      },
+      {
+        "commit": "cfd81933286f3a63734ba0ac1650019487c402ff",
+        "message": "Add useSyncExternalStore to react-debug-tools (#22240)\n\nAdds support for useSyncExternalStore to react-debug-tools, which in\r\nturn adds support for React Devtools.\r\n\r\nTest plan: I added a test to ReactHooksInspectionIntegration, based on\r\nexisting one for useMutableSource.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "263cfa6ecb9879ecb629d4e04a8c26422b4c4ff9",
+        "message": "[Experimental] Add useInsertionEffect (#21913)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "8209de269531767b33d8db26eda41db38bfb6a27",
+        "message": "Delete useMutableSource implementation (#22292)\n\nThis API was replaced by useSyncExternalStore",
+        "diff": [
+          {
+            "removed": "hookLog.push({primitive: 'MutableSource', stackError: new Error(), value});",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "82c8fa90be86fc0afcbff2dc39486579cff1ac9a",
+        "message": "Add back useMutableSource temporarily (#22396)\n\nRecoil uses useMutableSource behind a flag. I thought this was fine\r\nbecause Recoil isn't used in any concurrent roots, so the behavior\r\nwould be the same, but it turns out that it is used by concurrent\r\nroots in a few places.\r\n\r\nI'm not expecting it to be hard to migrate to useSyncExternalStore, but\r\nto de-risk the change I'm going to roll it out gradually with a flag. In\r\nthe meantime, I've added back the useMutableSource API.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({primitive: 'MutableSource', stackError: new Error(), value});"
+          }
+        ]
+      },
+      {
+        "commit": "ebf9ae8579230e7b1ed0b1d243e1cf802f56938b",
+        "message": "useId (#22644)\n\n* Add useId to dispatcher\r\n\r\n* Initial useId implementation\r\n\r\nIds are base 32 strings whose binary representation corresponds to the\r\nposition of a node in a tree.\r\n\r\nEvery time the tree forks into multiple children, we add additional bits\r\nto the left of the sequence that represent the position of the child\r\nwithin the current level of children.\r\n\r\n    00101       00010001011010101\r\n    ╰─┬─╯       ╰───────┬───────╯\r\n  Fork 5 of 20       Parent id\r\n\r\nThe leading 0s are important. In the above example, you only need 3 bits\r\nto represent slot 5. However, you need 5 bits to represent all the forks\r\nat the current level, so we must account for the empty bits at the end.\r\n\r\nFor this same reason, slots are 1-indexed instead of 0-indexed.\r\nOtherwise, the zeroth id at a level would be indistinguishable from\r\nits parent.\r\n\r\nIf a node has only one child, and does not materialize an id (i.e. does\r\nnot contain a useId hook), then we don't need to allocate any space in\r\nthe sequence. It's treated as a transparent indirection. For example,\r\nthese two trees produce the same ids:\r\n\r\n<>                          <>\r\n  <Indirection>               <A />\r\n    <A />                     <B />\r\n  </Indirection>            </>\r\n  <B />\r\n</>\r\n\r\nHowever, we cannot skip any materializes an id. Otherwise, a parent id\r\nthat does not fork would be indistinguishable from its child id. For\r\nexample, this tree does not fork, but the parent and child must have\r\ndifferent ids.\r\n\r\n<Parent>\r\n  <Child />\r\n</Parent>\r\n\r\nTo handle this scenario, every time we materialize an id, we allocate a\r\nnew level with a single slot. You can think of this as a fork with only\r\none prong, or an array of children with length 1.\r\n\r\nIt's possible for the the size of the sequence to exceed 32 bits, the\r\nmax size for bitwise operations. When this happens, we make more room by\r\nconverting the right part of the id to a string and storing it in an\r\noverflow variable. We use a base 32 string representation, because 32 is\r\nthe largest power of 2 that is supported by toString(). We want the base\r\nto be large so that the resulting ids are compact, and we want the base\r\nto be a power of 2 because every log2(base) bits corresponds to a single\r\ncharacter, i.e. every log2(32) = 5 bits. That means we can lop bits off\r\nthe end 5 at a time without affecting the final result.\r\n\r\n* Incremental hydration\r\n\r\nStores the tree context on the dehydrated Suspense boundary's state\r\nobject so it resume where it left off.\r\n\r\n* Add useId to react-debug-tools\r\n\r\n* Add selective hydration test\r\n\r\nDemonstrates that selective hydration works and ids are preserved even\r\nafter subsequent client updates.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "75f3ddebfa0d9885ce8df42571cf0c09ad6c0a3b",
+        "message": "Remove experimental useOpaqueIdentifier API (#22672)\n\nuseId is the updated version of this API.",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "25b99efe0c9c9d593c86829386c86740d409fa8c",
+        "message": "[DevTools] Add support for useMemoCache (#26696)\n\nuseMemoCache wasn't previously supported in the DevTools, so any attempt\r\nto inspect a component using the hook would result in a\r\n`dispatcher.useMemoCache is not a function (it is undefined)` error.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "80d9a40114bb43c07d021e8254790852f450bd2b",
+        "message": "Remove useMutableSource (#27011)\n\n## Summary\r\n\r\nThis PR cleans up `useMutableSource`. This has been blocked by a\r\nremaining dependency internally at Meta, but that has now been deleted.\r\n\r\n<!--\r\nExplain the **motivation** for making this change. What existing problem\r\ndoes the pull request solve?\r\n-->\r\n\r\n## How did you test this change?\r\n\r\n```\r\nyarn flow\r\nyarn lint\r\nyarn test --prod\r\n```\r\n\r\n<!--\r\nDemonstrate the code is solid. Example: The exact commands you ran and\r\ntheir output, screenshots / videos if the pull request changes the user\r\ninterface.\r\nHow exactly did you verify that your PR solves the issue you wanted to\r\nsolve?\r\n  If you leave this empty, your PR will very likely be closed.\r\n-->",
+        "diff": [
+          {
+            "removed": "hookLog.push({primitive: 'MutableSource', stackError: new Error(), value});",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "a4195750779dbd9a13e1615fbbd493bf2c5768ca",
+        "message": "fix[devtools/useMemoCache]: add stub for useMemoCache in ReactDebugHook (#27472)\n\nCurrently, we have this error in our logs of the internal version of\r\nReact DevTools:\r\n```\r\nTypeError: Cannot read properties of undefined (reading 'memoCache')\r\n    at Proxy.useMemoCache (chrome-extension://dnjnjgbfilfphmojnmhliehogmojhclc/build/react_devtools_backend_compact.js:151:71)\r\n```\r\n\r\nLooking at the build files of the extension, it fails here:\r\nhttps://github.com/facebook/react/blob/dddfe688206dafa5646550d351eb9a8e9c53654a/packages/react-debug-tools/src/ReactDebugHooks.js#L333-L337\r\n\r\nLooks like `updateQueue` can be `undefined`, as it is not defined in\r\nhook object here:\r\nhttps://github.com/facebook/react/blob/dddfe688206dafa5646550d351eb9a8e9c53654a/packages/react-reconciler/src/ReactFiberHooks.js#L180-L186\r\n\r\n~~Also, it looks like `useMemoCache` implementation doesn't expect this,\r\nso it should also result into TypeError here, line 1114:~~\r\n\r\nhttps://github.com/facebook/react/blob/dddfe688206dafa5646550d351eb9a8e9c53654a/packages/react-reconciler/src/ReactFiberHooks.js#L1108-L1115\r\n\r\n~~Should this also be updated?~~",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "85cc01743bc992a689770a4f37e3d5441f14f082",
+        "message": "DevTools: Add support for useOptimistic Hook (#27982)\n\n## Summary\r\n\r\nAdd support for `useOptimistic` Hook fixing \"Unsupported hook in the\r\nreact-debug-tools package: Missing method in Dispatcher: useOptimistic\"\r\nwhen inspecting components using `useOptimistic`\r\n\r\n## How did you test this change?\r\n\r\n- Added test following the same pattern as for `useDeferredValue`",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "56cd10beb40586d09e91157e8f6ac531478a62be",
+        "message": "DevTools: Add support for useFormState (#28232)\n\n## Summary\r\n\r\nAdd support for `useFormState` Hook fixing \"Unsupported hook in the\r\nreact-debug-tools package: Missing method in Dispatcher: useFormState\"\r\nwhen inspecting components using `useFormState`\r\n\r\n## How did you test this change?\r\n\r\n- Added test to ReactHooksInspectionIntegration\r\n- Added dedicated section for form actions to devtools-shell\r\n![Screenshot 2024-02-04 at 12 02\r\n05](https://github.com/facebook/react/assets/12292047/bb274789-64b8-4594-963e-87c4b6962144)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "04b59928d867dae1639f12f19700347d8f5d4cac",
+        "message": "DevTools: Add support for use(Context) (#28233)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "7a32d718b9ea0eb9ea86e9d21d56a5af6c4ce9ed",
+        "message": "[Debug Tools] Introspect Promises in use() (#28297)\n\nAlternative to #28295.\r\n\r\nInstead of stashing all of the Usables eagerly, we can extract them by\r\nreplaying the render when we need them like we do with any other hook.\r\nWe already had an implementation of `use()` but it wasn't quite\r\ncomplete.\r\n\r\nThese can also include further DebugInfo on them such as what Server\r\nComponent rendered the Promise or async debug info. This is nice just to\r\nsee which use() calls were made in the side-panel but it can also be\r\nused to gather everything that might have suspended.\r\n\r\nTogether with https://github.com/facebook/react/pull/28286 we cover the\r\ncase when a Promise was used a child and if it was unwrapped with use().\r\nNotably we don't cover a Promise that was thrown (although we do support\r\nthat in a Server Component which maybe we shouldn't). Throwing a Promise\r\nisn't officially supported though and that use case should move to the\r\nuse() Hook.\r\n\r\nThe pattern of conditionally suspending based on cache also isn't really\r\nsupported with the use() pattern. You should always call use() if you\r\npreviously called use() with the same input. This also ensures that we\r\ncan track what might have suspended rather than what actually did.\r\n\r\nOne limitation of this strategy is that it's hard to find all the places\r\nsomething might suspend in a tree without rerendering all the fibers\r\nagain. So we might need to still add something to the tree to indicate\r\nwhich Fibers may have further debug info / thenables.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "hookLog.push({primitive: 'State', stackError: new Error(), value: state});",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "hookLog.push({primitive: 'Effect', stackError: new Error(), value: create});",
+            "added": "hookLog.push({"
+          },
+          {
+            "removed": "hookLog.push({primitive: 'Memo', stackError: new Error(), value});",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "5c65b27587c0507d66a84e055de948fc62d471d4",
+        "message": "Add `React.useActionState` (#28491)\n\n## Overview\r\n\r\n_Depends on https://github.com/facebook/react/pull/28514_\r\n\r\nThis PR adds a new React hook called `useActionState` to replace and\r\nimprove the ReactDOM `useFormState` hook.\r\n\r\n## Motivation\r\n\r\nThis hook intends to fix some of the confusion and limitations of the\r\n`useFormState` hook.\r\n\r\nThe `useFormState` hook is only exported from the `ReactDOM` package and\r\nimplies that it is used only for the state of `<form>` actions, similar\r\nto `useFormStatus` (which is only for `<form>` element status). This\r\nleads to understandable confusion about why `useFormState` does not\r\nprovide a `pending` state value like `useFormStatus` does.\r\n\r\nThe key insight is that the `useFormState` hook does not actually return\r\nthe state of any particular form at all. Instead, it returns the state\r\nof the _action_ passed to the hook, wrapping it and returning a\r\ntrackable action to add to a form, and returning the last returned value\r\nof the action given. In fact, `useFormState` doesn't need to be used in\r\na `<form>` at all.\r\n\r\nThus, adding a `pending` value to `useFormState` as-is would thus be\r\nconfusing because it would only return the pending state of the _action_\r\ngiven, not the `<form>` the action is passed to. Even if we wanted to\r\ntie them together, the returned `action` can be passed to multiple\r\nforms, creating confusing and conflicting pending states during multiple\r\nform submissions.\r\n\r\nAdditionally, since the action is not related to any particular\r\n`<form>`, the hook can be used in any renderer - not only `react-dom`.\r\nFor example, React Native could use the hook to wrap an action, pass it\r\nto a component that will unwrap it, and return the form result state and\r\npending state. It's renderer agnostic.\r\n\r\nTo fix these issues, this PR:\r\n- Renames `useFormState` to `useActionState`\r\n- Adds a `pending` state to the returned tuple\r\n- Moves the hook to the `'react'` package\r\n\r\n## Reference\r\n\r\nThe `useFormState` hook allows you to track the pending state and return\r\nvalue of a function (called an \"action\"). The function passed can be a\r\nplain JavaScript client function, or a bound server action to a\r\nreference on the server. It accepts an optional `initialState` value\r\nused for the initial render, and an optional `permalink` argument for\r\nrenderer specific pre-hydration handling (such as a URL to support\r\nprogressive hydration in `react-dom`).\r\n\r\nType:\r\n\r\n```ts\r\nfunction useActionState<State>(\r\n        action: (state: Awaited<State>) => State | Promise<State>,\r\n        initialState: Awaited<State>,\r\n        permalink?: string,\r\n    ): [state: Awaited<State>, dispatch: () => void, boolean];\r\n```\r\n\r\nThe hook returns a tuple with:\r\n- `state`: the last state the action returned\r\n- `dispatch`: the method to call to dispatch the wrapped action\r\n- `pending`: the pending state of the action and any state updates\r\ncontained\r\n\r\nNotably, state updates inside of the action dispatched are wrapped in a\r\ntransition to keep the page responsive while the action is completing\r\nand the UI is updated based on the result.\r\n\r\n## Usage\r\n\r\nThe `useActionState` hook can be used similar to `useFormState`:\r\n\r\n```js\r\nimport { useActionState } from \"react\"; // not react-dom\r\n\r\nfunction Form({ formAction }) {\r\n  const [state, action, isPending] = useActionState(formAction);\r\n\r\n  return (\r\n    <form action={action}>\r\n      <input type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button type=\"submit\" disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </form>\r\n  );\r\n}\r\n```\r\n\r\nBut it doesn't need to be used with a `<form/>` (neither did\r\n`useFormState`, hence the confusion):\r\n\r\n```js\r\nimport { useActionState, useRef } from \"react\";\r\n\r\nfunction Form({ someAction }) {\r\n  const ref = useRef(null);\r\n  const [state, action, isPending] = useActionState(someAction);\r\n\r\n  async function handleSubmit() {\r\n    // See caveats below\r\n    await action({ email: ref.current.value });\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <input ref={ref} type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button onClick={handleSubmit} disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </div>\r\n  );\r\n}\r\n```\r\n\r\n## Benefits\r\n\r\nOne of the benefits of using this hook is the automatic tracking of the\r\nreturn value and pending states of the wrapped function. For example,\r\nthe above example could be accomplished via:\r\n\r\n```js\r\nimport { useActionState, useRef } from \"react\";\r\n\r\nfunction Form({ someAction }) {\r\n  const ref = useRef(null);\r\n  const [state, setState] = useState(null);\r\n  const [isPending, setIsPending] = useTransition();\r\n\r\n  function handleSubmit() {\r\n    startTransition(async () => {\r\n      const response = await someAction({ email: ref.current.value });\r\n      setState(response);\r\n    });\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <input ref={ref} type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button onClick={handleSubmit} disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </div>\r\n  );\r\n}\r\n```\r\n\r\nHowever, this hook adds more benefits when used with render specific\r\nelements like react-dom `<form>` elements and Server Action. With\r\n`<form>` elements, React will automatically support replay actions on\r\nthe form if it is submitted before hydration has completed, providing a\r\nform of partial progressive enhancement: enhancement for when javascript\r\nis enabled but not ready.\r\n\r\nAdditionally, with the `permalink` argument and Server Actions,\r\nframeworks can provide full progressive enhancement support, submitting\r\nthe form to the URL provided along with the FormData from the form. On\r\nsubmission, the Server Action will be called during the MPA navigation,\r\nsimilar to any raw HTML app, server rendered, and the result returned to\r\nthe client without any JavaScript on the client.\r\n\r\n## Caveats\r\nThere are a few Caveats to this new hook:\r\n**Additional state update**: Since we cannot know whether you use the\r\npending state value returned by the hook, the hook will always set the\r\n`isPending` state at the beginning of the first chained action,\r\nresulting in an additional state update similar to `useTransition`. In\r\nthe future a type-aware compiler could optimize this for when the\r\npending state is not accessed.\r\n\r\n**Pending state is for the action, not the handler**: The difference is\r\nsubtle but important, the pending state begins when the return action is\r\ndispatched and will revert back after all actions and transitions have\r\nsettled. The mechanism for this under the hook is the same as\r\nuseOptimisitic.\r\n\r\nConcretely, what this means is that the pending state of\r\n`useActionState` will not represent any actions or sync work performed\r\nbefore dispatching the action returned by `useActionState`. Hopefully\r\nthis is obvious based on the name and shape of the API, but there may be\r\nsome temporary confusion.\r\n\r\nAs an example, let's take the above example and await another action\r\ninside of it:\r\n\r\n```js\r\nimport { useActionState, useRef } from \"react\";\r\n\r\nfunction Form({ someAction, someOtherAction }) {\r\n  const ref = useRef(null);\r\n  const [state, action, isPending] = useActionState(someAction);\r\n\r\n  async function handleSubmit() {\r\n    await someOtherAction();\r\n\r\n    // The pending state does not start until this call.\r\n    await action({ email: ref.current.value });\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <input ref={ref} type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button onClick={handleSubmit} disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </div>\r\n  );\r\n}\r\n\r\n```\r\n\r\nSince the pending state is related to the action, and not the handler or\r\nform it's attached to, the pending state only changes when the action is\r\ndispatched. To solve, there are two options.\r\n\r\nFirst (recommended): place the other function call inside of the action\r\npassed to `useActionState`:\r\n\r\n```js\r\nimport { useActionState, useRef } from \"react\";\r\n\r\nfunction Form({ someAction, someOtherAction }) {\r\n  const ref = useRef(null);\r\n  const [state, action, isPending] = useActionState(async (data) => {\r\n    // Pending state is true already.\r\n    await someOtherAction();\r\n    return someAction(data);\r\n  });\r\n\r\n  async function handleSubmit() {\r\n    // The pending state starts at this call.\r\n    await action({ email: ref.current.value });\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <input ref={ref} type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button onClick={handleSubmit} disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </div>\r\n  );\r\n}\r\n```\r\n\r\nFor greater control, you can also wrap both in a transition and use the\r\n`isPending` state of the transition:\r\n\r\n```js\r\nimport { useActionState, useTransition, useRef } from \"react\";\r\n\r\nfunction Form({ someAction, someOtherAction }) {\r\n  const ref = useRef(null);\r\n\r\n  // isPending is used from the transition wrapping both action calls.\r\n  const [isPending, startTransition] = useTransition();\r\n\r\n  // isPending not used from the individual action.\r\n  const [state, action] = useActionState(someAction);\r\n\r\n  async function handleSubmit() {\r\n    startTransition(async () => {\r\n      // The transition pending state has begun.\r\n      await someOtherAction();\r\n      await action({ email: ref.current.value });\r\n    });\r\n  }\r\n\r\n  return (\r\n    <div>\r\n      <input ref={ref} type=\"email\" name=\"email\" disabled={isPending} />\r\n      <button onClick={handleSubmit} disabled={isPending}>\r\n        Submit\r\n      </button>\r\n      {state.errorMessage && <p>{state.errorMessage}</p>}\r\n    </div>\r\n  );\r\n}\r\n```\r\n\r\nA similar technique using `useOptimistic` is preferred over using\r\n`useTransition` directly, and is left as an exercise to the reader.\r\n\r\n## Thanks\r\n\r\nThanks to @ryanflorence @mjackson @wesbos\r\n(https://github.com/facebook/react/issues/27980#issuecomment-1960685940)\r\nand [Allan\r\nLasser](https://allanlasser.com/posts/2024-01-26-avoid-using-reacts-useformstatus)\r\nfor their feedback and suggestions on `useFormStatus` hook.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "734956ace6450bc0c95d8d749dee74f4a140597b",
+        "message": "Devtools: Add support for useFormStatus (#28413)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "8308d2f1fe90ec0b5a5cde147b97c6e78581710a",
+        "message": "fix[react-devtools/ReactDebugHooks]: support unstable prefixes in hooks and useContextWithBailout (#30837)\n\nRelated - https://github.com/facebook/react/pull/30407.\r\n\r\nThis is experimental-only and FB-only hook. Without these changes,\r\ninspecting an element that is using this hook will throw an error,\r\nbecause this hook is missing in Dispatcher implementation from React\r\nDevTools, which overrides the original one to build the hook tree.\r\n\r\n![Screenshot 2024-08-28 at 18 42\r\n55](https://github.com/user-attachments/assets/e3bccb92-74fb-4e4a-8181-03d13f8512c0)\r\n\r\nOne nice thing from it is that in case of any potential regressions\r\nrelated to this experiment, we can quickly triage which implementation\r\nof `useContext` is used by inspecting an element in React DevTools.\r\n\r\nIdeally, I should've added some component that is using this hook to\r\n`react-devtools-shell`, so it can be manually tested, but I can't do it\r\nwithout rewriting the infra for it. This is because this hook is only\r\navailable from fb-www builds, and not experimental.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "909ed63e0adc162a95a4704d3ed07a956dcf9cd1",
+        "message": "Clean up context access profiling experiment (#31806)\n\nWe introduced the `unstable_useContextWithBailout` API to run compiler\nbased experiments. This API was designed to be an experiment proxy for\nalternative approaches which would be heavier to implement. The\nexperiment turned out to be inconclusive. Since most of our performance\ncritical usage is already optimized, we weren't able to find a clear win\nwith this approach.\n\nSince we don't have further plans for this API, let's clean it up.",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "5b51a2b9e249f264b1345cc35b275464ae3ef6eb",
+        "message": "fix[DevTools]: support useResourceEffect (#32088)\n\nSince we've started experimenting with it, I've started seeing a spike\r\nin errors:\r\n```\r\nUnsupported hook in the react-debug-tools package: Missing method in Dispatcher: useResourceEffect\r\n```\r\n\r\nAdding missing hook to the `Dispatcher` that is proxied by React\r\nDevTools.\r\n\r\nI can't really add an example that will use it to our RDT testing shell,\r\nbecause it uses experimental builds of `react`, which don't have this\r\nhook. I've tested it manually by rebuilding artifacts with\r\n`enableUseResourceEffectHook` flag enabled.\r\n\r\n![Screenshot 2025-01-16 at 15 20\r\n00](https://github.com/user-attachments/assets/a0d63fd6-1f17-4710-a2b2-82d484b8987f)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "b000019578a417ec0a1aeec8bda689db240cb28e",
+        "message": "DevTools: support useEffectEvent and forward-fix experimental prefix support (#32106)\n\n- Adds support for `experimental_useEffectEvent`, now DevTools will be\r\nable to display this hook for inspected element\r\n- Added a use case to DevTools shell, couldn't add case, because we are\r\nusing ReactTestRenderer, which has the corresponding flag disabled.\r\n- Forward-fix logic for handling `experimental` prefix that was added in\r\nhttps://github.com/facebook/react/pull/32088.\r\n\r\n![Screenshot 2025-01-16 at 21 24\r\n12](https://github.com/user-attachments/assets/6fb8ff2a-be47-47b5-bbfc-73d3a586657c)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "a69b80d07e5d1bf363ed15d6209a55b35e0765c2",
+        "message": "[crud] Remove useResourceEffect (#32206)\n\nRemoves useResourceEffect.\n---\n[//]: # (BEGIN SAPLING FOOTER)\nStack created with [Sapling](https://sapling-scm.com). Best reviewed\nwith [ReviewStack](https://reviewstack.dev/facebook/react/pull/32206).\n* __->__ #32206\n* #32205",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "a53da6abe1593483098df2baf927fe07d80153a5",
+        "message": "Add useSwipeTransition Hook Behind Experimental Flag (#32373)\n\nThis Hook will be used to drive a View Transition based on a gesture.\n\n```js\nconst [value, startGesture] = useSwipeTransition(prev, current, next);\n```\n\nThe `enableSwipeTransition` flag will depend on `enableViewTransition`\nflag but we may decide to ship them independently. This PR doesn't do\nanything interesting yet. There will be a lot more PRs to build out the\nactual functionality. This is just wiring up the plumbing for the new\nHook.\n\nThis first PR is mainly concerned with how the whole starts (and stops).\nThe core API is the `startGesture` function (although there will be\nother conveniences added in the future). You can call this to start a\ngesture with a source provider. You can call this multiple times in one\nevent to batch multiple Hooks listening to the same provider. However,\neach render can only handle one source provider at a time and so it does\none render per scheduled gesture provider.\n\nThis uses a separate `GestureLane` to drive gesture renders by marking\nthe Hook as having an update on that lane. Then schedule a render. These\nrenders should be blocking and in the same microtask as the\n`startGesture` to ensure it can block the paint. So it's similar to\nsync.\n\nIt may not be possible to finish it synchronously e.g. if something\nsuspends. If so, it just tries again later when it can like any other\nrender. This can also happen because it also may not be possible to\ndrive more than one gesture at a time like if we're limited to one View\nTransition per document. So right now you can only run one gesture at a\ntime in practice.\n\nThese renders never commit. This means that we can't clear the\n`GestureLane` the normal way. Instead, we have to clear only the root's\n`pendingLanes` if we don't have any new renders scheduled. Then wait\nuntil something else updates the Fiber after all gestures on it have\nstopped before it really clears.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookLog.push({"
+          }
+        ]
+      },
+      {
+        "commit": "0a7cf20b220a9f719e06fd8a12dfde3ab029c651",
+        "message": "Remove useSwipeTransition (#32786)\n\nStacked on #32785.\n\nThis is now replaced by `startGestureTransition` added in #32785.\n\nI also renamed the flag from `enableSwipeTransition` to\n`enableGestureTransition` to correspond to the new name.",
+        "diff": [
+          {
+            "removed": "hookLog.push({",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-art/src/__tests__/ReactART-test.js",
+    "commits": [
+      {
+        "commit": "b0726e99476ea67c7558cbf268685998a38ade7c",
+        "message": "Support sharing context objects between concurrent renderers (#12779)\n\n* Support concurrent primary and secondary renderers.\r\n\r\nAs a workaround to support multiple concurrent renderers, we categorize\r\nsome renderers as primary and others as secondary. We only expect\r\nthere to be two concurrent renderers at most: React Native (primary) and\r\nFabric (secondary); React DOM (primary) and React ART (secondary).\r\nSecondary renderers store their context values on separate fields.\r\n\r\n* Add back concurrent renderer warning\r\n\r\nOnly warn for two concurrent primary or two concurrent secondary renderers.\r\n\r\n* Change \"_secondary\" suffix to \"2\"\r\n\r\n#EveryBitCounts",
+        "diff": [
+          {
+            "removed": "",
+            "added": "ops.push(currentRenderer);"
+          }
+        ]
+      },
+      {
+        "commit": "b2ae9ddb3b497d16a7c27c051da1827d08871138",
+        "message": "Cleanup enableSyncDefaultUpdate flag (#26236)\n\nThis feature flag is enabled everywhere.",
+        "diff": [
+          {
+            "removed": "ops.push(currentRenderer);",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "da94e8b24a3f31a3e805f9bf6bba73055aad9d41",
+        "message": "Revert \"Cleanup enableSyncDefaultUpdate flag (#26236)\" (#26528)\n\nThis reverts commit b2ae9ddb3b497d16a7c27c051da1827d08871138.\r\n\r\nWhile the feature flag is fully rolled out, these tests are also testing\r\nbehavior set with an unstable flag on root, which for now we want to\r\npreserve.\r\n\r\nNot sure if there's a better way then adding a dynamic feature flag to\r\nthe www build?",
+        "diff": [
+          {
+            "removed": "",
+            "added": "ops.push(currentRenderer);"
+          }
+        ]
+      },
+      {
+        "commit": "e902c45caf7ca67810d3e53748a549bdcc36063b",
+        "message": "Remove forceConcurrentByDefaultForTesting flag (#30436)\n\nConcurrent by default has been unshipped! Let's clean it up.\r\n\r\nHere we remove `forceConcurrentByDefaultForTesting`, which allows us to\r\nrun tests against both concurrent strategies. In the next PR, we'll\r\nremove the actual concurrent by default code path.",
+        "diff": [
+          {
+            "removed": "ops.push(currentRenderer);",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-test-renderer/src/__tests__/ReactTestRenderer-test.internal.js",
+    "commits": [
+      {
+        "commit": "94518b068bf52196abea0c83f4c9926bfe2065c6",
+        "message": "Add stack unwinding phase for handling errors (#12201)\n\n* Add stack unwinding phase for handling errors\r\n\r\nA rewrite of error handling, with semantics that more closely match\r\nstack unwinding.\r\n\r\nErrors that are thrown during the render phase unwind to the nearest\r\nerror boundary, like before. But rather than synchronously unmount the\r\nchildren before retrying, we restart the failed subtree within the same\r\nrender phase. The failed children are still unmounted (as if all their\r\nkeys changed) but without an extra commit.\r\n\r\nCommit phase errors are different. They work by scheduling an error on\r\nthe update queue of the error boundary. When we enter the render phase,\r\nthe error is popped off the queue. The rest of the algorithm is\r\nthe same.\r\n\r\nThis approach is designed to work for throwing non-errors, too, though\r\nthat feature is not implemented yet.\r\n\r\n* Add experimental getDerivedStateFromCatch lifecycle\r\n\r\nFires during the render phase, so you can recover from an error within the same\r\npass. This aligns error boundaries more closely with try-catch semantics.\r\n\r\nLet's keep this behind a feature flag until a future release. For now, the\r\nrecommendation is to keep using componentDidCatch. Eventually, the advice will\r\nbe to use getDerivedStateFromCatch for handling errors and componentDidCatch\r\nonly for logging.\r\n\r\n* Reconcile twice to remount failed children, instead of using a boolean\r\n\r\n* Handle effect immediately after its thrown\r\n\r\nThis way we don't have to store the thrown values on the effect list.\r\n\r\n* ReactFiberIncompleteWork -> ReactFiberUnwindWork\r\n\r\n* Remove startTime\r\n\r\n* Remove TypeOfException\r\n\r\nWe don't need it yet. We'll reconsider once we add another exception type.\r\n\r\n* Move replay to outer catch block\r\n\r\nThis moves it out of the hot path.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        log.push('render ' + this.props.name);"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('mount ' + this.props.name);"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('unmount ' + this.props.name);"
+          },
+          {
+            "removed": "",
+            "added": "    ReactTestRenderer.create(<div ref={r => log.push(r)} />);"
+          },
+          {
+            "removed": "",
+            "added": "        log.push(this.refs.bar);"
+          },
+          {
+            "removed": "",
+            "added": "    ReactTestRenderer.create(<div ref={r => log.push(r)} />, {createNodeMock});"
+          },
+          {
+            "removed": "",
+            "added": "    ReactTestRenderer.create(<input ref={r => log.push(r)} />, {"
+          },
+          {
+            "removed": "",
+            "added": "            <li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "            <li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "            <li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "    ReactTestRenderer.create(<div ref={r => log.push(r)} />);"
+          },
+          {
+            "removed": "",
+            "added": "    ReactTestRenderer.create(<div ref={r => log.push(r)} />, {});"
+          },
+          {
+            "removed": "",
+            "added": "      log.push(element.type);"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Angry render');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Angry componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Angry componentWillUnmount');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Boundary render');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Boundary componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Boundary componentWillUnmount');"
+          },
+          {
+            "removed": "",
+            "added": "        log.push('Boundary componentDidCatch');"
+          }
+        ]
+      },
+      {
+        "commit": "6fb8133ed3aa6b23063375dd345c6e413b05f0fe",
+        "message": "Turn on string ref deprecation warning for everybody (not codemoddable) (#25383)\n\n## Summary\r\n \r\nAlternate to https://github.com/facebook/react/pull/25334 without any\r\nprod runtime changes i.e. the proposed codemod in\r\nhttps://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md#deprecate-string-refs-and-remove-production-mode-_owner-field\r\nwould not work.\r\n\r\n## How did you test this change?\r\n\r\n- [x] CI\r\n- [x] `yarn test` with and without `warnAboutStringRefs`",
+        "diff": [
+          {
+            "removed": "log.push(this.refs.bar);",
+            "added": "log.push(this.barRef.current);"
+          }
+        ]
+      },
+      {
+        "commit": "bb66aa3cef4e42aee790200d03cf7a82659da121",
+        "message": "Use concurrent root in RTR (#28498)\n\nBased on\r\n- https://github.com/facebook/react/pull/28497\r\n- https://github.com/facebook/react/pull/28419\r\n\r\nReusing the disableLegacyMode flag, we set ReactTestRenderer to always\r\nrender with concurrent root where legacy APIs are no longer available.\r\nIf disableLegacyMode is false, we continue to allow the\r\nunstable_isConcurrent option determine the root type.\r\n\r\nAlso checking a global `IS_REACT_NATIVE_TEST_ENVIRONMENT` so we can\r\nmaintain the existing behavior for RN until we remove legacy root\r\nsupport there.",
+        "diff": [
+          {
+            "removed": "ReactTestRenderer.create(<div ref={r => log.push(r)} />);",
+            "added": "await act(() => {"
+          },
+          {
+            "removed": "",
+            "added": "ReactTestRenderer.create(<div ref={r => log.push(r)} />);"
+          },
+          {
+            "removed": "ReactTestRenderer.create(<div ref={r => log.push(r)} />, {createNodeMock});",
+            "added": ""
+          },
+          {
+            "removed": "ReactTestRenderer.create(<input ref={r => log.push(r)} />, {",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "ReactTestRenderer.create(<div ref={r => log.push(r)} />, {"
+          },
+          {
+            "removed": "",
+            "added": "ReactTestRenderer.create(<input ref={r => log.push(r)} />, {"
+          },
+          {
+            "removed": "",
+            "added": "<li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "<li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "<li ref={r => log.push(r)} />"
+          },
+          {
+            "removed": "",
+            "added": "ReactTestRenderer.create(<div ref={r => log.push(r)} />);"
+          },
+          {
+            "removed": "",
+            "added": "ReactTestRenderer.create(<div ref={r => log.push(r)} />, {});"
+          },
+          {
+            "removed": "<li ref={r => log.push(r)} />",
+            "added": ""
+          },
+          {
+            "removed": "<li ref={r => log.push(r)} />",
+            "added": ""
+          },
+          {
+            "removed": "<li ref={r => log.push(r)} />",
+            "added": ""
+          },
+          {
+            "removed": "ReactTestRenderer.create(<div ref={r => log.push(r)} />);",
+            "added": ""
+          },
+          {
+            "removed": "ReactTestRenderer.create(<div ref={r => log.push(r)} />, {});",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom/src/__tests__/ReactServerRendering-test.js",
+    "commits": [
+      {
+        "commit": "313611572b6567d229367ed20ff63d1bca8610bb",
+        "message": "Reorganize code structure (#11288)\n\n* Move files and tests to more meaningful places\r\n\r\n* Fix the build\r\n\r\nNow that we import reconciler via react-reconciler, I needed to make a few tweaks.\r\n\r\n* Update sizes\r\n\r\n* Move @preventMunge directive to FB header\r\n\r\n* Revert unintentional change\r\n\r\n* Fix Flow coverage\r\n\r\nI forgot to @flow-ify those files. This uncovered some issues.\r\n\r\n* Prettier, I love you but you're bringing me down\r\nPrettier, I love you but you're bringing me down\r\n\r\nLike a rat in a cage\r\nPulling minimum wage\r\nPrettier, I love you but you're bringing me down\r\n\r\nPrettier, you're safer and you're wasting my time\r\nOur records all show you were filthy but fine\r\nBut they shuttered your stores\r\nWhen you opened the doors\r\nTo the cops who were bored once they'd run out of crime\r\n\r\nPrettier, you're perfect, oh, please don't change a thing\r\nYour mild billionaire mayor's now convinced he's a king\r\nSo the boring collect\r\nI mean all disrespect\r\nIn the neighborhood bars I'd once dreamt I would drink\r\n\r\nPrettier, I love you but you're freaking me out\r\nThere's a ton of the twist but we're fresh out of shout\r\nLike a death in the hall\r\nThat you hear through your wall\r\nPrettier, I love you but you're freaking me out\r\n\r\nPrettier, I love you but you're bringing me down\r\nPrettier, I love you but you're bringing me down\r\nLike a death of the heart\r\nJesus, where do I start?\r\nBut you're still the one pool where I'd happily drown\r\n\r\nAnd oh! Take me off your mailing list\r\nFor kids who think it still exists\r\nYes, for those who think it still exists\r\nMaybe I'm wrong and maybe you're right\r\nMaybe I'm wrong and maybe you're right\r\nMaybe you're right, maybe I'm wrong\r\nAnd just maybe you're right\r\n\r\nAnd oh! Maybe mother told you true\r\nAnd there'll always be somebody there for you\r\nAnd you'll never be alone\r\nBut maybe she's wrong and maybe I'm right\r\nAnd just maybe she's wrong\r\nMaybe she's wrong and maybe I'm right\r\nAnd if so, here's this song!",
+        "diff": [
+          {
+            "removed": "",
+            "added": "            lifecycle.push('getInitialState');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillMount');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('render');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentDidUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('shouldComponentUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillReceiveProps');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillUnmount');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('getInitialState');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillMount');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('render');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentDidUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('shouldComponentUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillReceiveProps');"
+          },
+          {
+            "removed": "",
+            "added": "            lifecycle.push('componentWillUnmount');"
+          }
+        ]
+      },
+      {
+        "commit": "87ae211ccd8d61796cfdef138d1e12fb7a74f85d",
+        "message": "New context API (#11818)\n\n* New context API\r\n\r\nIntroduces a declarative context API that propagates updates even when\r\nshouldComponentUpdate returns false.\r\n\r\n* Fuzz tester for context\r\n\r\n* Use ReactElement for provider and consumer children\r\n\r\n* Unify more branches in createFiberFromElement\r\n\r\n* Compare context values using Object.is\r\n\r\nSame semantics as PureComponent/shallowEqual.\r\n\r\n* Add support for Provider and Consumer to server-side renderer\r\n\r\n* Store providers on global stack\r\n\r\nRather than using a linked list stored on the context type. The global\r\nstack can be reset in case of an interruption or error, whereas with the\r\nlinked list implementation, you'd need to keep track of every\r\ncontext type.\r\n\r\n* Put new context API behind a feature flag\r\n\r\nWe'll enable this in www only for now.\r\n\r\n* Store nearest provider on context object\r\n\r\n* Handle reentrancy in server renderer\r\n\r\nContext stack should be per server renderer instance.\r\n\r\n* Bailout of consumer updates using bitmask\r\n\r\nThe context type defines an optional function that compares two context\r\nvalues, returning a bitfield. A consumer may specify the bits it needs\r\nfor rendering. If a provider's context changes, and the consumer's bits\r\ndo not intersect with the changed bits, we can skip the consumer.\r\n\r\nThis is similar to how selectors are used in Redux but fast enough to do\r\nwhile scanning the tree. The only user code involved is the function\r\nthat computes the changed bits. But that's only called once per provider\r\nupdate, not for every consumer.\r\n\r\n* Store current value and changed bits on context object\r\n\r\nThere are fewer providers than consumers, so better to do this work\r\nat the provider.\r\n\r\n* Use maximum of 31 bits for bitmask\r\n\r\nThis is the largest integer size in V8 on 32-bit systems. Warn in\r\ndevelopment if too large a number is used.\r\n\r\n* ProviderComponent -> ContextProvider, ConsumerComponent -> ContextConsumer\r\n\r\n* Inline Object.is\r\n\r\n* Warn if multiple renderers concurrently render the same context provider\r\n\r\nLet's see if we can get away with not supporting this for now. If it\r\nturns out that it's needed, we can fall back to backtracking the\r\nfiber return path.\r\n\r\n* Nits that came up during review",
+        "diff": [
+          {
+            "removed": "lifecycle.push('getInitialState');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillMount');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentDidMount');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('render');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentDidUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('shouldComponentUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillReceiveProps');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillUnmount');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('getInitialState');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillMount');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentDidMount');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('render');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentDidUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('shouldComponentUpdate');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillReceiveProps');",
+            "added": ""
+          },
+          {
+            "removed": "lifecycle.push('componentWillUnmount');",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "f5779bbc10ce85ac78fb54c9f20e71b5e32bb393",
+        "message": "Run server rendering test on bundles (#13153)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "lifecycle.push('getInitialState');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillMount');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('render');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentDidUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('shouldComponentUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillReceiveProps');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillUnmount');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('getInitialState');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillMount');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentDidMount');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('render');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentDidUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('shouldComponentUpdate');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillReceiveProps');"
+          },
+          {
+            "removed": "",
+            "added": "lifecycle.push('componentWillUnmount');"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom/src/__tests__/ReactMultiChildReconcile-test.js",
+    "commits": [
+      {
+        "commit": "d9c1dbd61772f8f8ab0cdf389e70463d704c480b",
+        "message": "Use Yarn Workspaces (#11252)\n\n* Enable Yarn workspaces for packages/*\r\n\r\n* Move src/isomorphic/* into packages/react/src/*\r\n\r\n* Create index.js stubs for all packages in packages/*\r\n\r\nThis makes the test pass again, but breaks the build because npm/ folders aren't used yet.\r\nI'm not sure if we'll keep this structure--I'll just keep working and fix the build after it settles down.\r\n\r\n* Put FB entry point for react-dom into packages/*\r\n\r\n* Move src/renderers/testing/* into packages/react-test-renderer/src/*\r\n\r\nNote that this is currently broken because Jest ignores node_modules,\r\nand so Yarn linking makes Jest skip React source when transforming.\r\n\r\n* Remove src/node_modules\r\n\r\nIt is now unnecessary. Some tests fail though.\r\n\r\n* Add a hacky workaround for Jest/Workspaces issue\r\n\r\nJest sees node_modules and thinks it's third party code.\r\n\r\nThis is a hacky way to teach Jest to still transform anything in node_modules/react*\r\nif it resolves outside of node_modules (such as to our packages/*) folder.\r\n\r\nI'm not very happy with this and we should revisit.\r\n\r\n* Add a fake react-native package\r\n\r\n* Move src/renderers/art/* into packages/react-art/src/*\r\n\r\n* Move src/renderers/noop/* into packages/react-noop-renderer/src/*\r\n\r\n* Move src/renderers/dom/* into packages/react-dom/src/*\r\n\r\n* Move src/renderers/shared/fiber/* into packages/react-reconciler/src/*\r\n\r\n* Move DOM/reconciler tests I previously forgot to move\r\n\r\n* Move src/renderers/native-*/* into packages/react-native-*/src/*\r\n\r\n* Move shared code into packages/shared\r\n\r\nIt's not super clear how to organize this properly yet.\r\n\r\n* Add back files that somehow got lost\r\n\r\n* Fix the build\r\n\r\n* Prettier\r\n\r\n* Add missing license headers\r\n\r\n* Fix an issue that caused mocks to get included into build\r\n\r\n* Update other references to src/\r\n\r\n* Re-run Prettier\r\n\r\n* Fix lint\r\n\r\n* Fix weird Flow violation\r\n\r\nI didn't change this file but Flow started complaining.\r\nCaleb said this annotation was unnecessarily using $Abstract though so I removed it.\r\n\r\n* Update sizes\r\n\r\n* Fix stats script\r\n\r\n* Fix packaging fixtures\r\n\r\nUse file: instead of NODE_PATH since NODE_PATH.\r\nNODE_PATH trick only worked because we had no react/react-dom in root node_modules, but now we do.\r\n\r\nfile: dependency only works as I expect in Yarn, so I moved the packaging fixtures to use Yarn and committed lockfiles.\r\nVerified that the page shows up.\r\n\r\n* Fix art fixture\r\n\r\n* Fix reconciler fixture\r\n\r\n* Fix SSR fixture\r\n\r\n* Rename native packages",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        originalKeys.push(key);"
+          },
+          {
+            "removed": "",
+            "added": "      children.push("
+          },
+          {
+            "removed": "",
+            "added": "    orderedDomKeys.push(contentKey);"
+          },
+          {
+            "removed": "",
+            "added": "    orderedLogicalKeys.push(statusDisplay.props.contentKey);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-core/src/backend.js",
+    "commits": [
+      {
+        "commit": "0f2fb5badf5908ee271e0b9e7ec7f3022e31a648",
+        "message": "Standalone NPM packages and React Native support (#335)\n\n* Add version 4 react-devtools and react-devtools-core packages which support both React Native and e.g. Safari or iframe DOM usage.\r\n* Replaces typed operations arrays with regular arrays in order to support Hermes. This is unfortunate, since in theory a typed array buffer could be more efficiently transferred between frontend and backend for the web extension, but this never actually worked properly in v8, only Spidermonkey, and it fails entirely in Hermes so for the time being- it's been removed.\r\n* Adds support for React Native (paper renderer)\r\n* Adds a style editor for react-native and react-native-web",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        messageListeners.push(fn);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/server/ReactFizzConfigDOM.js",
+    "commits": [
+      {
+        "commit": "ffb8eaca5966fc7733bd0a23f4055e26d2cc59d7",
+        "message": "Rename ReactServerFormatConfig to ReactFizzConfig (#26591)\n\npart of https://github.com/facebook/react/pull/26571\r\n\r\nmerging separately to improve tracking of file renames",
+        "diff": [
+          {
+            "removed": "",
+            "added": "  currentResourcesStack.push(currentResources);"
+          },
+          {
+            "removed": "",
+            "added": "    bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "      bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "        bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "      bootstrapChunks.push(endAsyncScript);"
+          },
+          {
+            "removed": "",
+            "added": "      bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "        bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "      bootstrapChunks.push(endAsyncScript);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(stringToChunk(encodeHTMLTextNode(text)));"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "      target.push(styleAttributeStart, nameChunk, styleAssign, valueChunk);"
+          },
+          {
+            "removed": "",
+            "added": "      target.push(styleSeparator, nameChunk, styleAssign, valueChunk);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(attributeEnd);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(attributeSeparator, stringToChunk(name), attributeEmptyString);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push("
+          },
+          {
+            "removed": "",
+            "added": "      target.push("
+          },
+          {
+            "removed": "",
+            "added": "      target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "        target.push("
+          },
+          {
+            "removed": "",
+            "added": "      target.push(stringToChunk('' + html));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('select'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('option'));"
+          },
+          {
+            "removed": "",
+            "added": "          target.push(selectedMarkerAttribute);"
+          },
+          {
+            "removed": "",
+            "added": "        target.push(selectedMarkerAttribute);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(selectedMarkerAttribute);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('input'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTagSelfClosing);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('textarea'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(leadingNewline);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(encodeHTMLTextNode('' + value)));"
+          },
+          {
+            "removed": "",
+            "added": "        target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "          target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "        target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('link'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTagSelfClosing);"
+          },
+          {
+            "removed": "",
+            "added": "        resource.props.hrefs.push(href);"
+          },
+          {
+            "removed": "",
+            "added": "      target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('style'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(escapeTextForBrowser('' + child)));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endTag1, stringToChunk('style'), endTag2);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(escapeTextForBrowser('' + child)));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag(tag));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTagSelfClosing);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('menuitem'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('title'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(escapeTextForBrowser('' + child)));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endTag1, stringToChunk('title'), endTag2);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('title'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "      target.push(DOCTYPE);"
+          },
+          {
+            "removed": "",
+            "added": "      target.push(textSeparator);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag('script'));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endTag1, stringToChunk('script'), endTag2);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag(tag));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag(tag));"
+          },
+          {
+            "removed": "",
+            "added": "            target.push("
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startChunkForTag(tag));"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "        target.push(leadingNewline, stringToChunk(html));"
+          },
+          {
+            "removed": "",
+            "added": "        target.push(stringToChunk('' + html));"
+          },
+          {
+            "removed": "",
+            "added": "    target.push(leadingNewline);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endTag1, stringToChunk(type), endTag2);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(startCompletedSuspenseBoundary);"
+          },
+          {
+            "removed": "",
+            "added": "  target.push(endSuspenseBoundary);"
+          }
+        ]
+      },
+      {
+        "commit": "c826dc50de288758a0b783b2fd37b40a3b512fc4",
+        "message": "Add (Client) Functions as Form Actions (#26674)\n\nThis lets you pass a function to `<form action={...}>` or `<button\r\nformAction={...}>` or `<input type=\"submit formAction={...}>`. This will\r\nbehave basically like a `javascript:` URL except not quite implemented\r\nthat way. This is a convenience for the `onSubmit={e => {\r\ne.preventDefault(); const fromData = new FormData(e.target); ... }`\r\npattern.\r\n\r\nYou can still implement a custom `onSubmit` handler and if it calls\r\n`preventDefault`, it won't invoke the action, just like it would if you\r\nused a full page form navigation or javascript urls. It behaves just\r\nlike a navigation and we might implement it with the Navigation API in\r\nthe future.\r\n\r\nCurrently this is just a synchronous function but in a follow up this\r\nwill accept async functions, handle pending states and handle errors.\r\n\r\nThis is implemented by setting `javascript:` URLs, but these only exist\r\nto trigger an error message if something goes wrong instead of\r\nnavigating away. Like if you called `stopPropagation` to prevent React\r\nfrom handling it or if you called `form.submit()` instead of\r\n`form.requestSubmit()` which by-passes the `submit` event. If CSP is\r\nused to ban `javascript:` urls, those will trigger errors when these\r\nURLs are invoked which would be a different error message but it's still\r\nthere to notify the user that something went wrong in the plumbing.\r\n\r\nNext up is improving the SSR state with action replaying and progressive\r\nenhancement.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push("
+          },
+          {
+            "removed": "checkControlledValueProps('input', props);",
+            "added": "target.push(startChunkForTag('form'));"
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          },
+          {
+            "removed": "",
+            "added": "target.push(startChunkForTag('button'));"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          }
+        ]
+      },
+      {
+        "commit": "36e4cbe2e918ec9c8a7abbfda28898c835361fb2",
+        "message": "[Float][Flight] Flight support for Float (#26502)\n\nStacked on #26557 \r\n\r\nSupporting Float methods such as ReactDOM.preload() are challenging for\r\nflight because it does not have an easy means to convey direct\r\nexecutions in other environments. Because the flight wire format is a\r\nJSON-like serialization that is expected to be rendered it currently\r\nonly describes renderable elements. We need a way to convey a function\r\ninvocation that gets run in the context of the client environment\r\nwhether that is Fizz or Fiber.\r\n\r\nFiber is somewhat straightforward because the HostDispatcher is always\r\nactive and we can just have the FlightClient dispatch the serialized\r\ndirective.\r\n\r\nFizz is much more challenging becaue the dispatcher is always scoped but\r\nthe specific request the dispatch belongs to is not readily available.\r\nEnvironments that support AsyncLocalStorage (or in the future\r\nAsyncContext) we will use this to be able to resolve directives in Fizz\r\nto the appropriate Request. For other environments directives will be\r\nelided. Right now this is pragmatic and non-breaking because all\r\ndirectives are opportunistic and non-critical. If this changes in the\r\nfuture we will need to reconsider how widespread support for async\r\ncontext tracking is.\r\n\r\nFor Flight, if AsyncLocalStorage is available Float methods can be\r\ncalled before and after await points and be expected to work. If\r\nAsyncLocalStorage is not available float methods called in the sync\r\nphase of a component render will be captured but anything after an await\r\npoint will be a noop. If a float call is dropped in this manner a DEV\r\nwarning should help you realize your code may need to be modified.\r\n\r\nThis PR also introduces a way for resources (Fizz) and hints (Flight) to\r\nflush even if there is not active task being worked on. This will help\r\nwhen Float methods are called in between async points within a function\r\nexecution but the task is blocked on the entire function finishing.\r\n\r\nThis PR also introduces deduping of Hints in Flight using the same\r\nresource keys used in Fizz. This will help shrink payload sizes when the\r\nsame hint is attempted to emit over and over again",
+        "diff": [
+          {
+            "removed": "currentResourcesStack.push(currentResources);",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "9545e4810c2dc8922f575b6d8f726503a7345d0c",
+        "message": "Add nonce support to bootstrap scripts and external runtime (#26738)\n\nAdds support for nonce on `bootstrapScripts`, `bootstrapModules` and the external fizz runtime",
+        "diff": [
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push("
+          }
+        ]
+      },
+      {
+        "commit": "559e83aebb2026035d47aa0ebf842f78d4cd6757",
+        "message": "[Fizz] Allow an action provide a custom set of props to use for progressive enhancement (#26749)\n\nStacked on top of #26735.\r\n\r\nThis allows a framework to add a `$$FORM_ACTION` property to a function.\r\nThis lets the framework return a set of props to use in place of the\r\nfunction but only during SSR. Effectively, this lets you implement\r\nprogressive enhancement of form actions using some other way instead of\r\nrelying on the replay feature.\r\n\r\nThis will be used by RSC on Server References automatically by\r\nconvention in a follow up, but this mechanism can also be used by other\r\nframeworks/libraries.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(startHiddenInputChunk);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTagSelfClosing);"
+          },
+          {
+            "removed": "target.push(",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          },
+          {
+            "removed": "target.push(",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          },
+          {
+            "removed": "",
+            "added": "target.push(startHiddenInputChunk);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTagSelfClosing);"
+          }
+        ]
+      },
+      {
+        "commit": "90229eb925e2330667fb7c023a5c4317c7ae8363",
+        "message": "Add support for 'crossorigin' attribute on bootstrapScripts and bootstrapModules (#26844)\n\nbase build ci job failing but this change is unrelated and I think it is just flake with the builds host application",
+        "diff": [
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push("
+          }
+        ]
+      },
+      {
+        "commit": "9d4582dffdea5b4dcb6a6093ea848d15423c7701",
+        "message": "[Float][Fizz][Static] add `importMap` option to Fizz and Static server renderers (#27260)\n\nImport maps need to be emitted before any scripts or preloads so the\r\nbrowser can properly locate these resources.\r\n\r\nUnlike most scripts, importmaps are singletons meaning you can only have\r\none per document and they must appear before any modules are loaded or\r\npreloaded. In the future there may be a way to dynamically add more\r\nmappings however the proposed API for this seems likely to be a\r\njavascript API and not an html tag.\r\n\r\nGiven the unique constraints here this PR implements React's support of\r\nimportMaps as the following\r\n\r\n1. an `importMap` option accepting a plain object mapping module\r\nspecifier to path is accepted in any API that renders a preamble (head\r\ncontent). Notably this precludes resume rendering because in resume\r\ncases the preamble should have already been produced as part of the\r\nprerender step.\r\n2. the importMap is stringified and emitted as a `<script\r\ntype=\"importmap\">...</script>` in the preamble.\r\n3. the importMap is escaped identically to how bootstrapScriptContent is\r\nescaped, notably, isntances of `</script>` are escaped to avoid breaking\r\nout of the script context\r\n\r\nUsers can still render importmap tags however with Float enabled this is\r\nrather pointless as most modules will be hoisted above the importmap\r\nthat is rendered. In practice this means the only functional way to use\r\nimport maps with React is to use this config API.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "importMapChunks.push(importMapScriptStart);"
+          },
+          {
+            "removed": "",
+            "added": "importMapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "importMapChunks.push(importMapScriptEnd);"
+          }
+        ]
+      },
+      {
+        "commit": "8b26f07a883bb341c20283c0099bf5ee6f87bd1f",
+        "message": "useFormState: Emit comment to mark whether state matches (#27307)\n\nA planned feature of useFormState is that if the page load is the result\r\nof an MPA-style form submission — i.e. a form was submitted before it\r\nwas hydrated, using Server Actions — the state of the hook should\r\ntransfer to the next page.\r\n\r\nI haven't implemented that part yet, but as a prerequisite, we need some\r\nway for Fizz to indicate whether a useFormState hook was rendered using\r\nthe \"postback\" state. That way we can do all state matching logic on the\r\nserver without having to replicate it on the client, too.\r\n\r\nThe approach here is to emit a comment node for each useFormState hook.\r\nWe use one of two comment types: `<!--F-->` for a normal useFormState\r\nhook, and `<!--F!-->` for a hook that was rendered using the postback\r\nstate. React will read these markers during hydration. This is similar\r\nto how we encode Suspense boundaries.\r\n\r\nAgain, the actual matching algorithm is not yet implemented — for now,\r\nthe \"not matching\" marker is always emitted.\r\n\r\nWe can optimize this further by not emitting any markers for a render\r\nthat is not the result of a form postback, which I'll do in subsequent\r\nPRs.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(formStateMarkerIsMatching);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(formStateMarkerIsNotMatching);"
+          }
+        ]
+      },
+      {
+        "commit": "b775564d35d6fe9f9acead0f380bbc86bb6bdd2c",
+        "message": "[Fizz] Ensure Resumable State is Serializable (#27388)\n\nMoves writing queues to renderState.\r\n\r\nWe shouldn't need the resource tracking's value. We just need to know if\r\nthat resource has already been emitted. We can use a Set for this. To\r\nensure that set is directly serializable we can just use a\r\ndictionary-like object with no value.\r\n\r\nSee individual commits for special cases.",
+        "diff": [
+          {
+            "removed": "importMapChunks.push(importMapScriptStart);",
+            "added": ""
+          },
+          {
+            "removed": "importMapChunks.push(",
+            "added": ""
+          },
+          {
+            "removed": "importMapChunks.push(importMapScriptEnd);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "importMapChunks.push(importMapScriptStart);"
+          },
+          {
+            "removed": "",
+            "added": "importMapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "importMapChunks.push(importMapScriptEnd);"
+          }
+        ]
+      },
+      {
+        "commit": "49eba01930e9e1f331b34967fca65d5a0ba62846",
+        "message": "[Fizz][Float] Refactor Resources  (#27400)\n\nRefactors Resources to have a more compact and memory efficient\r\nstruture. Resources generally are just an Array of chunks. A resource is\r\nflushed when it's chunks is length zero. A resource does not have any\r\nother state.\r\n\r\nStylesheets and Style tags are different and have been modeled as a unit\r\nas a StyleQueue. This object stores the style rules to flush as part of\r\nstyle tags using precedence as well as all the stylesheets associated\r\nwith the precedence. Stylesheets still need to track state because it\r\naffects how we issue boundary completion instructions. Additionally\r\nstylesheets encode chunks lazily because we may never write them as html\r\nif they are discovered late.\r\n\r\nThe preload props transfer is now maximally compact (only stores the\r\nprops we would ever actually adopt) and only stores props for\r\nstylesheets and scripts because other preloads have no resource\r\ncounterpart to adopt props into. The ResumableState maps that track\r\nwhich keys have been observed are being overloaded. Previously if a key\r\nwas found it meant that a resource already exists (either in this render\r\nor in a prior prerender). Now we discriminate between null and object\r\nvalues. If map value is null we can assume the resource exists but if it\r\nis an object that represents a prior preload for that resource and the\r\nresource must still be constructed.",
+        "diff": [
+          {
+            "removed": "resource.props.hrefs.push(href);",
+            "added": "// We have seen this precedence before and need to track this href"
+          },
+          {
+            "removed": "",
+            "added": "styleQueue.hrefs.push(stringToChunk(escapeTextForBrowser(href)));"
+          }
+        ]
+      },
+      {
+        "commit": "8c85b02996b940d63f961f835348a0dd0045d3b6",
+        "message": "[Fizz] Optimize end tags chunks (#27522)\n\nImplements `endChunkForTag` to make writing end tags faster",
+        "diff": [
+          {
+            "removed": "target.push(endTag1, stringToChunk('style'), endTag2);",
+            "added": "target.push(endChunkForTag('style'));"
+          },
+          {
+            "removed": "target.push(endTag1, stringToChunk('title'), endTag2);",
+            "added": "target.push(endChunkForTag('title'));"
+          },
+          {
+            "removed": "target.push(endTag1, stringToChunk('script'), endTag2);",
+            "added": "target.push(endChunkForTag('script'));"
+          },
+          {
+            "removed": "target.push(endTag1, stringToChunk(type), endTag2);",
+            "added": "target.push(endChunkForTag(type));"
+          }
+        ]
+      },
+      {
+        "commit": "f3ce87ab650f07774e1df9bc3f8033e023973d10",
+        "message": "Restore old behavior for empty `href` props on anchor tags (#28124)\n\nTreat `<a href=\"\" />` the same with and without\r\n`enableFilterEmptyStringAttributesDOM`\r\n\r\nin https://github.com/facebook/react/pull/18513 we started to warn and\r\nignore for empty `href` and `src` props since it usually hinted at a\r\nmistake. However, for anchor tags there's a valid use case since `<a\r\nhref=\"\"></a>` will by spec render a link to the current page. It could\r\nbe used to reload the page without having to rely on browser\r\naffordances.\r\n\r\nThe implementation for Fizz is in the spirit of\r\nhttps://github.com/facebook/react/pull/21153. I gated the fork behind\r\nthe flag so that the fork is DCE'd when the flag is off.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(startChunkForTag('a'));"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          }
+        ]
+      },
+      {
+        "commit": "bbc571aee431d44799ae6a70832ea834325a5af9",
+        "message": "React DOM: Support boolean values for `inert` prop (#24730)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push("
+          }
+        ]
+      },
+      {
+        "commit": "208ceeb46ca2838c9bf24cd341435f87b2d50569",
+        "message": "Cleanup enableFloat flag (#28613)\n\nCleanup enableFloat flag",
+        "diff": [
+          {
+            "removed": "target.push(textSeparator);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push(textSeparator);"
+          },
+          {
+            "removed": "target.push(textSeparator);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push(textSeparator);"
+          },
+          {
+            "removed": "styleQueue.hrefs.push(stringToChunk(escapeTextForBrowser(href)));",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "styleQueue.hrefs.push(stringToChunk(escapeTextForBrowser(href)));"
+          },
+          {
+            "removed": "target.push(textSeparator);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push(textSeparator);"
+          },
+          {
+            "removed": "target.push(startChunkForTag('title'));",
+            "added": ""
+          },
+          {
+            "removed": "target.push(endOfStartTag);",
+            "added": ""
+          },
+          {
+            "removed": "target.push(DOCTYPE);",
+            "added": ""
+          },
+          {
+            "removed": "target.push(textSeparator);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push(textSeparator);"
+          }
+        ]
+      },
+      {
+        "commit": "6cd6ba703de77e332ab201518b6e30e47cd49aaf",
+        "message": "Land enableNewBooleanProps everywhere (#28676)\n\nRolled out internally. Removing flag.",
+        "diff": [
+          {
+            "removed": "target.push(",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          }
+        ]
+      },
+      {
+        "commit": "28fc980ef2c563e3086ae5b0b2e6293de48ae0d4",
+        "message": "Cleanup enableNewBooleanProps (#28712)",
+        "diff": [
+          {
+            "removed": "target.push(",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "aead514db2808a2e82c128aa4db459939ab88b58",
+        "message": "[Fizz] escape <style> textContent as css (#28870)\n\nstyle text content has historically been escaped as HTML which is\r\nnon-sensical and often leads users to using dangerouslySetInnerHTML as a\r\nmatter of course. While rendering untrusted style rules is a security\r\nrisk React doesn't really provide any special protection here and\r\nforcing users to use a completely unescaped API is if anything worse. So\r\nthis PR updates the style escaping rules for Fizz to only escape the\r\ntext content to ensure the tag scope cannot be closed early. This is\r\naccomplished by encoding \"s\" and \"S\" as hexadecimal unicode\r\nrepresentation \"\\73 \" and \"\\53 \" respectively when found within a\r\nsequence like </style>. We have to be careful to support casing here\r\njust like with the script closing tag regex for bootstrap scripts.",
+        "diff": [
+          {
+            "removed": "target.push(stringToChunk(escapeTextForBrowser('' + child)));",
+            "added": "target.push(stringToChunk(escapeStyleTextContent(child)));"
+          },
+          {
+            "removed": "target.push(stringToChunk(escapeTextForBrowser('' + child)));",
+            "added": "target.push(stringToChunk(escapeStyleTextContent(child)));"
+          }
+        ]
+      },
+      {
+        "commit": "561c023708bc0cb04613f89da821dc3c55245f01",
+        "message": "[Fizz] escape <script> textContent similar to bootstrapScript (#28871)\n\nstacked on #28870 \r\n\r\ninline script children have been encoded as HTML for a while now but\r\nthis can easily break script parsing so practically if you were\r\nrendering inline scripts you were using dangerouslySetInnerHTML. This is\r\nnot great because now there is no escaping at all so you have to be even\r\nmore careful. While care should always be taken when rendering untrusted\r\nscript content driving users to use dangerous APIs is not the right\r\napproach and in this PR the escaping functionality used for\r\nbootstrapScripts and importMaps is being extended to any inline script.\r\n\r\nthe approach is to escape 's' or 'S\" with the appropriate unicode code\r\npoint if it is inside a <script or </script sequence. This has the nice\r\nbenefit of minimally escaping the text for readability while still\r\npreserving full js parsing capabilities. As articulated when we\r\nintroduced this escaping for prior use cases this is only safe because\r\nwe are escaping the entire script content. It would be unsafe if we were\r\nnot escaping the entirety of the script because we would no longer be\r\nable to ensure there are no earlier or later <script sequences that put\r\nthe parser in unexpected states.",
+        "diff": [
+          {
+            "removed": "target.push(stringToChunk(encodeHTMLTextNode(children)));",
+            "added": "target.push(stringToChunk(escapeEntireInlineScriptContent(children)));"
+          }
+        ]
+      },
+      {
+        "commit": "f0e8164410049aabc680035e8fd45b657eb020ab",
+        "message": "sanitize javascript: urls for <object> tags (#29808)\n\nsanitize javascript: urls for <object> tags\r\n\r\nReact 19 added sanitization for `javascript:` URLs for `href` properties\r\non various tags. This PR also adds that sanitization for `<object>` tags\r\nas well that Firefox otherwise executes.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(startChunkForTag('object'));"
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTag);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(stringToChunk(encodeHTMLTextNode(children)));"
+          }
+        ]
+      },
+      {
+        "commit": "9e2c233139e62ea2f50bfa8986de02044e895c65",
+        "message": "[flags] Delete enableSuspenseAvoidThisFallbackFizz (#31779)\n\nWe're not shipping `enableSuspenseAvoidThisFallback` and the fizz flag\nis already off so we can delete it.",
+        "diff": [
+          {
+            "removed": "target.push(startCompletedSuspenseBoundary);",
+            "added": ""
+          },
+          {
+            "removed": "target.push(endSuspenseBoundary);",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "8bda71558c8b6f9f19af33271f1bfd0251a1c071",
+        "message": "[Fiber] support hydration when rendering Suspense anywhere (#32224)\n\nfollow up to https://github.com/facebook/react/pull/32163\r\n\r\nThis continues the work of making Suspense workable anywhere in a\r\nreact-dom tree. See the prior PRs for how we handle server rendering and\r\nclient rendering. In this change we update the hydration implementation\r\nto be able to locate expected nodes. In particular this means hydration\r\nunderstands now that the default hydration context is the document body\r\nwhen the container is above the body.\r\n\r\nOne case that is unique to hydration is clearing Suspense boundaries.\r\nWhen hydration fails or when the server instructs the client to recover\r\nan errored boundary it's possible that the html, head, and body tags in\r\nthe initial document were written from a fallback or a different primary\r\ncontent on the server and need to be replaced by the client render.\r\nHowever these tags (and in the case of head, their content) won't be\r\ninside the comment nodes that identify the bounds of the Suspense\r\nboundary. And when client rendering you may not even render the same\r\nsingletons that were server rendered. So when server rendering a\r\nboudnary which contributes to the preamble (the html, head, and body tag\r\nopenings plus the head contents) we emit a special marker comment just\r\nbefore closing the boundary out. This marker encodes which parts of the\r\npreamble this boundary owned. If we need to clear the suspense boundary\r\non the client we read this marker and use it to reset the appropriate\r\nsingleton state.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(startChunkForTag(tag));"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endOfStartTag);"
+          }
+        ]
+      },
+      {
+        "commit": "ea05b750a5374458fc8c74ea0918059c818d1167",
+        "message": "Allow Passing Blob/File/MediaSource/MediaStream to src of <img>, <video> and <audio> (#32828)\n\nBehind the `enableSrcObject` flag. This is revisiting a variant of what\nwas discussed in #11163.\n\nInstead of supporting the [`srcObject`\nproperty](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/srcObject)\nas a separate name, this adds an overload of `src` to allow objects to\nbe passed. The DOM needs to add separate properties for the object forms\nsince you read back but it doesn't make sense for React's write-only API\nto do that. Similar to how we'll like add an overload for\n`popoverTarget` instead of calling it `popoverTargetElement` and how\n`style` accepts an object and it's not `styleObject={{...}}`.\n\nThere are a number of reason to revisit this.\n\n- It's just way more convenient to have this built-in and it makes\nconceptual sense. We typically support declarative APIs and polyfill\nthem when necessary.\n- RSC supports Blobs and by having it built-in you don't need a Client\nComponent wrapper to render it where as doing it with effects would\nrequire more complex wrappers. By picking Blobs over base64,\nclient-navigations can use the more optimized binary encoding in the RSC\nprotocol.\n- The timing aspect of coordinating it with Suspensey images and image\ndecoding is a bit tricky to get right because if you set it in an effect\nit's too late because you've already rendered it.\n- SSR gets complicated when done in user space because you have to\nhandle both branches. Likely with `useSyncExternalStore`.\n- By having it built-in we could optimize the payloads shared between\nRSC payloads embedded in the HTML and data URLs.\n\nThis does not support objects for `<source src>` nor `<img srcset>`.\nThose don't really have equivalents in the DOM neither. They're mainly\nfor picking an option when you don't know programmatically. However, for\nthis use case you're really better off picking a variant before\ngenerating the blobs.\n\nWe may support Response objects in the future too as per\nhttps://github.com/whatwg/fetch/issues/49",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push("
+          }
+        ]
+      },
+      {
+        "commit": "3fbfb9baaf38528349b86372bd7eff36c6a3261a",
+        "message": "Emit Activity boundaries as comments in Fizz (#32834)\n\nUses `&` for Activity as opposed to `$` for Suspense. This will be used\nto delimitate which nodes we can skip hydrating.\n\nThis isn't used on the client yet. It's just a noop on the client\nbecause it's just an unknown comment. This just adds the SSR parts.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(startActivityBoundary);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(endActivityBoundary);"
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          }
+        ]
+      },
+      {
+        "commit": "8a3c5e1a8d1d89a68ca36c6959c1f253710f6cef",
+        "message": "Emit Preamble Contribution inline instead of the end of a boundary (#32850)\n\nThis lets us write them early in the render phase.\n\nThis should be safe because even if we write them deeply, then they\nstill can't be wrapped by a element because then they'd no longer be in\nthe document scope anymore. They end up flat in the body and so when we\nsearch the content we'll discover them.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "target.push(headPreambleContributionChunk);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(bodyPreambleContributionChunk);"
+          },
+          {
+            "removed": "",
+            "added": "target.push(htmlPreambleContributionChunk);"
+          },
+          {
+            "removed": "target.push(",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "143d3e1b89d7f64d607bbfc844d1324b39ed93dc",
+        "message": "[Fizz] Emit link rel=\"expect\" to block render before the shell has fully loaded (#33016)\n\nThe semantics of React is that anything outside of Suspense boundaries\nin a transition doesn't display until it has fully unsuspended. With SSR\nstreaming the intention is to preserve that.\n\nWe explicitly don't want to support the mode of document streaming\nnormally supported by the browser where it can paint content as tags\nstream in since that leads to content popping in and thrashing in\nunpredictable ways. This should instead be modeled explictly by nested\nSuspense boundaries or something like SuspenseList.\n\nAfter the first shell any nested Suspense boundaries are only revealed,\nby script, once they're fully streamed in to the next boundary. So this\nis already the case there. However, for the initial shell we have been\nat the mercy of browser heuristics for how long it decides to stream\nbefore the first paint.\n\nChromium now has [an API explicitly for this use\ncase](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using#stabilizing_page_state_to_make_cross-document_transitions_consistent)\nthat lets us model the semantics that we want. This is always important\nbut especially so with MPA View Transitions.\n\nAfter this a simple document looks like this:\n\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n     <link rel=\"expect\" href=\"#«R»\" blocking=\"render\"/>\n  </head>\n  <body>\n    <p>hello world</p>\n    <script src=\"bootstrap.js\" id=\"«R»\" async=\"\"></script>\n    ...\n  </body>\n</html>\n```\n\nThe `rel=\"expect\"` tag indicates that we want to wait to paint until we\nhave streamed far enough to be able to paint the id `\"«R»\"` which\nindicates the shell.\n\nIdeally this `id` would be assigned to the root most HTML element in the\nbody. However, this is tricky in our implementation because there can be\nmultiple and we can render them out of order.\n\nSo instead, we assign the id to the first bootstrap script if there is\none since these are always added to the end of the shell. If there isn't\na bootstrap script then we emit an empty `<template\nid=\"«R»\"></template>` instead as a marker.\n\nSince we currently put as much as possible in the shell if it's loaded\nby the time we render, this can have some negative effects for very\nlarge documents. We should instead apply the heuristic where very large\nSuspense boundaries get outlined outside the shell even if they're\nimmediately available. This means that even prerenders can end up with\nscript tags.\n\nWe only emit the `rel=\"expect\"` if you're rendering a whole document.\nI.e. if you rendered either a `<html>` or `<head>` tag. If you're\nrendering a partial document, then we don't really know where the\nstreaming parts are anyway and can't provide such guarantees. This does\napply whether you're streaming or not because we still want to block\nrendering until the end, but in practice any serialized state that needs\nhydrate should still be embedded after the completion id.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push(inlineScriptWithNonce);"
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push(renderState.startInlineScript);"
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push("
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push(startChunkForTag('template'));"
+          },
+          {
+            "removed": "",
+            "added": "bootstrapChunks.push(endOfStartTag, endChunkForTag('template'));"
+          },
+          {
+            "removed": "",
+            "added": "target.push("
+          }
+        ]
+      },
+      {
+        "commit": "ee7fee8f8875052afde53c5bfc8aedad43ff9d8e",
+        "message": "[Fizz] Batch Suspense Boundary Reveal with Throttle (#33076)\n\nStacked on #33073.\n\nReact semantics is that Suspense boundaries reveal with a throttle\n(300ms). That helps avoid flashing reveals when a stream reveals many\nindividual steps back to back. It can also improve overall performance\nby batching the layout and paint work that has to happen at each step.\n\nUnfortunately we never implemented this for SSR streaming - only for\nclient navigations. This is highly noticeable on very dynamic sites with\nlots of Suspense boundaries. It can look good with a client nav but feel\nglitchy when you reload the page or initial load.\n\nThis fixes the Fizz runtime to be throttled and reveals batched into a\nsingle paint at a time. We do this by first tracking the last paint\nafter the complete (this will be the first paint if `rel=\"expect\"` is\nrespected). Then in the `completeBoundary` operation we queue the\noperation and then flush it all into a throttled batch.\n\nAnother motivation is that View Transitions need to operate as a batch\nand individual steps get queued in a sequence so it's extra important to\ninclude as much content as possible in each animated step. This will be\ndone in a follow up for SSR View Transitions.",
+        "diff": [
+          {
+            "removed": "bootstrapChunks.push(startChunkForTag('template'));",
+            "added": ""
+          },
+          {
+            "removed": "bootstrapChunks.push(endOfStartTag, endChunkForTag('template'));",
+            "added": "writeChunk(destination, startChunkForTag('template'));"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/shared/ReactDOMUnknownPropertyHook.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        unknownProps.push(key);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/shared/ReactDOMInvalidARIAHook.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        invalidProps.push(key);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/client/ReactFiberConfigDOM.js",
+    "commits": [
+      {
+        "commit": "b55d31955982851284bb437a5187a6c56e366539",
+        "message": "Rename HostConfig files to FiberConfig to clarify they are configs fo… (#26592)\n\npart of https://github.com/facebook/react/pull/26571\r\n\r\nmerging separately to improve tracking of files renames in git\r\n\r\nRename HostConfig files to FiberConfig to clarify they are configs for\r\nFiber and not Fizz/Flight. This better conforms to the naming used in\r\nFlight and now Fizz of `ReactFlightServerConfig` and `ReactFizzConfig`",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    stack.push(...current.children);"
+          },
+          {
+            "removed": "",
+            "added": "        existing.push(node);"
+          }
+        ]
+      },
+      {
+        "commit": "0bf1f39ec6906c666011c0c57aa56aa34a262daf",
+        "message": "View Transition Refs (#32038)\n\nThis adds refs to View Transition that can resolve to an instance of:\n\n```js\ntype ViewTransitionRef = {\n  name: string,\n  group: Animatable,\n  imagePair: Animatable,\n  old: Animatable,\n  new: Animatable,\n}\n```\n\nAnimatable is a type that has `animate(keyframes, options)` and\n`getAnimations()` on it. It's the interface that exists on Element that\nlets you start animations on it. These ones are like that but for the\nfour pseudo-elements created by the view transition.\n\nIf a name changes, then a new ref is created. That way if you hold onto\na ref during an exit animation spawned by the name change, you can keep\ncalling functions on it. It will keep referring to the old name rather\nthan the new name.\n\nThis allows imperative control over the animations instead of using CSS\nfor this.\n\n```js\nconst viewTransition = ref.current;\nconst groupAnimation = viewTransition.group.animate(keyframes, options);\nconst imagePairAnimation = viewTransition.imagePair.animate(keyframes, options);\nconst oldAnimation = viewTransition.old.animate(keyframes, options);\nconst newAnimation = viewTransition.new.animate(keyframes, options);\n```\n\nThe downside of using this API is that it doesn't work with SSR so for\nSSR rendered animations they'll fallback to the CSS. You could use this\nfor progressive enhancement though.\n\nNote: In this PR the ref only controls one DOM node child but there can\nbe more than one DOM node in the ViewTransition fragment and they are\njust left to their defaults. We could try something like making the\n`animate()` function apply to multiple children but that could lead to\nsome weird consequences and the return value would be difficult to\nmerge. We could try to maintain an array of Animatable that updates with\nhow ever many things are currently animating but that makes the API more\ncomplicated to use for the simple case. Conceptually this should be like\na fragment so we would ideally combine the multiple children into a\nsingle isolate if we could. Maybe one day the same name could be applied\nto multiple children to create a single isolate. For now I think I'll\njust leave it like this and you're really expect to just use it with one\nDOM node. If you have more than one they just get the default animations\nfrom CSS.\n\nUsing this is a little tricky due timing. In this fixture I just use a\nlayout effect plus rAF to get into the right timing after the\nstartViewTransition is ready. In the future I'll add an event that fires\nwhen View Transitions heuristics fire with the right timing.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "result.push(animations[i]);"
+          }
+        ]
+      },
+      {
+        "commit": "6aa8254bb7353fe3096289edc669cf168e9fd190",
+        "message": "Add ref to Fragment (#32465)\n\n*This API is experimental and subject to change or removal.*\n\nThis PR is an alternative to\nhttps://github.com/facebook/react/pull/32421 based on feedback:\nhttps://github.com/facebook/react/pull/32421#pullrequestreview-2625382015\n. The difference here is that we traverse from the Fragment's fiber at\noperation time instead of keeping a set of children on the\n`FragmentInstance`. We still need to handle newly added or removed child\nnodes to apply event listeners and observers, so we treat those updates\nas effects.\n\n**Fragment Refs**\n\nThis PR extends React's Fragment component to accept a `ref` prop. The\nFragment's ref will attach to a custom host instance, which will provide\nan Element-like API for working with the Fragment's host parent and host\nchildren.\n\nHere I've implemented `addEventListener`, `removeEventListener`, and\n`focus` to get started but we'll be iterating on this by adding\nadditional APIs in future PRs. This sets up the mechanism to attach refs\nand perform operations on children. The FragmentInstance is implemented\nin `react-dom` here but is planned for Fabric as well.\n\nThe API works by targeting the first level of host children and proxying\nElement-like APIs to allow developers to manage groups of elements or\nelements that cannot be easily accessed such as from a third-party\nlibrary or deep in a tree of Functional Component wrappers.\n\n```javascript\nimport {Fragment, useRef} from 'react';\n\nconst fragmentRef = useRef(null);\n\n<Fragment ref={fragmentRef}>\n  <div id=\"A\" />\n  <Wrapper>\n    <div id=\"B\">\n      <div id=\"C\" />\n    </div>\n  </Wrapper>\n  <div id=\"D\" />\n</Fragment>\n```\n\nIn this case, calling `fragmentRef.current.addEventListener()` would\napply an event listener to `A`, `B`, and `D`. `C` is skipped because it\nis nested under the first level of Host Component. If another Host\nComponent was appended as a sibling to `A`, `B`, or `D`, the event\nlistener would be applied to that element as well and any other APIs\nwould also affect the newly added child.\n\nThis is an implementation of the basic feature as a starting point for\nfeedback and further iteration.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "listeners.push({type, listener, optionsOrUseCapture});"
+          }
+        ]
+      },
+      {
+        "commit": "c69a5fc53a5135136668ca878f99b634d2374837",
+        "message": "Add blur() and focusLast() to fragment instances (#32654)\n\n`focus()` was added in https://github.com/facebook/react/pull/32465.\nHere we add `focusLast()` and `blur()`. I also extended `focus` to take\noptions.\n\n`focus` will focus the first focusable element. `focusLast` will focus\nthe last focusable element. We could consider a `focusFirst` naming or\neven the `focusWithin` used by test selector APIs as well.\n\n`blur` will only have an effect if the current `document.activeElement`\nis one of the fragment children.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "collection.push(child);"
+          }
+        ]
+      },
+      {
+        "commit": "476f53879e80d4ee976ed036a0e8986126fa3117",
+        "message": "Add getClientRects to fragment instances (#32660)\n\nAdds `getClientRects()` to fragment instances with a fixture test case.\n`Element.getClientRect` returns a collection of `DOMRect`s (see example\nof multiline span returning two `DOMRect` boxes).\n`fragmentInstance.getClientRects` here flattens those collections into\nan array of rects.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "rects.push.apply(rects, child.getClientRects());"
+          }
+        ]
+      },
+      {
+        "commit": "e5a8de81e57181692d33ce916dfd6aa23638ec92",
+        "message": "Add compareDocumentPosition to fragment instances (#32722)\n\nThis adds `compareDocumentPosition(otherNode)` to fragment instances.\n\nThe semantics implemented are meant to match typical element\npositioning, with some fragment specifics. See the unit tests for all\nexpectations.\n\n- An element preceding a fragment is `Node.DOCUMENT_POSITION_PRECEDING`\n- An element after a fragment is `Node.DOCUMENT_POSITION_FOLLOWING`\n- An element containing the fragment is\n`Node.DOCUMENT_POSITION_PRECEDING` and\n`Node.DOCUMENT_POSITION_CONTAINING`\n- An element within the fragment is\n`Node.DOCUMENT_POSITION_CONTAINED_BY`\n- An element compared against an empty fragment will result in\n`Node.DOCUMENT_POSITION_DISCONNECTED` and\n`Node.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC`\n\nSince we assume a fragment instances target children are DOM siblings\nand we want to compare the full fragment as a pseudo container, we can\ncompare against the first target child outside of handling the special\ncases (empty fragments and contained elements).",
+        "diff": [
+          {
+            "removed": "rects.push.apply(rects, child.getClientRects());",
+            "added": "rects.push.apply(rects, instance.getClientRects());"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/client/ReactDOMComponent.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      names.push(name);"
+          },
+          {
+            "removed": "",
+            "added": "          updatePayload.push(propKey, styleUpdates);"
+          }
+        ]
+      },
+      {
+        "commit": "520f7f3ed4d01e9e50a73d7d04ff138e3c71ac86",
+        "message": "Refactor ReactDOMComponent to use flatter property operations (#26433)\n\nThis is in line with the refactor I already did on Fizz earlier and\r\nbrings Fiber up to a similar structure.\r\n\r\nWe end up with a lot of extra checks due the extra abstractions we use\r\nto check the various properties. This uses a flatter and more inline\r\nmodel which makes it easier to see what each property does. The tradeoff\r\nis that a change might need changes in more places.\r\n\r\nThe general structure is that there's a switch for tag first, then a\r\nswitch for each attribute special case, then a switch for the value. So\r\nit's easy to follow where each scenario will end up and there shouldn't\r\nbe any unnecessary code executed along the way.\r\n\r\nMy goal is to eventually get rid of the meta-programming in DOMProperty\r\nand CSSProperty but I'm leaving that in for now - in line with Fizz.\r\n\r\nMy next step is moving around things a bit in the diff/commit phases.\r\nThis is the first step to more refactors for perf and size, but also\r\nbecause I'm adding more special cases so I need to have a flatter\r\nstructure that I can reason about for those special cases.",
+        "diff": [
+          {
+            "removed": "updatePayload.push(propKey, styleUpdates);",
+            "added": "} else {"
+          },
+          {
+            "removed": "",
+            "added": "updatePayload.push(propKey, styleUpdates);"
+          }
+        ]
+      },
+      {
+        "commit": "85de6fde515148babd36eae2b7384ad8e62b732a",
+        "message": "Refactor DOM special cases per tags including controlled fields (#26501)\n\nI use a shared helper when setting properties into a helper whether it's\r\ninitial or update.\r\n\r\nI moved the special cases per tag to commit phase so we can check it\r\nonly once. This also effectively inlines getHostProps which can be done\r\nin a single check per prop key.\r\n\r\nThe diffProperties operation is simplified to mostly just generating a\r\nplain diff of all properties, generating an update payload. This might\r\ngenerate a few more entries that are now ignored in the commit phase.\r\nthat previously would've been ignored earlier. We could skip this and\r\njust do the whole diff in the commit phase by always scheduling a commit\r\nphase update.\r\n\r\nI tested the attribute table (one change documented below) and a few\r\nselect DOM fixtures.",
+        "diff": [
+          {
+            "removed": "updatePayload.push(propKey, styleUpdates);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "updatePayload.push(propKey, styleUpdates);"
+          }
+        ]
+      },
+      {
+        "commit": "7f6201889e8e628eeb53e05d8850ddffa3c2e74a",
+        "message": "Ship diffInCommitPhase (#27409)\n\nPerformance tests at Meta showed neutral results.",
+        "diff": [
+          {
+            "removed": "updatePayload.push(propKey, styleUpdates);",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "4b8dfd6215bf855402ae1a94cb0ae4f467afca9a",
+        "message": "Move Hydration Warnings from the DOM Config into the Fiber reconciliation (#28476)\n\nStacked on #28458.\r\n\r\nThis doesn't actually really change the messages yet, it's just a\r\nrefactor.\r\n\r\nHydration warnings can be presented either as HTML or React JSX format.\r\nIf presented as HTML it makes more sense to make that a DOM specific\r\nconcept, however, I think it's actually better to present it in terms of\r\nReact JSX.\r\n\r\nMost of the time the errors aren't going to be something messing with\r\nthem at the HTML/HTTP layer. It's because the JS code does something\r\ndifferent. Most of the time you're working in just React. People don't\r\nnecessarily even know what the HTML form of it looks like. So this takes\r\nthe approach that the warnings are presented in React JSX in their rich\r\nobject form.\r\n\r\nTherefore, I'm moving the approach to yield diff data to the reconciler\r\nbut it's the reconciler that's actually printing all the warnings.",
+        "diff": [
+          {
+            "removed": "names.push(name);",
+            "added": "attributeNames.forEach(function (attributeName) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-reconciler/src/ReactFiberHooks.js",
+    "commits": [
+      {
+        "commit": "7bee9fbdd49aa5b9365a94b0ddf6db04bc1bf51c",
+        "message": "Initial hooks implementation\n\nIncludes:\n- useState\n- useContext\n- useEffect\n- useRef\n- useReducer\n- useCallback\n- useMemo\n- useAPI",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      callbackList.push(update);"
+          },
+          {
+            "removed": "",
+            "added": "      ? inputs.concat([ref])"
+          }
+        ]
+      },
+      {
+        "commit": "bf9fadfcf42847fa89f9a76c7d4dc2e2c17ee020",
+        "message": "[Hooks] Remove dispatch callbacks (#14037)\n\nRemoves the `enableDispatchCallback` feature flag and deletes the\r\nassociated code. An earlier version of the Hooks proposal included this\r\nfeature but we've since decided to remove it.",
+        "diff": [
+          {
+            "removed": "callbackList.push(update);",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "1454a8be03794f5e0b23a7e7696cbbbdcf8b0f5d",
+        "message": "Don't bother comparing constructor when deps are not provided (#14594)\n\n* Don't bother comparing constructor when deps are not provided\r\n\r\nWhen no dependencies are passed to an effect hook, what we used to do is\r\ncompare the effect constructor. If there was no change, then we would\r\nskip firing the effect. In practice, this is a useless optimization\r\nbecause the constructor will always be different when you pass an inline\r\nclosure. And if you don't pass an inline closure, then you can't access\r\nany props or state.\r\n\r\nThere are some edge cases where an effect that doesn't close over props\r\nor state could be useful, like reference counting the number of mounted\r\ncomponents. But those are rare and can be addressed by passing an empty\r\narray of dependencies.\r\n\r\nBy removing this \"optimization,\" we can avoid retaining the constructor\r\nin the majority of cases where it's a closure that changes on\r\nevery render.\r\n\r\nI made corresponding changes to the other hooks that accept\r\ndependencies, too (useMemo, useCallback, and useImperativeHandle).\r\n\r\n* Improve hook dependencies warning\r\n\r\nIt now includes the name of the hook in the message.\r\n\r\n* Nits",
+        "diff": [
+          {
+            "removed": "? inputs.concat([ref])",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : [ref];"
+          }
+        ]
+      },
+      {
+        "commit": "ecd919a2f9b6e3d314fffc3d34b68b953a4e75e1",
+        "message": "RFC: warn when returning different hooks on subsequent renders (#14585)\n\n* warn when returning different hooks on next render\r\n\r\nlike it says. adds a field to Hook to track effect 'type', and compares when cloning subsequently.\r\n\r\n* lint\r\n\r\n* review changes\r\n\r\n- numbered enum for hook types\r\n- s/hookType/_debugType\r\n- better dce\r\n\r\n* cleaner detection location\r\n\r\n* redundant comments\r\n\r\n* different EffectHook / LayoutEffectHook\r\n\r\n* prettier\r\n\r\n* top level currentHookType\r\n\r\n* nulling currentHookType\r\n\r\nneed to verify dce still works\r\n\r\n* small enhancements\r\n\r\n* hook order checks for useContext/useImperative\r\n\r\n* prettier\r\n\r\n* stray whitespace\r\n\r\n* move some bits around\r\n\r\n* better errors\r\n\r\n* pass tests\r\n\r\n* lint, flow\r\n\r\n* show a before - after diff\r\n\r\n* an error stack in the warning\r\n\r\n* lose currentHookMatches, fix a test\r\n\r\n* tidy\r\n\r\n* clear the mismatch only in dev\r\n\r\n* pass flow\r\n\r\n* side by side diff\r\n\r\n* tweak warning\r\n\r\n* pass flow\r\n\r\n* dedupe warnings per fiber, nits\r\n\r\n* better format\r\n\r\n* nit\r\n\r\n* fix bad merge, pass flow\r\n\r\n* lint\r\n\r\n* missing hooktype enum\r\n\r\n* merge currentHookType/currentHookNameInDev, fix nits\r\n\r\n* lint\r\n\r\n* final nits",
+        "diff": [
+          {
+            "removed": "",
+            "added": "previousOrder.push(((current: any): HookDev)._debugType);"
+          },
+          {
+            "removed": "",
+            "added": "nextOrder.push(((workInProgress: any): HookDev)._debugType);"
+          },
+          {
+            "removed": "",
+            "added": "hookStackDiff.push("
+          }
+        ]
+      },
+      {
+        "commit": "cb1ff430e8c473a8a6bddd592106891251bbf5bf",
+        "message": "Phased dispatcher (#14701)\n\n* Move DEV-only function right above where it's used\r\n\r\nI don't like looking at this top-level function #petty\r\n\r\n* Use different dispatchers for functions & classes\r\n\r\nClasses support readContext, but not any of the other dispatcher\r\nmethods. Function support all methods.\r\n\r\nThis is a more robust version of our previous strategy of checking\r\nwhether `currentlyRenderingFiber` is null.\r\n\r\nAs a next step, we can use a separate dispatcher for each phase of the\r\nrender cycle (mount versus update).\r\n\r\n* Use separate dispatchers for mount and update\r\n\r\n* Remove mount code from update path\r\n\r\nDeletes mount-specific code from the update path, since it should be\r\nunreachable. To continue supporting progressive enhancement (mounting\r\nnew hooks at the end of the list), we detect when there are no more\r\ncurrent hooks and switch back to the mount dispatcher. Progressive\r\nenhancement isn't officially supported yet, so it will continue to warn.\r\n\r\n* Factoring nits\r\n\r\n* Fix Flow\r\n\r\nHad to cheat more than I would like\r\n\r\n* More Flow nits\r\n\r\n* Switch back to using a special dispatcher for nested hooks in DEV\r\n\r\nIn order for this strategy to work, I had to revert progressive\r\nenhancement support (appending hooks to the end). It was previously a\r\nwarning but now it results in an error. We'll reconsider later.\r\n\r\n* Always pass args to updateState and updateReducer\r\n\r\nEven though the extra args are only used on mount, to ensure\r\ntype consistency.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : [ref];"
+          }
+        ]
+      },
+      {
+        "commit": "70d4075832cebc8bd3eb19f1089701096b483bd5",
+        "message": "Move Hook mismatch warning to first mismatch site (#14720)\n\n* Move Hook mismatch warning to first mismatch site\r\n\r\nAllows us to localize the warning logic in one place.\r\n\r\n* Nit",
+        "diff": [
+          {
+            "removed": "previousOrder.push(((current: any): HookDev)._debugType);",
+            "added": ""
+          },
+          {
+            "removed": "nextOrder.push(((workInProgress: any): HookDev)._debugType);",
+            "added": ""
+          },
+          {
+            "removed": "hookStackDiff.push(",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "f24a0da6e0f59484e5aafd0825bb1a6ed27d7182",
+        "message": "Fix useImperativeHandle to have no deps by default (#14801)\n\n* Fix useImperativeHandle to have no deps by default\r\n\r\n* Save a byte?\r\n\r\n* Nit: null",
+        "diff": [
+          {
+            "removed": "deps !== null && deps !== undefined ? deps.concat([ref]) : [ref];",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;"
+          },
+          {
+            "removed": "deps !== null && deps !== undefined ? deps.concat([ref]) : [ref];",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;"
+          }
+        ]
+      },
+      {
+        "commit": "4186952a6f3558eb4fae9f6c5f669bd898dc1d97",
+        "message": "Fixed incompatibility between react-debug-tools and useContext() (#14940)\n\n* Refactor hook ordering check to use DEV-only data structure. This enables us to warn about more cases (e.g. useContext, useDebugValue) withou the need to add any overhead to production bundles.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookTypesDev.push(hookName);"
+          }
+        ]
+      },
+      {
+        "commit": "d686f3f16a796025ce32cfb431b70eef6de1934e",
+        "message": "Add `.old` prefix to reconciler modules",
+        "diff": [
+          {
+            "removed": "hookTypesDev.push(hookName);",
+            "added": ""
+          },
+          {
+            "removed": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;",
+            "added": ""
+          },
+          {
+            "removed": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "f101c2d0d3a6cb5a788a3d91faef48462e45f515",
+        "message": "Remove Reconciler fork (2/2) (#25775)\n\nWe've heard from multiple contributors that the Reconciler forking\r\nmechanism was confusing and/or annoying to deal with. Since it's\r\ncurrently unused and there's no immediate plans to start using it again,\r\nthis removes the forking.\r\n\r\nFully removing the fork is split into 2 steps to preserve file history:\r\n\r\n**#25774 previous PR that did the bulk of the work:**\r\n- remove `enableNewReconciler` feature flag.\r\n- remove `unstable_isNewReconciler` export\r\n- remove eslint rules for cross fork imports\r\n- remove `*.new.js` files and update imports\r\n- merge non-suffixed files into `*.old` files where both exist\r\n(sometimes types were defined there)\r\n\r\n**This PR**\r\n- rename `*.old` files",
+        "diff": [
+          {
+            "removed": "",
+            "added": "hookTypesDev.push(hookName);"
+          },
+          {
+            "removed": "",
+            "added": "stores.push(check);"
+          },
+          {
+            "removed": "",
+            "added": "events.push(payload);"
+          },
+          {
+            "removed": "",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;"
+          },
+          {
+            "removed": "",
+            "added": "deps !== null && deps !== undefined ? deps.concat([ref]) : null;"
+          }
+        ]
+      },
+      {
+        "commit": "67b05be0d216c4efebc4bb5acb12c861a18bd87c",
+        "message": "useActionState: Transfer transition context (#29694)\n\nMini-refactor of useActionState to only wrap the action in a transition\r\ncontext if the dispatch is called during a transition. Conceptually, the\r\naction starts as soon as the dispatch is called, even if the action is\r\nqueued until earlier ones finish.\r\n\r\nWe will also warn if an async action is dispatched outside of a\r\ntransition, since that is almost certainly a mistake. Ideally we would\r\nautomatically upgrade these to a transition, but we don't have a great\r\nway to tell if the action is async until after it's already run.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "actionNode.listeners.push(listener);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-reconciler/src/ReactFiberHydrationDiffs.js",
+    "commits": [
+      {
+        "commit": "2ec2aaea98588178525f83495669e11e96815a00",
+        "message": "Add Diffs to Hydration Warnings (#28512)\n\nStacked on #28502.\r\n\r\nThis builds on the mechanism in #28502 by adding a diff of everything\r\nwe've collected so far to the thrown error or logged error.\r\n\r\nThis isn't actually a longest common subsequence diff. This means that\r\nthere are certain cases that can appear confusing such as a node being\r\nadded/removed when it really would've appeared later in the list. In\r\nfact once a node mismatches, we abort rendering so we don't have the\r\ncontext of what would've been rendered. It's not quite right to use the\r\nresult of the recovery render because it can use client-only code paths\r\nusing useSyncExternalStore which would yield false differences. That's\r\nwhy diffing the HTML isn't quite right.\r\n\r\nI also present abstract components in the stack, these are presented\r\nwith the client props and no diff since we don't have the props that\r\nwere on the server. The lack of difference might be confusing but it's\r\nuseful for context.\r\n\r\nThe main thing that's data new here is that we're adding some siblings\r\nand props for context.\r\n\r\nExamples in the [snapshot\r\ncommit](https://github.com/facebook/react/pull/28512/commits/e14532fd8df858a319d3eca687d83227209a498c).",
+        "diff": [
+          {
+            "removed": "",
+            "added": "properties.push(propName + '=' + propValue);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hook.js",
+    "commits": [
+      {
+        "commit": "4ba20579daf119639567f69a0cb38128532754c6",
+        "message": "Scheduling Profiler: De-emphasize React internal frames (#22588)\n\nThis commit adds code to all React bundles to explicitly register the beginning and ending of the module. This is done by creating Error objects (which capture the file name, line number, and column number) and passing them explicitly to a DevTools hook (when present).\r\n\r\nNext, as the Scheduling Profiler logs metadata to the User Timing API, it prints these module ranges along with other metadata (like Lane values and profiler version number).\r\n\r\nLastly, the Scheduling Profiler UI compares stack frames to these ranges when drawing the flame graph and dims or de-emphasizes frames that fall within an internal module.\r\n\r\nThe net effect of this is that user code (and 3rd party code) stands out clearly in the flame graph while React internal modules are dimmed.\r\n\r\nInternal module ranges are completely optional. Older profiling samples, or ones recorded without the React DevTools extension installed, will simply not dim the internal frames.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "openModuleRangesStack.push(startStackFrame);"
+          },
+          {
+            "removed": "",
+            "added": "moduleRanges.push([startStackFrame, stopStackFrame]);"
+          }
+        ]
+      },
+      {
+        "commit": "3cac0875dcd60b8db099d8fa671c5ad1f8f0ef23",
+        "message": "refactor[react-devtools]: move console patching to global hook (#30596)\n\nStacked on https://github.com/facebook/react/pull/30566 and whats under\r\nit. See [this\r\ncommit](https://github.com/facebook/react/pull/30596/commits/374fd737e4b0b7028afb765838db7c0e22def865).\r\n\r\nIt is mostly copying code from one place to another and updating tests.\r\nWith these changes, for every console method that we patch, there is\r\ngoing to be a single applied patch:\r\n- For `error`, `warn`, and `trace` we are patching when hook is\r\ninstalled. This guarantees that component stacks are going to be\r\nappended even if browser DevTools are not opened. We pay some price for\r\nit, though: if user has browser DevTools closed and if at this point\r\nsome warning or error is emitted (logged), the next time user opens\r\nbrowser DevTools, they are going to see `hook.js` as the source frame.\r\nUnfortunately, ignore listing from source maps is not applied\r\nretroactively, and I don't know if its a bug or just a design\r\nlimitations. Once browser DevTools are opened, source maps will be\r\nloaded and ignore listing will be applied for all emitted logs in the\r\nfuture.\r\n- For `log`, `info`, `group`, `groupCollapsed` we are only patching when\r\nReact notifies React DevTools about running in StrictMode. We unpatch\r\nthe methods right after it.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "unpatchConsoleCallbacks.push(() => {"
+          },
+          {
+            "removed": "",
+            "added": "args.push(fakeError);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hydration.js",
+    "commits": [
+      {
+        "commit": "ec7ef50e8b7a61639d5b622e9e675602120e2e96",
+        "message": "Reorganized things again into packages",
+        "diff": [
+          {
+            "removed": "",
+            "added": "  cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "          path.concat([i]),"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "            path.concat([name]),"
+          },
+          {
+            "removed": "",
+            "added": "      cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "4da836af71f035a25c26814e7f6aa04e0535f4af",
+        "message": "Merged changes from 4.0.0 -> 4.0.5 from DevTools fork",
+        "diff": [
+          {
+            "removed": "",
+            "added": "path.concat([i]),"
+          },
+          {
+            "removed": "",
+            "added": "unserializable.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "5235d193d70d2623c98788ccb8dffc1d5abd688d",
+        "message": "fix: make serializable data  in react-devtools (#17233)\n\n* fix: make serializable data for bridge in react-devtools\r\n\r\n* fix: add bigint data type in hydration\r\n\r\n* refactor: remove console.log\r\n\r\n* test: update unit tests for bigint in react-devtools",
+        "diff": [
+          {
+            "removed": "",
+            "added": "cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "f887d1aa27336baa0bc292158793a5a244c712b6",
+        "message": "[DevTools] Display RegExp values in props/state (#17690)\n\nPreviously, when props/state contained a regexp, it was shown as an\r\nempty object. This commit adds regexps as values in need of special\r\nrehydration (like Symbols or TypedArrays), and display them as a user\r\nmight expect.\r\n\r\nCo-authored-by: Zirak <zirakertan@gmail.com>",
+        "diff": [
+          {
+            "removed": "",
+            "added": "cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "92c7e49895032885cffaad77a69d71268dda762e",
+        "message": "Don't consumer iterators while inspecting (#19831)\n\n\r\nCo-authored-by: Brian Vaughn <bvaughn@fb.com>",
+        "diff": [
+          {
+            "removed": "",
+            "added": "cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "a5aa9d525345ca3281e027a6f62f212f5feee0cd",
+        "message": "Remove redundant if statement (#21101)",
+        "diff": [
+          {
+            "removed": "path.concat([i]),",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "path.concat([i]),"
+          }
+        ]
+      },
+      {
+        "commit": "b14f8da15598cdc2253529a905421ac795d68ab1",
+        "message": "refactor[devtools]: forbid editing class instances in props (#26522)\n\n## Summary\r\nFixes https://github.com/facebook/react/issues/24781\r\n\r\nRestricting from editing props, which are class instances, because their\r\ninternals should be opaque.\r\n\r\nProposed changes:\r\n1. Adding new data type `class_instance`: based on prototype chain of an\r\nobject we will check if its plain or not. If not, then will be marked as\r\n`class_instance`. This should not affect `arrays`, ..., because we do\r\nthis in the end of an `object` case in `getDataType` function.\r\n\r\nImportant detail: this approach won't work for objects created with\r\n`Object.create`, because of the custom prototype. This can also be\r\nbypassed by manually deleting a prototype ¯\\\\\\_(ツ)_/¯\r\nI am not sure if there might be a better solution (which will cover all\r\ncases) to detect if object is a class instance. Initially I was trying\r\nto use `Object.getPrototypeOf(object) === Object.prototype`, but this\r\nwon't work for cases when we are dealing with `iframe`.\r\n\r\n\r\n2. Objects with a type `class_instance` will be marked as unserializable\r\nand read-only.\r\n\r\n## Demo\r\n`person` is a class instance, `object` is a plain object\r\n\r\n\r\nhttps://user-images.githubusercontent.com/28902667/228914791-ebdc8ab0-eb5c-426d-8163-66d56b5e8790.mov",
+        "diff": [
+          {
+            "removed": "",
+            "added": "path.concat([keyAsString]),"
+          },
+          {
+            "removed": "",
+            "added": "unserializable.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "654e387d7eac113ddbf85f8a9029d1af7117679e",
+        "message": "[Flight] Serialize Server Components Props in DEV (#31105)\n\nThis allows us to show props in React DevTools when inspecting a Server\r\nComponent.\r\n\r\nI currently drastically limit the object depth that's serialized since\r\nthis is very implicit and you can have heavy objects on the server.\r\n\r\nWe previously was using the general outlineModel to outline\r\nReactComponentInfo but we weren't consistently using it everywhere which\r\ncould cause some bugs with the parsing when it got deduped on the\r\nclient. It also lead to the weird feature detect of `isReactComponent`.\r\nIt also meant that this serialization was using the plain serialization\r\ninstead of `renderConsoleValue` which means we couldn't safely serialize\r\narbitrary debug info that isn't serializable there.\r\n\r\nSo the main change here is to call `outlineComponentInfo` and have that\r\nalways write every \"Server Component\" instance as outlined and in a way\r\nthat lets its props be serialized using `renderConsoleValue`.\r\n\r\n<img width=\"1150\" alt=\"Screenshot 2024-10-01 at 1 25 05 AM\"\r\nsrc=\"https://github.com/user-attachments/assets/f6e7811d-51a3-46b9-bbe0-1b8276849ed4\">",
+        "diff": [
+          {
+            "removed": "",
+            "added": "cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "197d6a040368ee87308225f5534b013cb5512673",
+        "message": "[devtools] 1st class support of used Thenables (#32989)\n\nCo-authored-by: Ruslan Lesiutin <rdlesyutin@gmail.com>",
+        "diff": [
+          {
+            "removed": "",
+            "added": "path.concat(['value']),"
+          },
+          {
+            "removed": "",
+            "added": "unserializable.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "path.concat(['reason']),"
+          },
+          {
+            "removed": "",
+            "added": "unserializable.push(path);"
+          },
+          {
+            "removed": "",
+            "added": "cleaned.push(path);"
+          }
+        ]
+      },
+      {
+        "commit": "c498bfce8b9baa3dd21bd0d5124eb3a4549886f1",
+        "message": "[devtools] Allow inspecting cause, name, message, stack of Errors in props (#33023)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "path.concat(['message']),"
+          },
+          {
+            "removed": "",
+            "added": "path.concat(['stack']),"
+          },
+          {
+            "removed": "",
+            "added": "path.concat(['cause']),"
+          },
+          {
+            "removed": "",
+            "added": "path.concat([keyAsString]),"
+          },
+          {
+            "removed": "",
+            "added": "unserializable.push(path);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/backend/fiber/renderer.js",
+    "commits": [
+      {
+        "commit": "ec98d36c3a47e9f02c45cc14ff6046fff8c27458",
+        "message": "[DevTools] Rename Fiber to Element in the Bridge Protocol and RendererInterface (#30490)\n\nI need to start clarifying where things are really actually Fibers and\r\nwhere they're not since I'm adding Server Components as a separate type\r\nof component instance which is not backed by a Fiber.\r\n\r\nNothing in the front end should really know anything about what kind of\r\nrenderer implementation we're inspecting and indeed it's already not\r\nalways a \"Fiber\" in the legacy renderer.\r\n\r\nWe typically refer to this as a \"Component Instance\" but the front end\r\ncurrently refers to it as an Element as it historically grew from the\r\nbrowser DevTools Elements tab.\r\n\r\nI also moved the renderer.js implementation into the `backend/fiber`\r\nfolder. These are at the same level as `backend/legacy`. This clarifies\r\nthat anything outside of this folder ideally shouldn't refer to a\r\n\"Fiber\".\r\n\r\nconsole.js and profilingHooks.js unfortunately use Fibers a lot which\r\nneeds further refactoring. The profiler frontend also uses the term\r\nalot.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "          indices.push(index);"
+          },
+          {
+            "removed": "",
+            "added": "        changedKeys.push(key);"
+          },
+          {
+            "removed": "",
+            "added": "    pendingOperations.push(op);"
+          },
+          {
+            "removed": "",
+            "added": "      pendingOperationsQueue.push(operations);"
+          },
+          {
+            "removed": "",
+            "added": "        pendingSimulatedUnmountedIDs.push(id);"
+          },
+          {
+            "removed": "",
+            "added": "        pendingRealUnmountedIDs.push(id);"
+          },
+          {
+            "removed": "",
+            "added": "          metadata.durations.push(id, actualDuration, selfDuration);"
+          },
+          {
+            "removed": "",
+            "added": "      nextChildren.push(getFiberIDThrows(fiber));"
+          },
+          {
+            "removed": "",
+            "added": "          commitProfilingMetadata.push("
+          },
+          {
+            "removed": "",
+            "added": "        fibers.push(node);"
+          },
+          {
+            "removed": "",
+            "added": "        owners.push(fiberToSerializedElement(ownerFiber));"
+          },
+          {
+            "removed": "",
+            "added": "              initialTreeBaseDurations.push([id, treeBaseDuration]);"
+          },
+          {
+            "removed": "",
+            "added": "            fiberActualDurations.push([fiberID, durations[i + 1]]);"
+          },
+          {
+            "removed": "",
+            "added": "            fiberSelfDurations.push([fiberID, durations[i + 2]]);"
+          },
+          {
+            "removed": "",
+            "added": "          commitData.push({"
+          },
+          {
+            "removed": "",
+            "added": "        dataForRoots.push({"
+          },
+          {
+            "removed": "",
+            "added": "      keyPath.push(getPathFrame(fiber));"
+          }
+        ]
+      },
+      {
+        "commit": "ed94ea146a111124711910c87af44d7760bfd409",
+        "message": "[DevTools] Allow Highlighting/Inspect HostSingletons/Hoistables and Resources (#30584)\n\nBasically the new Float types needs to be supported. Resources are a bit\r\nspecial because they're a DOM specific type but we can expect any other\r\nimplementation using resources to provide and instance on this field if\r\nneeded.\r\n\r\nThere's a slightly related case for the reverse lookup. You can already\r\nselect a singleton or hoistable (that's not a resource) in the browser\r\nelements panel and it'll select the corresponding node in the RDT\r\nComponents panel. That works because it uses the same mechanism as event\r\ndispatching and those need to be able to receive events.\r\n\r\nHowever, you can't select a resource. Because that's conceptually one to\r\nmany. We could in principle just search the tree for the first one or\r\nkeep a map of currently mounted resources and just pick the first fiber\r\nthat created it. So that you can select a resource and see what created\r\nit. Particularly useful when there's only one Fiber which is most of the\r\ntime.\r\n\r\n---------\r\n\r\nCo-authored-by: Ruslan Lesiutin <rdlesyutin@gmail.com>",
+        "diff": [
+          {
+            "removed": "fibers.push(node);",
+            "added": "if ("
+          },
+          {
+            "removed": "",
+            "added": "hostInstances.push(hostInstance);"
+          }
+        ]
+      },
+      {
+        "commit": "25c584f5672d90ba67d72ea9ba9cc06b12311806",
+        "message": "[DevTools] Further Refactoring of Unmounts (#30658)\n\nStacked on #30625 and #30657.\r\n\r\nThis ensures that we only create instances during the commit\r\nreconciliation and that we don't create unnecessary instances for things\r\nthat are filtered or not mounted. This ensures that we also can rely on\r\nthe reconciliation to do all the clean up. Now everything is created and\r\ndeleted as a pair in the same pass.\r\n\r\nPreviously we were including unfiltered components in the owner stack\r\nwhich probably doesn't make sense since you're intending to filter them\r\neverywhere presumably. However, it also means that those links were\r\nbroken since you can't link into owners that don't exist in the parent\r\ntree.\r\n\r\nThe main complication is the component filters. It relied on not\r\nunmounting the old instances. I had to update some tests that asserted\r\non ids that are now shifted.\r\n\r\nFor warnings/errors tracking I now restore them back into the pending\r\nset when they unmount. Basically it puts them back into their\r\n\"pre-commit\" state. That way when they remount they’re still there.\r\n\r\nFor restoring the current selection I use the tracked path mechanism\r\ninstead of relying on the id being unchanged. This is better anyway\r\nbecause if you filter out the currently selected item it's better to\r\nselect the nearest match instead of just losing the selection.",
+        "diff": [
+          {
+            "removed": "pendingSimulatedUnmountedIDs.push(id);",
+            "added": ""
+          },
+          {
+            "removed": "pendingRealUnmountedIDs.push(id);",
+            "added": ""
+          },
+          {
+            "removed": "}",
+            "added": "pendingRealUnmountedIDs.push(id);"
+          }
+        ]
+      },
+      {
+        "commit": "082a690cc3ed6e27f62ed6e4ac655dec5c828708",
+        "message": "[DevTools] Compute new reordered child set from the instance tree (#30668)\n\nThis is already filtered and simply just all the ids in the linked list.\r\n\r\nSame principle as #30665.",
+        "diff": [
+          {
+            "removed": "child = child.sibling;",
+            "added": "nextChildren.push(child.id);"
+          },
+          {
+            "removed": "nextChildren.push(getFiberIDThrows(fiber));",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "49496d493797d4df1b9496f64a6103d9a7d23968",
+        "message": "[DevTools] Support Server Components in Tree (#30684)\n\nThis adds VirtualInstances to the tree. Each Fiber has a list of its\r\nparent Server Components in `_debugInfo`. The algorithm is that when we\r\nenter a set of fibers, we actually traverse level 0 of all the\r\n`_debugInfo` in each fiber. Then level 1 of each `_debugInfo` and so on.\r\nIt would be simpler if `_debugInfo` only contained Server Component\r\nsince then we could just look at the index in the array but it actually\r\ncontains other data as well which leads to multiple passes but we don't\r\nexpect it to have a lot of levels before hitting a reified fiber.\r\nFinally when we hit the end a traverse the fiber itself.\r\n\r\nThis lets us match consecutive `ReactComponentInfo` that are all the\r\nsame at the same level. This creates a single VirtualInstance for each\r\nsequence. This lets the same Server Component instance that's a parent\r\nto multiple children appear as a single Instance instead of one per\r\nFiber.\r\n\r\nSince a Server Component's result can be rendered in more than one place\r\nthere's not a 1:1 mapping though. If it is in different parents or if\r\nthe sequence is interrupted, then it gets split into two different\r\ninstances with the same `ReactComponentInfo` data.\r\n\r\nThe real interesting case is what happens during updates because this\r\nalgorithm means that a Fiber can become reparented during an update to\r\nend up in a different VirtualInstance. The ideal would maybe be that the\r\nfrontend could deal with this reparenting but instead I basically just\r\nunmount the previous instance (and its children) and mount a new\r\ninstance which leads to some interesting scenarios. This is inline with\r\nthe strategy I was intending to pursue anyway where instances are\r\nreconciled against the previous children of the same parent instead of\r\nthe `fiberToFiberInstance` map - which would let us get rid of that map.\r\nIn that case the model is resilient to Fiber being in more than one\r\nplace at a time.\r\n\r\nHowever this unmount/remount does mean that we can lose selection when\r\nthis happens. We could maybe do something like using the tracked path\r\nlike I did for component filters. Ideally it's a weird edge case though\r\nbecause you'd typically not have it. The main case that it happens now\r\nis for reorders of list of server components. In that case basically all\r\nthe children move between server components while the server components\r\nthemselves stay in place. We should really include the key in server\r\ncomponents so that we can reconcile them using the key to handle\r\nreorders which would solve the common case anyway.\r\n\r\nI convert the name to the `Env(Name)` pattern which allows the\r\nEnvironment Name to be used as a badge.\r\n\r\n<img width=\"1105\" alt=\"Screenshot 2024-08-13 at 9 55 29 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/323c20ba-b655-4ee8-84fa-8233f55d2999\">\r\n\r\n(Screenshot is with #30667. I haven't tried it with the alternative\r\nfix.)\r\n\r\n---------\r\n\r\nCo-authored-by: Ruslan Lesiutin <rdlesyutin@gmail.com>",
+        "diff": [
+          {
+            "removed": "",
+            "added": "pendingRealUnmountedIDs.push(id);"
+          }
+        ]
+      },
+      {
+        "commit": "13ddf1084b4304a60059e3b96fc3c039d23e9432",
+        "message": "[DevTools] Find owners from the parent path that matches the Fiber or ReactComponentInfo (#30717)\n\nThis enables finding Server Components on the owner path. Server\r\nComponents aren't stateful so there's not actually one specific owner\r\nthat it necessarily matches. So it can't be a global look up. E.g. the\r\nsame Server Component can be rendered in two places or even nested\r\ninside each other.\r\n\r\nTherefore we need to find an appropriate instance using a heuristic. We\r\ncan do that by traversing the parent path since the owner is likely also\r\na parent. Not always but almost always.\r\n\r\nTo simplify things we can also do the same for Fibers. That brings us\r\none step closer to being able to get rid of the global\r\nfiberToFiberInstance map since we can just use the shadow tree to find\r\nthis information.\r\n\r\nThis does mean that we can't find owners that aren't parents which is\r\nusually ok. However, there is a test case that's interesting where you\r\nhave a React ART tree inside a DOM tree. In that case the owners\r\nactually span multiple renderers and roots so the owner is not on the\r\nparent stack. Usually this is fine since you'd just care about the\r\nowners within React ART but ideally we'd support this. However, I think\r\nthat really the fix to this is that the React ART tree itself should\r\nactually show up inside the DOM tree in DevTools and in the virtual\r\nshadow tree because that's conceptually where it belongs. That would\r\nthen solve this particular issue. We'd just need some way to associate\r\nthe root with a DOM parent when it gets mounted.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "result.push(instanceToSerializedElement(inst));"
+          },
+          {
+            "removed": "",
+            "added": "owners.push(instanceToSerializedElement(ownerInstance));"
+          },
+          {
+            "removed": "owners.push(fiberToSerializedElement(ownerFiber));",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "1a8f92a8699e79966e65841fcb9110bba4c3df7f",
+        "message": "[DevTools] Track Tree Base Duration of Virtual Instances (#30817)\n\nThese don't have their own time since they don't take up any time to\r\nrender but they show up in the tree for context. However they never\r\nrender themselves. Their base tree time is the base time of their\r\nchildren. This way they take up the same space as their combined\r\nchildren in the Profiler tree. (Instead of leaving a blank line which\r\nthey did before this PR.)\r\n\r\nThe frontend doesn't track the difference between a virtual instance and\r\na Fiber that didn't render this update. This might be a bit confusing as\r\nto why it didn't render. I add the word \"client\" to make it a bit\r\nclearer and works for both. We should probably have different verbiage\r\nhere based on it is a Server Component or something else.\r\n\r\n<img width=\"1103\" alt=\"Screenshot 2024-08-26 at 5 00 47 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/87b811d4-7024-466a-845d-542493ed3ca2\">\r\n\r\nI also took the opportunity to remove idToTreeBaseDurationMap and\r\nidToRootMap maps. Cloning the Map isn't really all that super fast\r\nanyway and it means we have to maintain the map continuously as we\r\nrender. Instead, we can track it on the instances and then walk the\r\ninstances to create a snapshot when starting to profile. This isn't as\r\nfast but really fast too and requires less bookkeeping while rendering\r\ninstead which is more sensitive than that one snapshot in the beginning.",
+        "diff": [
+          {
+            "removed": "initialTreeBaseDurations.push([id, treeBaseDuration]);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "target.push([instance.id, instance.treeBaseDuration]);"
+          }
+        ]
+      },
+      {
+        "commit": "e33a7233a76e1164bd1a9c4b8115abb575b48c50",
+        "message": "[DevTools] Track virtual instances on the tracked path for selections (#30802)\n\nThis appends a (filtered) virtual instance path at the end of the fiber\r\npath. If a virtual instance is selected inside the fiber.\r\n\r\nThe main part of the path is still just the fiber path since that's the\r\nsemantically stateful part. Then we just tack on a few virtual path\r\nframes at the end if we're currently selecting a specific Server\r\nComponent within the nearest Fiber.\r\n\r\nI also took the opportunity to fix a bug which caused selections inside\r\nSuspense boundaries to not be tracked.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "keyPath.push(getVirtualPathFrame(inst));"
+          }
+        ]
+      },
+      {
+        "commit": "01ae2ddaa94386b2250230004f1051218ada2de1",
+        "message": "[DevTools] Include some Filtered Fiber Instances (#30865)\n\nWhen we filter Fiber Instances where have no way to recover our position\r\nin the Fiber tree. The extreme form of this is if you filter out all the\r\nFibers and keep only Server Components.\r\n\r\nThis affects operations that are performed against fibers such as\r\ncollecting Host Instances for highlighting or emulating\r\nsuspending/erroring.\r\n\r\nConceptually we don't need to add this into the DevToolsInstance tree\r\nbecause we only need to get to some Fibers from a VirtualInstance. A\r\nVirtual Instance can contain more than one conceptual child Fiber. It\r\nwould be easier if we didn't include them in the tree on one hand\r\nbecause we could just traverse the tree and assume it looks like the one\r\non the frontend. But it's also tricky to manage the lifetime. So I went\r\nwith a special FilteredFiberInstance node in the tree.\r\n\r\nCurrently I only add it if its parent would've been a VirtualInstance\r\nsince we don't need it in any other cases. If the parent was another\r\nFiberInstance it already has a Fiber.\r\n\r\nThere might be need for always tracking all Instances whether they're\r\nfiltered or not or just moving filtering to the frontend but for now I'm\r\nkeeping the general architecture as is.",
+        "diff": [
+          {
+            "removed": "nextChildren.push(child.id);",
+            "added": "if (child.kind === FILTERED_FIBER_INSTANCE) {"
+          },
+          {
+            "removed": "",
+            "added": "nextChildren.push((innerChild: any).id);"
+          },
+          {
+            "removed": "",
+            "added": "nextChildren.push(child.id);"
+          },
+          {
+            "removed": "target.push([instance.id, instance.treeBaseDuration]);",
+            "added": "if (instance.kind !== FILTERED_FIBER_INSTANCE) {"
+          },
+          {
+            "removed": "",
+            "added": "target.push([instance.id, instance.treeBaseDuration]);"
+          }
+        ]
+      },
+      {
+        "commit": "629239824116436521eaf00ddf02aa3b263de6de",
+        "message": "[DevTools] Simplify Context Change Tracking in Profiler (#30896)\n\nWhen Context change tracking was added to support modern Context it\r\nrelied on the \"memoizedValue\" to read the current value. This only works\r\nin React 18+ when it was added to support Lazy Context Propagation.\r\nHowever, the backend stored the old value the same way it used to work\r\nfor legacy Context in a global map. This was unnecessary since we *also*\r\nhave the old value on the previous Fiber.\r\n\r\nThis removes all the costly tracking of previous values for every Fiber\r\nthat uses Contexts slowing down profiling. Instead, we just compare the\r\nContexts from\r\n\r\nThe downside is that this no longer supports detecting changes due to\r\nlegacy Context because it doesn't have a similar \"previous\" value.\r\nHowever, legacy Context has long been deprecated and is completely\r\nremoved in 19. So I don't think it's worth supporting since you have to\r\nbe on an old version *and* actually use legacy Context *and* trying to\r\nprofile something that updates it. Which btw, updating legacy contexts\r\nonly worked at all from 16 something when we made updates work. So it\r\nwas unusual even in the slight gap where you could and before you had\r\nmigrated to modern Context introduced in 16.3.",
+        "diff": [
+          {
+            "removed": "indices.push(index);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "indices.push(index);"
+          }
+        ]
+      },
+      {
+        "commit": "99cba2b041cd13d7ade48a5c97b473e8a188df35",
+        "message": "[DevTools] Build Updater List from the Commit instead of Map (#30897)\n\nStacked on #30896.\r\n\r\nThe problem with the `getUpdatersList` function is that it iterates over\r\nFibers and then looks up each of those Fibers in the\r\nfiberToFiberInstanceMap which we ideally could get rid of.\r\n\r\nHowever, every time an updater comes into play for a commit it must mean\r\nthat something below the updater itself updated and so the updater will\r\nalso be cloned which means we'll pass it on the way down when traversing\r\nthe tree in the commit.\r\n\r\nWhen we do this traversal, we can just look if the Fiber is in the\r\nupdater set and if so add it to the updater list as we go.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "metadata.updaters.push(instanceToSerializedElement(fiberInstance));"
+          },
+          {
+            "removed": "result.push(instanceToSerializedElement(inst));",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "389a2deebc2dc41deb268f4b543709989d688d69",
+        "message": "refactor[react-devtools/fiber/renderer]: optimize durations resolution (#31118)\n\nStacked on https://github.com/facebook/react/pull/31117. \r\n\r\nNo need for sending long float numbers and to have resolution less than\r\na microsecond, we end up formatting it on a Frontend side:\r\n\r\nhttps://github.com/facebook/react/blob/6c7b41da3de12be2d95c60181b3fe896f824f13a/packages/react-devtools-shared/src/devtools/views/Profiler/utils.js#L359-L360",
+        "diff": [
+          {
+            "removed": "fiberActualDurations.push([fiberID, durations[i + 1]]);",
+            "added": ""
+          },
+          {
+            "removed": "fiberSelfDurations.push([fiberID, durations[i + 2]]);",
+            "added": "fiberActualDurations.push(["
+          },
+          {
+            "removed": "",
+            "added": "fiberSelfDurations.push(["
+          }
+        ]
+      },
+      {
+        "commit": "2b4064eb9b40f65d20a03ce93b246ad762d562e6",
+        "message": "[mcp] Add MCP tool to print out the component tree of the currently open React App (#33305)\n\n## Summary\n\nThis tool leverages DevTools to get the component tree from the\ncurrently open React App. This gives realtime information to agents\nabout the state of the app.\n\n## How did you test this change?\n\nTested integration with Claude Desktop",
+        "diff": [
+          {
+            "removed": "",
+            "added": "rootInstances.push(instance);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/devtools/views/Components/InspectedElementHooksTree.js",
+    "commits": [
+      {
+        "commit": "50d9451f320a9aaf94304209193562cc385567d8",
+        "message": "Improve DevTools editing interface (#19774)\n\n* Improve DevTools editing interface\r\n\r\nThis commit adds the ability to rename or delete keys in the props/state/hooks/context editor and adds tests to cover this functionality. DevTools will degrade gracefully for older versions of React that do not inject the new reconciler rename* or delete* methods.\r\n\r\nSpecifically, this commit includes the following changes:\r\n* Adds unit tests (for modern and legacy renderers) to cover overriding props, renaming keys, and deleting keys.\r\n* Refactor backend override methods to reduce redundant Bridge/Agent listeners and methods.\r\n* Inject new (DEV-only) methods from reconciler into DevTools to rename and delete paths.\r\n* Refactor 'inspected element' UI components to improve readability.\r\n* Improve auto-size input to better mimic Chrome's Style editor panel. (See this Code Sandbox for a proof of concept.)\r\n\r\nIt also contains the following code cleanup:\r\n* Additional unit tests have been added for modifying values as well as renaming or deleting paths.\r\n* Four new DEV-only methods have been added to the reconciler to be injected into the DevTools hook: overrideHookStateDeletePath, overrideHookStateRenamePath, overridePropsDeletePath, and overridePropsRenamePath. (DevTools will degrade gracefully for older renderers without these methods.)\r\n* I also took this as an opportunity to refactor some of the existing code in a few places:\r\n  * Rather than the backend implementing separate methods for editing props, state, hooks, and context– there are now three methods: deletePath, renamePath, and overrideValueAtPath that accept a type argument to differentiate between props, state, context, or hooks.\r\n  * The various UI components for the DevTools frontend have been refactored to remove some unnecessary repetition.\r\n\r\nThis commit also adds temporary support for override* commands with mismatched backend/frontend versions:\r\n* Add message forwarding for older backend methods (overrideContext, overrideHookState, overrideProps, and overrideState) to the new overrideValueAtPath method. This was done in both the frontend Bridge (for newer frontends passing messages to older embedded backends) and in the backend Agent (for older frontends passing messages to newer backends). We do this because React Native embeds the React DevTools backend, but cannot control which version of the frontend users use.\r\n* Additional unit tests have been added as well to cover the older frontend to newer backend case. Our DevTools test infra does not make it easy to write tests for the other way around.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      path={path.concat([index])}"
+          },
+          {
+            "removed": "",
+            "added": "        path={path.concat(['subHooks'])}"
+          },
+          {
+            "removed": "",
+            "added": "        path={path.concat(['subHooks'])}"
+          },
+          {
+            "removed": "",
+            "added": "              path={path.concat(['value'])}"
+          },
+          {
+            "removed": "",
+            "added": "            path={path.concat(['value'])}"
+          }
+        ]
+      },
+      {
+        "commit": "d14ce51327c1bd4daf78f5118ae23f8620ebad03",
+        "message": "refactor[react-devtools]: rewrite context menus (#29049)\n\n## Summary\r\n- While rolling out RDT 5.2.0 on Fusebox, we've discovered that context\r\nmenus don't work well with this environment. The reason for it is the\r\ncontext menu state implementation - in a global context we define a map\r\nof registered context menus, basically what is shown at the moment (see\r\ndeleted Contexts.js file). These maps are not invalidated on each\r\nre-initialization of DevTools frontend, since the bundle\r\n(react-devtools-fusebox module) is not reloaded, and this results into\r\nRDT throwing an error that some context menu was already registered.\r\n- We should not keep such data in a global state, since there is no\r\nguarantee that this will be invalidated with each re-initialization of\r\nDevTools (like with browser extension, for example).\r\n- The new implementation is based on a `ContextMenuContainer` component,\r\nwhich will add all required `contextmenu` event listeners to the\r\nanchor-element. This component will also receive a list of `items` that\r\nwill be displayed in the shown context menu.\r\n- The `ContextMenuContainer` component is also using\r\n`useImperativeHandle` hook to extend the instance of the component, so\r\ncontext menus can be managed imperatively via `ref`:\r\n`contextMenu.current?.hide()`, for example.\r\n- **Changed**: The option for copying value to clipboard is now hidden\r\nfor functions. The reasons for it are:\r\n- It is broken in the current implementation, because we call\r\n`JSON.stringify` on the value, see\r\n`packages/react-devtools-shared/src/backend/utils.js`.\r\n- I don't see any reasonable value in doing this for the user, since `Go\r\nto definition` option is available and you can inspect the real code and\r\nthen copy it.\r\n- We already filter out fields from objects, if their value is a\r\nfunction, because the whole object is passed to `JSON.stringify`.\r\n\r\n## How did you test this change?\r\n### Works with element props and hooks:\r\n- All context menu items work reliably for props items\r\n- All context menu items work reliably or hooks items\r\n\r\n\r\nhttps://github.com/facebook/react/assets/28902667/5e2d58b0-92fa-4624-ad1e-2bbd7f12678f\r\n\r\n### Works with timeline profiler:\r\n- All context menu items work reliably: copying, zooming, ...\r\n- Context menu automatically closes on the scroll event\r\n\r\n\r\nhttps://github.com/facebook/react/assets/28902667/de744cd0-372a-402a-9fa0-743857048d24\r\n\r\n### Works with Fusebox:\r\n- Produces no errors\r\n- Copy to clipboard context menu item works reliably\r\n\r\n\r\nhttps://github.com/facebook/react/assets/28902667/0288f5bf-0d44-435c-8842-6b57bc8a7a24",
+        "diff": [
+          {
+            "removed": "path={[]}",
+            "added": "path={path.concat(['value'])}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-16/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-16/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      args = args.concat([stack]);"
+          }
+        ]
+      }
+    ]
+  }
+]

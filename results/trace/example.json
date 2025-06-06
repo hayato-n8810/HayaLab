@@ -1,0 +1,9 @@
+{
+    "slow_apply_files": [
+        "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ContainingStringSourceMappingURL.js"
+    ],
+    "fast_call_files": [
+        "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/scripts/devtools/prepare-release.js",
+        "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/scripts/jest/devtools/setupEnv.js"
+    ]
+}

@@ -1,5 +1,4 @@
 {
-    "repository": "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react",
     "slow_apply_files": [
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ContainingStringSourceMappingURL.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ToDoList.js",
@@ -130,7 +129,5 @@
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-runtime.production.min.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-dev-runtime.development.js",
         "/Users/hayato-n/projects/hayaLab/data/repository/facebook_react/fixtures/dom/src/components/fixtures/error-handling/index.js"
-    ],
-    "slow_count": 79,
-    "fast_count": 48
+    ]
 }

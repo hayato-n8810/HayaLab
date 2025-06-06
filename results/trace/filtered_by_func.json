@@ -1,0 +1,2142 @@
+[
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/no-columns/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/fb-sources-extended/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/react-sources-extended/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/ContainingStringSourceMappingURL.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/ToDoList.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/index.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/ComponentUsingHooksIndirectly.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/ComponentWithCustomHook.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/external/fb-sources-extended/index-map/Example.js",
+    "commits": [
+      {
+        "commit": "e07039bb61e3d006ad552ab7754acbc91f7b8619",
+        "message": "Moved named hooks code (and tests) from react-devtools-extensions to react-devtools-shared (#22260)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== \"object\" && typeof obj !== \"function\") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/flight/scripts/build.js",
+    "commits": [
+      {
+        "commit": "0512cd6a261eb738059aac4769ea31e66aab2065",
+        "message": "Bump fixture dependency versions (#20397)\n\n* Bump all versions\r\n\r\n* Switch to CJS mode\r\n\r\n* Revert \"Switch to CJS mode\"\r\n\r\nThis reverts commit b3c4fd92dcef6ecb4116fc66f674ae88aad3c582.\r\n\r\n* Fix ES mode\r\n\r\n* Add nodemon to restart the server on edits\r\n\r\n* Ignore /server/ from compilation",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (Object.prototype.hasOwnProperty.call(err, 'postcssNode')) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "scripts/jest/devtools/setupEnv.js",
+    "commits": [
+      {
+        "commit": "952aa74f8e45ed35ac6bf1de10ad5ed5410deac6",
+        "message": "Upgrade tests to use react/jsx-runtime (#28252)\n\nInstead of createElement.\r\n\r\nWe should have done this when we initially released jsx-runtime but\r\nbetter late than never. The general principle is that our tests should\r\nbe written using the most up-to-date idioms that we recommend for users,\r\nexcept when explicitly testing an edge case or legacy behavior, like for\r\nbackwards compatibility.\r\n\r\nMost of the diff is related to tweaking test output and isn't very\r\ninteresting.\r\n\r\nI did have to workaround an issue related to component stacks. The\r\ncomponent stack logic depends on shared state that lives in the React\r\nmodule. The problem is that most of our tests reset the React module\r\nstate and re-require a fresh instance of React, React DOM, etc. However,\r\nthe JSX runtime is not re-required because it's injected by the compiler\r\nas a static import. This means its copy of the shared state is no longer\r\nthe same as the one used by React, causing any warning logged by the JSX\r\nruntime to not include a component stack. (This same issue also breaks\r\nstring refs, but since we're removing those soon I'm not so concerned\r\nabout that.) The solution I went with for now is to mock the JSX runtime\r\nwith a proxy that re-requires the module on every function invocation. I\r\ndon't love this but it will have to do for now. What we should really do\r\nis migrate our tests away from manually resetting the module state and\r\nuse import syntax instead.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "return jest.requireActual(moduleName)[prop].apply(this, arguments);"
+          }
+        ]
+      },
+      {
+        "commit": "43dac1ee8d658d28af914f76c12ecc42865c3dd5",
+        "message": "[DevTools] Implement Owner Stacks (#30417)\n\nStacked on #30410.\r\n\r\nUse \"owner stacks\" as the appended component stack if it is available on\r\nthe Fiber. This will only be available if the enableOwnerStacks flag is\r\non. Otherwise it fallback to parent stacks. In prod, there's no owner so\r\nit's never added there.\r\n\r\nI was going back and forth on whether to inject essentially\r\n`captureOwnerStack` as part of the DevTools hooks or replicate the\r\nimplementation but decided to replicate the implementation.\r\n\r\nThe DevTools needs all the same information from internals to implement\r\nowner views elsewhere in the UI anyway so we're not saving anything in\r\nterms of the scope of internals. Additionally, we really need this\r\ninformation for non-current components as well like \"rendered by\" views\r\nof the currently selected component.\r\n\r\nIt can also be useful if we need to change the format after the fact\r\nlike we did for parent stacks in:\r\nhttps://github.com/facebook/react/pull/30289\r\n\r\nInjecting the implementation would lock us into specifics both in terms\r\nof what the core needs to provide and what the DevTools can use.\r\n\r\nThe implementation depends on the technique used in #30369 which tags\r\nframes to strip out with `react-stack-bottom-frame`. That's how the\r\nimplementation knows how to materialize the error if it hasn't already.\r\n\r\nFirefox:\r\n\r\n<img width=\"487\" alt=\"Screenshot 2024-07-21 at 11 33 37 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/d3539b53-4578-4fdd-af25-25698b2bcc7d\">\r\n\r\nFollow up: One thing about this view is that it doesn't include the\r\ncurrent actual synchronous stack. When I used to append these I would\r\ninclude both the real current stack and the owner stack. That's because\r\nthe owner stack doesn't include the name of the currently executing\r\ncomponent. I'll probably inject the current stack too in addition to the\r\nowner stack. This is similar to how native Async Stacks are basically\r\njust appended onto the current stack rather than its own.",
+        "diff": [
+          {
+            "removed": "return jest.requireActual(moduleName)[prop].apply(this, arguments);",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "return jest.requireActual(moduleName)[prop].apply(this, arguments);"
+          }
+        ]
+      },
+      {
+        "commit": "fc74a3a3e6a3ec8340a6202f8d07bb422240836d",
+        "message": "Transform JSX to Lazy Requires instead of Wrappers (#30433)\n\nThis ensures that we can keep overriding what runtime to use by\r\nresetting modules while still using the automatic JSX plugin. This is\r\nlike the \"inline requires\" transform but just for JSX.\r\n\r\nI got sick of trying to figure out workarounds to hide the extra stack\r\nframe that appears due to the wrappers.",
+        "diff": [
+          {
+            "removed": "return jest.requireActual(moduleName)[prop].apply(this, arguments);",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/legacy-events/SyntheticEvent.js",
+    "commits": [
+      {
+        "commit": "e3f4eb7272d4ca0ee49f27577156b57eeb07cf73",
+        "message": "Fork legacy-events folder into react-dom and react-native (#19228)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    return Super.apply(this, arguments);"
+          },
+          {
+            "removed": "",
+            "added": "      EventConstructor.call("
+          }
+        ]
+      },
+      {
+        "commit": "9fba65efa50fe5f38e5664729d4aa6f85cf7be92",
+        "message": "Enable modern event system and delete dead code (#19230)",
+        "diff": [
+          {
+            "removed": "EventConstructor.call(",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "EventConstructor.call("
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-native-renderer/src/legacy-events/EventPluginRegistry.js",
+    "commits": [
+      {
+        "commit": "e3f4eb7272d4ca0ee49f27577156b57eeb07cf73",
+        "message": "Fork legacy-events folder into react-dom and react-native (#19228)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "  eventPluginOrder = Array.prototype.slice.call(injectedEventPluginOrder);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-debug-tools/src/ReactDebugHooks.js",
+    "commits": [
+      {
+        "commit": "5cec48e145f6b43879b9ef40cdda812b88fff31c",
+        "message": "DevTools: Read context values from context dependencies (#28467)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "const value = hasOwnProperty.call(currentContextDependency, 'memoizedValue')"
+          },
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(currentFiber, 'dependencies')) {"
+          },
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(currentFiber, 'dependencies_old')) {"
+          },
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(currentFiber, 'dependencies_new')) {"
+          },
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(currentFiber, 'contextDependencies')) {"
+          },
+          {
+            "removed": "",
+            "added": "!hasOwnProperty.call(currentContextDependency, 'memoizedValue')"
+          }
+        ]
+      },
+      {
+        "commit": "f5f2799a8d0b37487c9674159846cbb7696febd3",
+        "message": "DevTools: Fix inspecting components with multiple reads of the same Context in React 17 (#28974)",
+        "diff": [
+          {
+            "removed": "const value = hasOwnProperty.call(currentContextDependency, 'memoizedValue')",
+            "added": ""
+          },
+          {
+            "removed": "currentContextDependency = currentContextDependency.next;",
+            "added": "if (hasOwnProperty.call(currentContextDependency, 'memoizedValue')) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/server/ReactFizzConfigDOM.js",
+    "commits": [
+      {
+        "commit": "ffb8eaca5966fc7733bd0a23f4055e26d2cc59d7",
+        "message": "Rename ReactServerFormatConfig to ReactFizzConfig (#26591)\n\npart of https://github.com/facebook/react/pull/26571\r\n\r\nmerging separately to improve tracking of file renames",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    if (!hasOwnProperty.call(style, styleName)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, 'children')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, 'children')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(props, propKey)) {"
+          }
+        ]
+      },
+      {
+        "commit": "c826dc50de288758a0b783b2fd37b40a3b512fc4",
+        "message": "Add (Client) Functions as Form Actions (#26674)\n\nThis lets you pass a function to `<form action={...}>` or `<button\r\nformAction={...}>` or `<input type=\"submit formAction={...}>`. This will\r\nbehave basically like a `javascript:` URL except not quite implemented\r\nthat way. This is a convenience for the `onSubmit={e => {\r\ne.preventDefault(); const fromData = new FormData(e.target); ... }`\r\npattern.\r\n\r\nYou can still implement a custom `onSubmit` handler and if it calls\r\n`preventDefault`, it won't invoke the action, just like it would if you\r\nused a full page form navigation or javascript urls. It behaves just\r\nlike a navigation and we might implement it with the Navigation API in\r\nthe future.\r\n\r\nCurrently this is just a synchronous function but in a follow up this\r\nwill accept async functions, handle pending states and handle errors.\r\n\r\nThis is implemented by setting `javascript:` URLs, but these only exist\r\nto trigger an error message if something goes wrong instead of\r\nnavigating away. Like if you called `stopPropagation` to prevent React\r\nfrom handling it or if you called `form.submit()` instead of\r\n`form.requestSubmit()` which by-passes the `submit` event. If CSP is\r\nused to ban `javascript:` urls, those will trigger errors when these\r\nURLs are invoked which would be a different error message but it's still\r\nthere to notify the user that something went wrong in the plumbing.\r\n\r\nNext up is improving the SSR state with action replaying and progressive\r\nenhancement.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(props, propKey)) {"
+          },
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(props, propKey)) {"
+          }
+        ]
+      },
+      {
+        "commit": "2983249dd2bb1a295f27939e36ab0de9e4bfab76",
+        "message": "[Fizz] implement `onHeaders` and `headersLengthHint` options (#27641)\n\nAdds a new option to `react-dom/server` entrypoints.\r\n\r\n`onHeaders: (headers: Headers) => void` (non node envs)\r\n`onHeaders: (headers: { Link?: string }) => void` (node envs)\r\n\r\nWhen any `renderTo...` or `prerender...` function is called and this\r\noption is provided the supplied function will be called sometime on or\r\nbefore completion of the render with some preload link headers.\r\n\r\nWhen provided during a `renderTo...` the callback will usually be called\r\nafter the first pass at work. The idea here is we want to get a set of\r\nheaders to start the browser loading well before the shell is ready. We\r\ndon't wait for the shell because if we did we may as well send the\r\npreloads as tags in the HTML.\r\n\r\nWhen provided during a `prerender...` the callback will be called after\r\nthe entire prerender is complete. The idea here is we are not responding\r\nto a live request and it is preferable to capture as much as possible\r\nfor preloading as Headers in case the prerender was unable to finish the\r\nshell.\r\n\r\nCurrently the following resources are always preloaded as headers when\r\nthe option is provided\r\n1. prefetchDNS and preconnects\r\n2. font preloads\r\n3. high priority image preloads\r\n\r\nAdditionally if we are providing headers when the shell is incomplete\r\n(regardless of whether it is render or prerender) we will also include\r\nany stylesheet Resources (ones with a precedence prop)\r\n\r\nThere is a second option `maxHeadersLength?: number` which allows you to\r\nspecify the maximum length of the header content in unicode code units.\r\nThis is what you get when you read the length property of a string in\r\njavascript. It's improtant to note that this is not the same as the\r\nutf-8 byte length when these headers are serialized in a Response. The\r\nutf8 representation may be the same size, or larger but it will never be\r\nsmaller.\r\n\r\nIf you do not supply a `maxHeadersLength` we defaul to `2000`. This was\r\nchosen as half the value of the max headers length supported by commonly\r\nknown web servers and CDNs. many browser and web server can support\r\nsignificantly more headers than this so you can use this option to\r\nincrease the headers limit. You can also of course use it to be even\r\nmore conservative. Again it is important to keep in mind there is no\r\ndirect translation between the max length and the bytelength and so if\r\nyou want to stay under a certain byte length you need to be potentially\r\nmore aggressive in the maxHeadersLength you choose.\r\n\r\nConceptually `onHeaders` could be called more than once as new headers\r\nare discovered however if we haven't started flushing yet but since most\r\nAPIs for the server including the web standard Response only allow you\r\nto set headers once the current implementation will only call it one\r\ntime",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(params, paramName)) {"
+          }
+        ]
+      },
+      {
+        "commit": "f3ce87ab650f07774e1df9bc3f8033e023973d10",
+        "message": "Restore old behavior for empty `href` props on anchor tags (#28124)\n\nTreat `<a href=\"\" />` the same with and without\r\n`enableFilterEmptyStringAttributesDOM`\r\n\r\nin https://github.com/facebook/react/pull/18513 we started to warn and\r\nignore for empty `href` and `src` props since it usually hinted at a\r\nmistake. However, for anchor tags there's a valid use case since `<a\r\nhref=\"\"></a>` will by spec render a link to the current page. It could\r\nbe used to reload the page without having to rely on browser\r\naffordances.\r\n\r\nThe implementation for Fizz is in the spirit of\r\nhttps://github.com/facebook/react/pull/21153. I gated the fork behind\r\nthe flag so that the fork is DCE'd when the flag is off.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(props, propKey)) {"
+          }
+        ]
+      },
+      {
+        "commit": "208ceeb46ca2838c9bf24cd341435f87b2d50569",
+        "message": "Cleanup enableFloat flag (#28613)\n\nCleanup enableFloat flag",
+        "diff": [
+          {
+            "removed": "if (hasOwnProperty.call(props, propKey)) {",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "f0e8164410049aabc680035e8fd45b657eb020ab",
+        "message": "sanitize javascript: urls for <object> tags (#29808)\n\nsanitize javascript: urls for <object> tags\r\n\r\nReact 19 added sanitization for `javascript:` URLs for `href` properties\r\non various tags. This PR also adds that sanitization for `<object>` tags\r\nas well that Firefox otherwise executes.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(props, propKey)) {"
+          }
+        ]
+      },
+      {
+        "commit": "8bda71558c8b6f9f19af33271f1bfd0251a1c071",
+        "message": "[Fiber] support hydration when rendering Suspense anywhere (#32224)\n\nfollow up to https://github.com/facebook/react/pull/32163\r\n\r\nThis continues the work of making Suspense workable anywhere in a\r\nreact-dom tree. See the prior PRs for how we handle server rendering and\r\nclient rendering. In this change we update the hydration implementation\r\nto be able to locate expected nodes. In particular this means hydration\r\nunderstands now that the default hydration context is the document body\r\nwhen the container is above the body.\r\n\r\nOne case that is unique to hydration is clearing Suspense boundaries.\r\nWhen hydration fails or when the server instructs the client to recover\r\nan errored boundary it's possible that the html, head, and body tags in\r\nthe initial document were written from a fallback or a different primary\r\ncontent on the server and need to be replaced by the client render.\r\nHowever these tags (and in the case of head, their content) won't be\r\ninside the comment nodes that identify the bounds of the Suspense\r\nboundary. And when client rendering you may not even render the same\r\nsingletons that were server rendered. So when server rendering a\r\nboudnary which contributes to the preamble (the html, head, and body tag\r\nopenings plus the head contents) we emit a special marker comment just\r\nbefore closing the boundary out. This marker encodes which parts of the\r\npreamble this boundary owned. If we need to clear the suspense boundary\r\non the client we read this marker and use it to reset the appropriate\r\nsingleton state.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "if (hasOwnProperty.call(props, propKey)) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/shared/ReactDOMUnknownPropertyHook.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(warnedProperties, name) && warnedProperties[name]) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/shared/ReactDOMInvalidARIAHook.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(warnedProperties, name) && warnedProperties[name]) {"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/client/inputValueTracking.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      return get.call(this);"
+          },
+          {
+            "removed": "",
+            "added": "      set.call(this, value);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/client/ReactFiberConfigDOM.js",
+    "commits": [
+      {
+        "commit": "b55d31955982851284bb437a5187a6c56e366539",
+        "message": "Rename HostConfig files to FiberConfig to clarify they are configs fo… (#26592)\n\npart of https://github.com/facebook/react/pull/26571\r\n\r\nmerging separately to improve tracking of files renames in git\r\n\r\nRename HostConfig files to FiberConfig to clarify they are configs for\r\nFiber and not Fizz/Flight. This better conforms to the naming used in\r\nFlight and now Fizz of `ReactFlightServerConfig` and `ReactFizzConfig`",
+        "diff": [
+          {
+            "removed": "",
+            "added": "                Object.prototype.toString.call(domElement) ==="
+          },
+          {
+            "removed": "",
+            "added": "                !hasOwnProperty.call(warnedUnknownTags, type)"
+          },
+          {
+            "removed": "",
+            "added": "    (element.focus || HTMLElement.prototype.focus).call(element);"
+          },
+          {
+            "removed": "",
+            "added": "        hasOwnProperty.call(options, 'crossOrigin')"
+          },
+          {
+            "removed": "",
+            "added": "  onUnsuspend.call(state);"
+          }
+        ]
+      },
+      {
+        "commit": "bbc8530ed7a67859583a7c990ac51cd39c7746e5",
+        "message": "[Float] Refactor public interface and internal HostDispatcher implementation (#27361)\n\nWhen Float was first developed the internal implementation and external\r\ninterface were the same. This is problematic for a few reasons. One, the\r\npublic interface is typed but it is also untrusted and we should not\r\nassume that it is actually respected. Two, the internal implementations\r\ncan get called from places other than the the public interface and\r\nhaving to construct an options argument that ends up being destructured\r\nto process the request is computationally wasteful and may limit JIT\r\noptimizations to some degree. Lastly, the wire format was not as\r\ncompressed as it could be and it was untyped.\r\n\r\nThis refactor aims to address that by separating the public interface\r\nfrom the internal implementations so we can solve these challenges and\r\nalso make it easier to change Float in the future\r\n\r\n* The internal dispatcher method preinit is now preinitStyle and\r\npreinitScript.\r\n* The internal dispatcher method preinitModule is now\r\npreinitModuleScript in anticipation of different implementations for\r\nother module types in the future.\r\n* The wire format is explicitly typed and only includes options if they\r\nare actually used omitting undefined and nulls.\r\n* Some function arguments are not options even if they are optional. For\r\ninstance precedence can be null/undefined because we deafult it to\r\n'default' however we don't cosnider this an option because it is not\r\nsomething we transparently apply as props to the underlying instance.\r\n* Fixes a problem with keying images in flight where srcset and sizes\r\nwere not being taken into account.\r\n* Moves argument validation into the ReactDOMFloat file where it is\r\nshared with all runtimes that expose these methods\r\n* Fixes crossOrigin serialization to use empty string except when\r\n'use-credentials'",
+        "diff": [
+          {
+            "removed": "hasOwnProperty.call(options, 'crossOrigin')",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "47d0c30246134ad9ce04abdcf0977cf2d49d00ce",
+        "message": "[Fiber][Float] Error when a host fiber changes \"flavor\" (#29693)\n\nHost Components can exist as four semantic types\r\n\r\n1. regular Components (Vanilla obv)\r\n2. singleton Components\r\n2. hoistable components\r\n3. resources\r\n\r\nEach of these component types have their own rules related to mounting\r\nand reconciliation however they are not direclty modeled as their own\r\nunique fiber type. This is partly for code size but also because\r\nreconciling the inner type of these components would be in a very hot\r\npath in fiber creation and reconciliation and it's just not practical to\r\ndo this logic check here.\r\n\r\nRight now we have three Fiber types used to implement these 4 concepts\r\nbut we probably need to reconsider the model and think of Host\r\nComponents as a single fiber type with an inner implementation. Once we\r\ndo this we can regularize things like transitioning between a resource\r\nand a regular component or a singleton and a hoistable instance. The\r\ncases where these transitions happen today aren't particularly common\r\nbut they can be observed and currently the handling of these transitions\r\nis incomplete at best and buggy at worst. The most egregious case is the\r\nlink type. This can be a regular component (stylesheet without\r\nprecedence) a hoistable component (non stylesheet link tags) or a\r\nresource (stylesheet with a precedence) and if you have a single jsx\r\nslot that tries to reconcile transitions between these types it just\r\ndoesn't work well.\r\n\r\nThis commit adds an error for when a Hoistable goes from Instance to\r\nResource. Currently this is only possible for `<link>` elements going to\r\nand from stylesheets with precedence. Hopefully we'll be able to remove\r\nthis error and implement as an inner type before we encounter new\r\ncategories for the Hoistable types\r\n\r\ndetecting type shifting to and from regular components is harder to do\r\nefficiently because we don't want to reevaluate the type on every update\r\nfor host components which is currently not required and would add\r\noverhead to a very hot path\r\n\r\nsingletons can't really type shift in their one practical implementation\r\n(DOM) so they are only a problem in theroy not practice",
+        "diff": [
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(props, 'rel')) {"
+          },
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(props, 'href')) {"
+          },
+          {
+            "removed": "",
+            "added": "} else if (hasOwnProperty.call(props, 'precedence')) {"
+          }
+        ]
+      },
+      {
+        "commit": "c69a5fc53a5135136668ca878f99b634d2374837",
+        "message": "Add blur() and focusLast() to fragment instances (#32654)\n\n`focus()` was added in https://github.com/facebook/react/pull/32465.\nHere we add `focusLast()` and `blur()`. I also extended `focus` to take\noptions.\n\n`focus` will focus the first focusable element. `focusLast` will focus\nthe last focusable element. We could consider a `focusFirst` naming or\neven the `focusWithin` used by test selector APIs as well.\n\n`blur` will only have an effect if the current `document.activeElement`\nis one of the fragment children.",
+        "diff": [
+          {
+            "removed": "(element.focus || HTMLElement.prototype.focus).call(element);",
+            "added": "(element.focus || HTMLElement.prototype.focus).call(element, focusOptions);"
+          }
+        ]
+      },
+      {
+        "commit": "476f53879e80d4ee976ed036a0e8986126fa3117",
+        "message": "Add getClientRects to fragment instances (#32660)\n\nAdds `getClientRects()` to fragment instances with a fixture test case.\n`Element.getClientRect` returns a collection of `DOMRect`s (see example\nof multiline span returning two `DOMRect` boxes).\n`fragmentInstance.getClientRects` here flattens those collections into\nan array of rects.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "rects.push.apply(rects, child.getClientRects());"
+          }
+        ]
+      },
+      {
+        "commit": "e5a8de81e57181692d33ce916dfd6aa23638ec92",
+        "message": "Add compareDocumentPosition to fragment instances (#32722)\n\nThis adds `compareDocumentPosition(otherNode)` to fragment instances.\n\nThe semantics implemented are meant to match typical element\npositioning, with some fragment specifics. See the unit tests for all\nexpectations.\n\n- An element preceding a fragment is `Node.DOCUMENT_POSITION_PRECEDING`\n- An element after a fragment is `Node.DOCUMENT_POSITION_FOLLOWING`\n- An element containing the fragment is\n`Node.DOCUMENT_POSITION_PRECEDING` and\n`Node.DOCUMENT_POSITION_CONTAINING`\n- An element within the fragment is\n`Node.DOCUMENT_POSITION_CONTAINED_BY`\n- An element compared against an empty fragment will result in\n`Node.DOCUMENT_POSITION_DISCONNECTED` and\n`Node.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC`\n\nSince we assume a fragment instances target children are DOM siblings\nand we want to compare the full fragment as a pseudo container, we can\ncompare against the first target child outside of handling the special\ncases (empty fragments and contained elements).",
+        "diff": [
+          {
+            "removed": "rects.push.apply(rects, child.getClientRects());",
+            "added": "rects.push.apply(rects, instance.getClientRects());"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-dom-bindings/src/client/ReactDOMComponent.js",
+    "commits": [
+      {
+        "commit": "97d75c9c8bcddb0daed1ed062101c7f5e9b825f4",
+        "message": "Move react-dom implementation files to react-dom-bindings (#25345)\n\nThis lets us share it with react-server-dom-webpack while still having a\r\ndependency on react-dom. It also makes somewhat sense from a bundling\r\nperspective since react-dom is an external to itself.",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        Object.prototype.toString.call(domElement) ==="
+          },
+          {
+            "removed": "",
+            "added": "        !hasOwnProperty.call(warnedUnknownTags, type)"
+          }
+        ]
+      },
+      {
+        "commit": "8a9f82ed58c2fa76583a041fa34ad80f5f94a3d1",
+        "message": "[Float][Fizz][Fiber] - Do not hoist elements with `itemProp` & hydrate more tolerantly in hoist contexts (#26256)\n\n## Do not hoist elements with `itemProp`\r\nIn HTML `itemprop` signifies a property of an `itemscope` with respect\r\nto the Microdata spec\r\n(https://html.spec.whatwg.org/multipage/microdata.html#microdata)\r\n\r\nadditionally `itemprop` is valid on any tag and can even make some tags\r\nthat are otherwise invalid in the `<body>` valid there (`<meta>` for\r\ninstance).\r\n\r\nOriginally I tried an approach where if you rendered something otherwise\r\nhoistable inside an `itemscope` it would not hoist if it had an\r\n`itemprop`. This meant that some components with `itemprop` could hoist\r\n(if they were not scoped, which is generally invalid microdata\r\nimplementation). However the problem is things that do hoist, hoist into\r\nthe head and body and these tags can have an `itemscope`. This creates a\r\nton of ambiguity when trying to hydrate in these hoist scopes because we\r\ncan't know for certain whether a DOM node we find there was hoisted or\r\nnot even if it has an `itemprop` attribute. There are other scenarios\r\ntoo that have abiguous semantics like rendering a hoistable with\r\n`itemProp` outside of `<html itemScope={true>`. Is it fair to embed that\r\nhoistable inside that itemScope even though it was defined outside?\r\n\r\nTo simplify the situation and disambiguate I dropped the `itemscope`\r\nportion from the implementation and now any host component that could\r\nnormally be hoisted will not hoist if it has an `itemProp` prop.\r\n\r\nIn addition to the changes made for `itemProp` this PR also modifies\r\npart of the hydration implementation to be more tolerant of tags\r\ninjected by 3rd parties. This was opportunistically done when we needed\r\nto have context information like `inItemScope` but with the most recent\r\nimplementation that has been removed. I have however left the hydration\r\nchanges in place as it is a goal to make React handle hydrating the\r\nentire Document even when we cannot control whether 3rd parties are\r\ngoing to inject tags that React will not render but are also not\r\nhoistables\r\n\r\n-------\r\n\r\n##### Original Description when we considered tracking itemScope\r\n>One recent decision was to make elements using the `itemProp` prop not\r\nhoistable if they were inside and itemScope. This better fits with\r\nMicrodata spec which allows for meta tags and other tag types usually\r\nreserved for the `<head>` to be used in the `<body>` when using\r\nitemScope.\r\n>\r\n>To implement this a number of small changes were necessary\r\n>\r\n>1. HostContext in prod needed to expand beyond just tracking the\r\nelement namespace for new element creation. It now tracks whether we are\r\nin an itemScope. To keep this efficient it is modeled as a bitmask.\r\n>2. To disambiguate what is and is not a potential instance in the DOM\r\nfor hoistables the hydration algo was updated to skip past non-matching\r\ninstances while attempting to claim the instance rather than ahead of\r\ntime (getNextHydratable).\r\n>3. React will not consider an itemScope on `<html>`, `<head>`, or\r\n`<body>` as a valid scope for the hoisting opt-out. This is important as\r\nan invariant so we can make assumptions about certain tags in these\r\nscopes. This should not be a functional breaking change because if any\r\nof these tags have an `itemScope` then it can just be moved into the\r\nfirst node inside the `<body>`\r\n>\r\n>Since we were already updating the logic for hydration to better\r\nsupport `itemScope` opt-out I also changed the hydration behavior for\r\nsuspected 3rd party nodes in `<head>` and `<body>`. Now if you are\r\nhydrating in either of those contexts hydration will skip past any\r\nnon-matching nodes until it finds a match. This allows 3rd party scripts\r\nand extensions to inject nodes in either context that React does not\r\nexpect and still avoid a hydration mismatch.\r\n>\r\n>This new algorithm isn't perfect and it is possible for a mismatch to\r\noccur. The most glaring case may be if a 3rd party script prepends a\r\n`<div>` into `<body>` and you render a `<div>` in `<body>` in your app.\r\nthere is nothing to signal to React that this div was 3rd party so it\r\nwill claim is as the hydrated instance and hydration will almost\r\ncertainly fail immediately afterwards.\r\n>\r\n>The expectation is that this is rare and that if falling back to client\r\nrendering is transparent to the user then there is not problem here. We\r\nwill continue to evaluate this and may change the hydration matching\r\nalgorithm further to match user and developer expectations",
+        "diff": [
+          {
+            "removed": "Object.prototype.toString.call(domElement) ===",
+            "added": ""
+          },
+          {
+            "removed": "!hasOwnProperty.call(warnedUnknownTags, type)",
+            "added": ""
+          },
+          {
+            "removed": "",
+            "added": "Object.prototype.toString.call(domElement) ==="
+          },
+          {
+            "removed": "",
+            "added": "!hasOwnProperty.call(warnedUnknownTags, type)"
+          }
+        ]
+      },
+      {
+        "commit": "978fae4b4f6d5aa28887b530b5c9bf28b1e7b74b",
+        "message": "[Float][Fiber] implement a faster hydration match for hoistable elements (#26154)\n\nThis PR is now based on #26256 \r\n\r\nThe original matching function for `hydrateHoistable` some challenging\r\ntime complexity since we built up the list of matchable nodes for each\r\nlink of that type and then had to check to exclusion. This new\r\nimplementation aims to improve the complexity\r\n\r\nFor hoisted title tags we match the first title if it is valid (not in\r\nSVG context and does not have `itemprop`, the two ways you opt out of\r\nhoisting when rendering titles). This path is much faster than others\r\nand we use it because valid Documents only have 1 title anyway and if we\r\ndid have a mismatch the rendered title still ends up as the\r\nDocument.title so there is no functional degradation for misses.\r\n\r\nFor hoisted link and meta tags we track all potentially hydratable\r\nElements of this type in a cache per Document. The cache is refreshed\r\nonce each commit if and only if there is a title or meta hoistable\r\nhydrating. The caches are partitioned by a natural key for each type\r\n(href for link and content for meta). Then secondary attributes are\r\nchecked to see if the potential match is matchable.\r\n\r\nFor link we check `rel`, `title`, and `crossorigin`. These should\r\nprovide enough entropy that we never have collisions except is contrived\r\ncases and even then it should not affect functionality of the page. This\r\nshould also be tolerant of links being injected in arbitrary places in\r\nthe Document by 3rd party scripts and browser extensions\r\n\r\nFor meta we check `name`, `property`, `http-equiv`, and `charset`. These\r\nshould provide enough entropy that we don't have meaningful collisions.\r\nIt is concievable with og tags that there may be true duplciates `<meta\r\nproperty=\"og:image:size:height\" content=\"100\" />` but even if we did\r\nbind to the wrong instance meta tags are typically only read from SSR by\r\nbots and rarely inserted by 3rd parties so an adverse functional outcome\r\nis not expected.",
+        "diff": [
+          {
+            "removed": "Object.prototype.toString.call(domElement) ===",
+            "added": "Object.prototype.toString.call(element) ==="
+          }
+        ]
+      },
+      {
+        "commit": "43a70a610dd2cc298ab5592deebfbf8f7bbac127",
+        "message": "Limit the meaning of \"custom element\" to not include `is` (#26524)\n\nThis PR has a bunch of surrounding refactoring. See individual commits.\r\n\r\nThe main change is that we no longer special case `typeof is ===\r\n'string'` as a special case according to the\r\n`enableCustomElementPropertySupport` flag.\r\n\r\nEffectively this means that you can't use custom properties/events,\r\nother than the ones React knows about on `<input is=\"my-input\">`\r\nextensions.\r\n\r\nThis is unfortunate but there's too many paths that are forked in\r\ninconsistent ways since we fork based on tag name. I think __the\r\nsolution is to let all React elements set unknown properties/events in\r\nthe same way as this flag__ but that's a bigger change than this flag\r\nimplies.\r\n\r\nSince `is` is not universally supported yet anyway, this doesn't seem\r\nlike a huge loss. Attributes still work.\r\n\r\nWe still support passing the `is` prop and turn that into the\r\nappropriate createElement call.\r\n\r\n@josepharhar",
+        "diff": [
+          {
+            "removed": "Object.prototype.toString.call(element) ===",
+            "added": ""
+          },
+          {
+            "removed": "!hasOwnProperty.call(warnedUnknownTags, type)",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-reconciler/src/ReactFiberHooks.js",
+    "commits": [
+      {
+        "commit": "ecd919a2f9b6e3d314fffc3d34b68b953a4e75e1",
+        "message": "RFC: warn when returning different hooks on subsequent renders (#14585)\n\n* warn when returning different hooks on next render\r\n\r\nlike it says. adds a field to Hook to track effect 'type', and compares when cloning subsequently.\r\n\r\n* lint\r\n\r\n* review changes\r\n\r\n- numbered enum for hook types\r\n- s/hookType/_debugType\r\n- better dce\r\n\r\n* cleaner detection location\r\n\r\n* redundant comments\r\n\r\n* different EffectHook / LayoutEffectHook\r\n\r\n* prettier\r\n\r\n* top level currentHookType\r\n\r\n* nulling currentHookType\r\n\r\nneed to verify dce still works\r\n\r\n* small enhancements\r\n\r\n* hook order checks for useContext/useImperative\r\n\r\n* prettier\r\n\r\n* stray whitespace\r\n\r\n* move some bits around\r\n\r\n* better errors\r\n\r\n* pass tests\r\n\r\n* lint, flow\r\n\r\n* show a before - after diff\r\n\r\n* an error stack in the warning\r\n\r\n* lose currentHookMatches, fix a test\r\n\r\n* tidy\r\n\r\n* clear the mismatch only in dev\r\n\r\n* pass flow\r\n\r\n* side by side diff\r\n\r\n* tweak warning\r\n\r\n* pass flow\r\n\r\n* dedupe warnings per fiber, nits\r\n\r\n* better format\r\n\r\n* nit\r\n\r\n* fix bad merge, pass flow\r\n\r\n* lint\r\n\r\n* missing hooktype enum\r\n\r\n* merge currentHookType/currentHookNameInDev, fix nits\r\n\r\n* lint\r\n\r\n* final nits",
+        "diff": [
+          {
+            "removed": "",
+            "added": "const columnLength = Math.max.apply("
+          }
+        ]
+      },
+      {
+        "commit": "70d4075832cebc8bd3eb19f1089701096b483bd5",
+        "message": "Move Hook mismatch warning to first mismatch site (#14720)\n\n* Move Hook mismatch warning to first mismatch site\r\n\r\nAllows us to localize the warning logic in one place.\r\n\r\n* Nit",
+        "diff": [
+          {
+            "removed": "const columnLength = Math.max.apply(",
+            "added": ""
+          }
+        ]
+      },
+      {
+        "commit": "f101c2d0d3a6cb5a788a3d91faef48462e45f515",
+        "message": "Remove Reconciler fork (2/2) (#25775)\n\nWe've heard from multiple contributors that the Reconciler forking\r\nmechanism was confusing and/or annoying to deal with. Since it's\r\ncurrently unused and there's no immediate plans to start using it again,\r\nthis removes the forking.\r\n\r\nFully removing the fork is split into 2 steps to preserve file history:\r\n\r\n**#25774 previous PR that did the bulk of the work:**\r\n- remove `enableNewReconciler` feature flag.\r\n- remove `unstable_isNewReconciler` export\r\n- remove eslint rules for cross fork imports\r\n- remove `*.new.js` files and update imports\r\n- merge non-suffixed files into `*.old` files where both exist\r\n(sometimes types were defined there)\r\n\r\n**This PR**\r\n- rename `*.old` files",
+        "diff": [
+          {
+            "removed": "",
+            "added": "return ref.impl.apply(undefined, arguments);"
+          },
+          {
+            "removed": "",
+            "added": "return ref.impl.apply(undefined, arguments);"
+          }
+        ]
+      },
+      {
+        "commit": "5c8dabf8864e1d826c831d6096b2dfa66309961a",
+        "message": "Detect and warn about native async function components in development (#27031)\n\nAdds a development warning to complement the error introduced by\r\nhttps://github.com/facebook/react/pull/27019.\r\n\r\nWe can detect and warn about async client components by checking the\r\nprototype of the function. This won't work for environments where async\r\nfunctions are transpiled, but for native async functions, it allows us\r\nto log an earlier warning during development, including in cases that\r\ndon't trigger the infinite loop guard added in\r\nhttps://github.com/facebook/react/pull/27019. It does not supersede the\r\ninfinite loop guard, though, because that mechanism also prevents the\r\napp from crashing.\r\n\r\nI also added a warning for calling a hook inside an async function. This\r\none fires even during a transition. We could add a corresponding warning\r\nto Flight, since hooks are not allowed in async Server Components,\r\neither. (Though in both environments, this is better handled by a lint\r\nrule.)",
+        "diff": [
+          {
+            "removed": "",
+            "added": "Object.prototype.toString.call(Component) === '[object AsyncFunction]';"
+          }
+        ]
+      },
+      {
+        "commit": "9f2eebd807bf53b7d9901cf0b768762948224cae",
+        "message": "[Fiber/Fizz] Support AsyncIterable as Children and AsyncGenerator Client Components (#28868)\n\nStacked on #28849, #28854, #28853. Behind a flag.\r\n\r\nIf you're following along from the side-lines. This is probably not what\r\nyou think it is.\r\n\r\nIt's NOT a way to get updates to a component over time. The\r\nAsyncIterable works like an Iterable already works in React which is how\r\nan Array works. I.e. it's a list of children - not the value of a child\r\nover time.\r\n\r\nIt also doesn't actually render one component at a time. The way it\r\nworks is more like awaiting the entire list to become an array and then\r\nit shows up. Before that it suspends the parent.\r\n\r\nTo actually get these to display one at a time, you have to opt-in with\r\n`<SuspenseList>` to describe how they should appear. That's really the\r\ninteresting part and that not implemented yet.\r\n\r\nAdditionally, since these are effectively Async Functions and uncached\r\npromises, they're not actually fully \"supported\" on the client yet for\r\nthe same reason rendering plain Promises and Async Functions aren't.\r\nThey warn. It's only really useful when paired with RSC that produces\r\ninstrumented versions of these. Ideally we'd published instrumented\r\nhelpers to help with map/filter style operations that yield new\r\ninstrumented AsyncIterables.\r\n\r\nThe way the implementation works basically just relies on unwrapThenable\r\nand otherwise works like a plain Iterator.\r\n\r\nThere is one quirk with these that are different than just promises. We\r\nask for a new iterator each time we rerender. This means that upon retry\r\nwe kick off another iteration which itself might kick off new requests\r\nthat block iterating further. To solve this and make it actually\r\nefficient enough to use on the client we'd need to stash something like\r\na buffer of the previous iteration and maybe iterator on the iterable so\r\nthat we can continue where we left off or synchronously iterate if we've\r\nseen it before. Similar to our `.value` convention on Promises.\r\n\r\nIn Fizz, I had to do a special case because when we render an iterator\r\nchild we don't actually rerender the parent again like we do in Fiber.\r\nHowever, it's more efficient to just continue on where we left off by\r\nreusing the entries from the thenable state from before in that case.",
+        "diff": [
+          {
+            "removed": "Object.prototype.toString.call(Component) === '[object AsyncFunction]';",
+            "added": "Object.prototype.toString.call(Component) === '[object AsyncFunction]' ||"
+          },
+          {
+            "removed": "",
+            "added": "Object.prototype.toString.call(Component) ==="
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-reconciler/src/ReactFiberHydrationDiffs.js",
+    "commits": [
+      {
+        "commit": "2ec2aaea98588178525f83495669e11e96815a00",
+        "message": "Add Diffs to Hydration Warnings (#28512)\n\nStacked on #28502.\r\n\r\nThis builds on the mechanism in #28502 by adding a diff of everything\r\nwe've collected so far to the thrown error or logged error.\r\n\r\nThis isn't actually a longest common subsequence diff. This means that\r\nthere are certain cases that can appear confusing such as a node being\r\nadded/removed when it really would've appeared later in the list. In\r\nfact once a node mismatches, we abort rendering so we don't have the\r\ncontext of what would've been rendered. It's not quite right to use the\r\nresult of the recovery render because it can use client-only code paths\r\nusing useSyncExternalStore which would yield false differences. That's\r\nwhy diffing the HTML isn't quite right.\r\n\r\nI also present abstract components in the stack, these are presented\r\nwith the client props and no diff since we don't have the props that\r\nwere on the server. The lack of difference might be confusing but it's\r\nuseful for context.\r\n\r\nThe main thing that's data new here is that we're adding some siblings\r\nand props for context.\r\n\r\nExamples in the [snapshot\r\ncommit](https://github.com/facebook/react/pull/28512/commits/e14532fd8df858a319d3eca687d83227209a498c).",
+        "diff": [
+          {
+            "removed": "",
+            "added": "const name = Object.prototype.toString.call(object);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hook.js",
+    "commits": [
+      {
+        "commit": "ec7ef50e8b7a61639d5b622e9e675602120e2e96",
+        "message": "Reorganized things again into packages",
+        "diff": [
+          {
+            "removed": "",
+            "added": "        const renderRootCode = toString.call("
+          },
+          {
+            "removed": "",
+            "added": "      const code = toString.call(fn);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/hydration.js",
+    "commits": [
+      {
+        "commit": "ec7ef50e8b7a61639d5b622e9e675602120e2e96",
+        "message": "Reorganized things again into packages",
+        "diff": [
+          {
+            "removed": "",
+            "added": "      } else if (Object.prototype.toString.call(data) === '[object Date]') {"
+          }
+        ]
+      },
+      {
+        "commit": "12c000412d05c4a6079b4f57f721a40b8cea374d",
+        "message": "Improved inspected element props with inline previews (#17579)\n\n* Improved inspected element props with inline previews\r\n\r\nThis mimics the inline preview shown by the brower console and dramatically improves the UX when inspecting deep values. I also updated tests to add more coverage for this new functionality.\r\n\r\n* Cleaned up the DataView vs typed array check\r\n\r\n* Added early bailouts to DevTools when generating preview strings for iterables/objects/arrays, to avoid doing unnecessary work",
+        "diff": [
+          {
+            "removed": "} else if (Object.prototype.toString.call(data) === '[object Date]') {",
+            "added": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "packages/react-devtools-shared/src/backend/fiber/renderer.js",
+    "commits": [
+      {
+        "commit": "e44685e4f196f9e19c3729ab2b3772a40428ac1e",
+        "message": "[DevTools] Use Owner Stacks to Implement View Source of a Server Component (#30798)\n\nWe don't have the source location of Server Components on the client\r\nbecause we don't want to eagerly do the throw trick for all Server\r\nComponents just in case. Unfortunately Node.js doesn't expose V8's API\r\nto get a source location of a function.\r\n\r\nWe do have the owner stacks of the JSX that created it though and at\r\nsome point we'll also show that location in DevTools.\r\n\r\nHowever, the realization is that if a Server Component is the owner of\r\nany child. The owner stack of that child will have the owner component's\r\nsource location as its bottom stack frame.\r\n\r\nThe technique I'm implementing here is to track whenever a child mounts\r\nwe already have its owner. We track the first discovered owned child's\r\nstack on the owner. Then when we ask for a Source location of the owner\r\ndo we parse that stack and extract the location of the bottom frame.\r\nThis doesn't give us a location necessarily in the top of the function\r\nbut somewhere in the function.\r\n\r\nIn this case the first owned child is the Container:\r\n\r\n<img width=\"1107\" alt=\"Screenshot 2024-08-22 at 10 24 42 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/95f32850-24a5-4151-8ce6-b7b89db68aee\">\r\n<img width=\"648\" alt=\"Screenshot 2024-08-22 at 10 24 20 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/4bcba033-866f-4684-9beb-de09d189deff\">\r\n\r\nWe can even use this technique for Fibers too. Currently I use this as a\r\nfallback in case the error technique didn't work. This covers a case\r\nwhere nothing errors but you still render a child. This case is actually\r\nquite common:\r\n\r\n```\r\nfunction Foo() {\r\n  return <Bar />;\r\n}\r\n```\r\n\r\nHowever, for Fibers we could really just use the `inspect(function)`\r\ntechnique which works for all cases. At least in Chrome.\r\n\r\nUnfortunately, this technique doesn't work if a Component doesn't create\r\nany new JSX but just renders its children. It also currently doesn't\r\nwork if the child is filtered since I only look up the owner if an\r\ninstance is not filtered. This means that the container in the fixture\r\ncan't view source by default since the host component is filtered:\r\n\r\n```\r\nexport default function Container({children}) {\r\n  return <div>{children}</div>;\r\n}\r\n```\r\n\r\n<img width=\"1107\" alt=\"Screenshot 2024-08-22 at 10 24 35 PM\"\r\nsrc=\"https://github.com/user-attachments/assets/c3f8f9c5-5add-4d35-9290-3a5079e82adc\">",
+        "diff": [
+          {
+            "removed": "",
+            "added": "return toString.call(object) === '[object Error]';"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-16/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-16/cjs/react-jsx-runtime.production.min.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=\"\"+k);void 0!==a.key&&(e=\"\"+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-16/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "          Fake.call();"
+          },
+          {
+            "removed": "",
+            "added": "        fn.call(Fake.prototype);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-runtime.production.min.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=\"\"+k);void 0!==a.key&&(e=\"\"+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "          Fake.call();"
+          },
+          {
+            "removed": "",
+            "added": "        fn.call(Fake.prototype);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-runtime.production.min.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=\"\"+k);void 0!==a.key&&(e=\"\"+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-runtime.production.min.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=\"\"+k);void 0!==a.key&&(e=\"\"+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-dev-runtime.development.js",
+    "commits": [
+      {
+        "commit": "6d50a9d090a2a672fc3dea5ce77a3a05332a6caa",
+        "message": "Fixture: Legacy JSX Runtimes (#20012)\n\n* Fixture: Legacy JSX Runtimes\r\n\r\n* Add more comments",
+        "diff": [
+          {
+            "removed": "",
+            "added": "    Function.prototype.apply.call(console[level], console, argsWithFormat);"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'ref')) {"
+          },
+          {
+            "removed": "",
+            "added": "    if (hasOwnProperty.call(config, 'key')) {"
+          },
+          {
+            "removed": "",
+            "added": "      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {"
+          },
+          {
+            "removed": "",
+            "added": "          var iterator = iteratorFn.call(node);"
+          }
+        ]
+      }
+    ]
+  }
+]
